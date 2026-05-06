@@ -296,7 +296,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open http://localhost:5000.
 
 For deploy to work, set the `VERCEL_TOKEN` secret in GitHub repo settings (Settings → Secrets → Actions).
 
