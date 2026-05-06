@@ -1,0 +1,26 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install Vercel CLI
+        run: npm i -g vercel@latest
+
+      - name: Deploy to Vercel
+        id: deploy
+        run: |
+          # Vercel CLI reads .git to detect the commit author and blocks deploys on the Hobby plan if the author isn't the team owner.
+          rm -rf .git
+          deployment_url=$(vercel --yes --token=${{ secrets.VERCEL_TOKEN }} ${{ github.ref == 'refs/heads/main' && '--prod' || '' }})
+          echo "deployment_url=$deployment_url" >> $GITHUB_OUTPUT
