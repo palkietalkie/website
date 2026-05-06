@@ -312,7 +312,4 @@ CRITICAL: NEVER start without explicit user request. PR must be clean — don't 
    - If hook fails: fix, re-stage, commit again. Don't stage other sessions' files.
 3. Check for existing PR: `gh pr list --head $(git branch --show-current) --state open` — if exists, STOP and ask
 4. `git push`
-5. `gh pr create --title "<technical, descriptive title>" --body "" --assignee @me` — create PR immediately, no body
-6. Write PR body to `.pr-bodies/<pr#>.md` (gitignored), then `gh pr edit <number> --body-file .pr-bodies/<pr#>.md`
-   - Body format: TBD until product launches. For now: short Summary + Test plan (Vercel preview URL).
-   - Social/blog/docs steps deferred until public launch.
+5. `gh pr create --title "<technical, descriptive title>" --body "" --assignee @me` — title is enough; no body until product launches.

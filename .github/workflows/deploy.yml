@@ -21,4 +21,4 @@ jobs:
         run: |
           # Vercel CLI reads .git to detect the commit author and blocks deploys on the Hobby plan if the author isn't the team owner.
           rm -rf .git
-          vercel --yes --token=${{ secrets.VERCEL_TOKEN }} --prod
+          vercel --yes --token=${{ secrets.VERCEL_TOKEN }} --scope=gitauto --prod
