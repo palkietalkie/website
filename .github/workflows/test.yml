@@ -28,6 +28,17 @@ permissions:
   contents: read
 
 jobs:
+  test-pair:
+    name: Refuse source changes without paired test changes
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 200
+
+      - run: bash scripts/ci/check_test_pair.sh "origin/${{ github.base_ref }}"
+
   lint:
     name: Lint
     runs-on: ubuntu-latest
