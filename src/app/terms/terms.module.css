@@ -1,0 +1,67 @@
+.header {
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-5);
+  background: radial-gradient(900px 500px at 70% -10%, rgba(255, 90, 60, 0.08), transparent 60%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) 0;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.intro {
+  padding-top: var(--space-4);
+  max-width: 720px;
+}
+
+.intro h1 {
+  margin-bottom: var(--space-2);
+}
+
+.lede {
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+}
+
+.body {
+  background: var(--surface);
+}
+
+.prose {
+  max-width: 720px;
+  color: var(--fg);
+  line-height: 1.65;
+}
+
+.prose h2 {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-2);
+  font-size: 1.4rem;
+}
+
+.prose p,
+.prose ul {
+  margin-bottom: var(--space-3);
+  color: var(--fg-muted);
+}
+
+.prose ul {
+  padding-left: var(--space-3);
+}
+
+.prose li {
+  margin-bottom: var(--space-1);
+}
+
+.prose a {
+  color: var(--accent);
+  text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "क़ीमतें",
+    "subscribe": "सब्सक्राइब करें",
+    "language": "भाषा"
+  },
+  "hero": {
+    "ctaSecondary": "क़ीमतें देखें",
+    "smallprint": "रोज़ 10 मिनट मुफ़्त। कार्ड की ज़रूरत नहीं। कभी भी बंद कर सकते हैं।"
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "क़ीमतें",
+    "perMonth": "/ महीना",
+    "orPerYear": "या {yearly} / साल",
+    "mostPopular": "सबसे लोकप्रिय",
+    "tiers": {
+      "free": {
+        "name": "मुफ़्त",
+        "cta": "App Store पर डाउनलोड करें",
+        "includes": [
+          "रोज़ 10 मिनट, स्थानीय आधी रात पर रीसेट"
+        ]
+      },
+      "individual": {
+        "name": "इंडिविजुअल",
+        "cta": "वेब पर सब्सक्राइब करें",
+        "includes": [
+          "1 उपयोगकर्ता",
+          "असीमित बातचीत"
+        ]
+      },
+      "family": {
+        "name": "फ़ैमिली",
+        "cta": "वेब पर सब्सक्राइब करें",
+        "includes": [
+          "6 लोगों तक",
+          "हर एक के लिए अलग प्रोफ़ाइल + याददाश्त"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "App Store पर डाउनलोड करें"
+  },
+  "footer": {
+    "home": "होम",
+    "contact": "संपर्क"
+  },
+  "signup": {
+    "metaTitle": "सब्सक्राइब करें",
+    "metaDescription": "वेब पर Palkie Talkie इंडिविजुअल या फ़ैमिली प्लान सब्सक्राइब करें।",
+    "youPicked": "आपका प्लान",
+    "perMonth": "{amount} / महीना",
+    "perYear": "या {amount} / साल",
+    "switchToFamily": "फ़ैमिली पर बदलें →",
+    "switchToIndividual": "इंडिविजुअल पर बदलें →",
+    "canceled": "पेमेंट रद्द हुआ। आप कभी भी फिर कोशिश कर सकते हैं।",
+    "checkoutCta": "चेकआउट पर आगे — {price}",
+    "cancelNote": "कभी भी रद्द कर सकते हैं। ऐक्सेस मौजूदा बिलिंग चक्र के अंत तक चलती है।"
+  },
+  "success": {
+    "metaTitle": "हो गया",
+    "metaDescription": "सब्सक्रिप्शन पक्की। ऐप डाउनलोड कर बातचीत शुरू कीजिए।",
+    "eyebrowOk": "आप सब्सक्राइब्ड हैं",
+    "title": "अब ऐप डाउनलोड कीजिए।",
+    "lead": "आपकी सब्सक्रिप्शन चालू है। Palkie Talkie ऐप में रहता है।",
+    "instructions": "वही ईमेल इस्तेमाल कीजिए जो आपने यहाँ डाला था।",
+    "note": "इसी से हम आपकी सब्सक्रिप्शन को आपके अकाउंट से जोड़ते हैं।",
+    "eyebrowError": "अरे",
+    "errorTitle": "हम आपका सेशन वेरिफ़ाई नहीं कर सके।",
+    "errorFallback": "पेज रीफ़्रेश कीजिए, या सपोर्ट से संपर्क करें।",
+    "backToSignup": "रजिस्ट्रेशन पर वापस"
+  }
+}

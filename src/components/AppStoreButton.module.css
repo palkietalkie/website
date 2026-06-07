@@ -1,0 +1,91 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition:
+    transform 0.06s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.primary {
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+.primary:hover {
+  background: #1f1f1f;
+  box-shadow: var(--shadow-md);
+}
+
+.secondary {
+  background: var(--surface-elevated);
+  color: var(--fg);
+  border: 1px solid var(--border-strong);
+}
+
+.secondary:hover {
+  background: var(--surface);
+}
+
+/* Waitlist mode — pre-launch / non-iOS conversion CTA. The single most important action on the site right now. Accent fill, lift on hover, soft glow. */
+.waitlist {
+  background: var(--accent);
+  color: var(--accent-fg);
+  box-shadow:
+    0 6px 18px rgba(255, 90, 60, 0.35),
+    var(--shadow-sm);
+}
+
+.waitlist:hover {
+  background: var(--accent-hover);
+  box-shadow:
+    0 10px 24px rgba(255, 90, 60, 0.45),
+    var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.waitlist:active {
+  transform: translateY(0);
+}
+
+.md {
+  padding: 12px 20px;
+}
+
+.lg {
+  padding: 16px 28px;
+  font-size: 1.05rem;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
+
+.labelStack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.05;
+}
+
+.small {
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.big {
+  font-size: 1.05rem;
+  font-weight: 600;
+}

@@ -1,0 +1,284 @@
+.wrap {
+  min-height: 100vh;
+  /* Single background. The page IS the waitlist — no nested "card" treatment that would read as a separate component sitting inside the page. */
+  background: var(--bg);
+  padding: var(--space-3) var(--gutter) var(--space-5);
+}
+
+.shell {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.card {
+  /* Flat — no inner card chrome. The form sits directly on the page background. */
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.lead {
+  color: var(--fg-muted);
+  margin-bottom: var(--space-3);
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* Reset browser default <fieldset> styling — by default it has padding, a groove border, and `min-width: min-content` (which makes it wider than its container if the contents are wide). Killing all of that so a <fieldset> sized .field looks identical to a <label> sized .field. */
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.field span,
+.field legend {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--fg);
+  padding: 0;
+}
+
+.checkboxGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--fg);
+  cursor: pointer;
+  min-height: var(--tap-min);
+  /* Prevent the checkbox label overflowing its grid cell on long words. */
+  min-width: 0;
+}
+
+.checkbox span {
+  /* span inside .checkbox should NOT inherit the bold label styling that .field span applies — it's a checkbox label, not a field label. */
+  font-weight: 400;
+  font-size: 0.95rem;
+  /* Truncate if a language name happens to be wider than the column (Bahasa Indonesia, 简体中文 + ja chars). */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.checkbox input[type="checkbox"] {
+  /* Native checkbox look — universally understood. Sized comfortably for touch. */
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+  /* Do NOT inherit the field <input> styling below (full width, big padding, background, etc). */
+  appearance: auto;
+  -webkit-appearance: auto;
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+}
+
+.field > input,
+.field > textarea,
+.field > select {
+  width: 100%;
+  padding: 12px 14px;
+  /* 16px body font prevents iOS Safari from auto-zooming when an input focuses. */
+  font-size: 16px;
+  font-family: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+  /* Match the input height + remove the platform-specific <select> look so the field set reads as one consistent style. */
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.field > select {
+  /* Custom chevron, since we removed the native one. SVG kept inline so theming works without an asset. */
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%236b6b6b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='4 6 8 10 12 6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+}
+
+.field > input:focus,
+.field > textarea:focus,
+.field > select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.field > textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Custom multi-select. Trigger looks identical to .field > select (border, padding, font, chevron). Panel below is a tappable list — selected rows fill with the accent color. */
+.multiTrigger {
+  width: 100%;
+  padding: 12px 14px 12px 14px;
+  padding-right: 38px;
+  /* Match input height + iOS 16px floor. */
+  min-height: var(--tap-min);
+  font-size: 16px;
+  font-family: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+  text-align: left;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%236b6b6b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='4 6 8 10 12 6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.multiPlaceholder {
+  color: var(--fg-subtle);
+}
+
+.multiSummary {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Full-screen overlay rendered while the panel is open. Catches taps outside the panel (including iOS body taps where document-level mousedown doesn't fire). Transparent — purely a click-catcher. */
+.multiOverlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: default;
+  z-index: 10;
+}
+
+.multiPanel {
+  margin-top: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  max-height: 260px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  /* Sits above the overlay so its rows stay tappable. */
+  position: relative;
+  z-index: 11;
+}
+
+.multiRow {
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--fg);
+  cursor: pointer;
+  min-height: var(--tap-min);
+}
+
+.multiRow:hover {
+  background: var(--surface-elevated);
+}
+
+.multiRowOn {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+.multiRowOn:hover {
+  background: var(--accent-hover);
+}
+
+.submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-weight: 700;
+  font-size: 1.02rem;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.error {
+  color: var(--danger, #c0392b);
+  font-size: 0.92rem;
+}
+
+.thanks {
+  text-align: center;
+  padding: var(--space-3) 0;
+}
+
+.thanksTitle {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.thanksLead {
+  color: var(--fg-muted);
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding: var(--space-4) var(--gutter) var(--space-6);
+  }
+  .title {
+    font-size: 2rem;
+  }
+}

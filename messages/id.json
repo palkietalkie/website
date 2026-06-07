@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "Harga",
+    "subscribe": "Berlangganan",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "ctaSecondary": "Lihat harga",
+    "smallprint": "10 menit gratis tiap hari. Tanpa kartu. Bisa berhenti kapan saja."
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "Harga",
+    "perMonth": "/ bulan",
+    "orPerYear": "atau {yearly} / tahun",
+    "mostPopular": "Paling populer",
+    "tiers": {
+      "free": {
+        "name": "Gratis",
+        "cta": "Unduh di App Store",
+        "includes": [
+          "10 menit/hari, reset tengah malam waktu lokal"
+        ]
+      },
+      "individual": {
+        "name": "Individu",
+        "cta": "Berlangganan di web",
+        "includes": [
+          "1 pengguna",
+          "Bicara tanpa batas"
+        ]
+      },
+      "family": {
+        "name": "Keluarga",
+        "cta": "Berlangganan di web",
+        "includes": [
+          "Sampai 6 orang",
+          "Profil + memori untuk masing-masing"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "Unduh di App Store"
+  },
+  "footer": {
+    "home": "Beranda",
+    "contact": "Kontak"
+  },
+  "signup": {
+    "metaTitle": "Berlangganan",
+    "metaDescription": "Berlangganan Palkie Talkie Individu atau Keluarga lewat web.",
+    "youPicked": "Paket pilihanmu",
+    "perMonth": "{amount} / bulan",
+    "perYear": "atau {amount} / tahun",
+    "switchToFamily": "Ganti ke Keluarga →",
+    "switchToIndividual": "Ganti ke Individu →",
+    "canceled": "Pembayaran dibatalkan. Bisa coba lagi kapan saja.",
+    "checkoutCta": "Lanjutkan ke pembayaran — {price}",
+    "cancelNote": "Bisa berhenti kapan saja. Akses tetap sampai akhir periode tagihan."
+  },
+  "success": {
+    "metaTitle": "Selesai",
+    "metaDescription": "Langganan dikonfirmasi. Unduh aplikasi dan mulai bicara.",
+    "eyebrowOk": "Kamu sudah berlangganan",
+    "title": "Sekarang unduh aplikasinya.",
+    "lead": "Langgananmu aktif. Palkie Talkie ada di dalam aplikasi.",
+    "instructions": "Masuk dengan email yang kamu pakai di sini.",
+    "note": "Begitulah cara kami menautkan langganan ke akunmu.",
+    "eyebrowError": "Hmm",
+    "errorTitle": "Sesi kamu tidak bisa kami verifikasi.",
+    "errorFallback": "Muat ulang halaman, atau hubungi dukungan.",
+    "backToSignup": "Kembali ke pendaftaran"
+  }
+}

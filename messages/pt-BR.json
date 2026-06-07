@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "Preços",
+    "subscribe": "Assinar",
+    "language": "Idioma"
+  },
+  "hero": {
+    "ctaSecondary": "Ver preços",
+    "smallprint": "10 min grátis por dia. Sem cartão. Cancele quando quiser."
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "Preços",
+    "perMonth": "/ mês",
+    "orPerYear": "ou {yearly} / ano",
+    "mostPopular": "Mais popular",
+    "tiers": {
+      "free": {
+        "name": "Grátis",
+        "cta": "Baixar na App Store",
+        "includes": [
+          "10 min/dia, reinicia à meia-noite local"
+        ]
+      },
+      "individual": {
+        "name": "Individual",
+        "cta": "Assinar na web",
+        "includes": [
+          "Um usuário",
+          "Conversa ilimitada"
+        ]
+      },
+      "family": {
+        "name": "Família",
+        "cta": "Assinar na web",
+        "includes": [
+          "Até 6 pessoas",
+          "Perfil + memória para cada uma"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "Baixar na App Store"
+  },
+  "footer": {
+    "home": "Início",
+    "contact": "Contato"
+  },
+  "signup": {
+    "metaTitle": "Assinar",
+    "metaDescription": "Assine Palkie Talkie Individual ou Família na web.",
+    "youPicked": "Plano escolhido",
+    "perMonth": "{amount} / mês",
+    "perYear": "ou {amount} / ano",
+    "switchToFamily": "Mudar para Família →",
+    "switchToIndividual": "Mudar para Individual →",
+    "canceled": "Pagamento cancelado. Você pode tentar de novo a qualquer momento.",
+    "checkoutCta": "Continuar para o checkout — {price}",
+    "cancelNote": "Cancele quando quiser. O acesso continua até o fim do ciclo de cobrança."
+  },
+  "success": {
+    "metaTitle": "Tudo certo",
+    "metaDescription": "Assinatura confirmada. Baixe o app pra começar a conversar.",
+    "eyebrowOk": "Você está assinado",
+    "title": "Agora baixe o app.",
+    "lead": "Sua assinatura está ativa. O Palkie Talkie vive no app.",
+    "instructions": "Entre com o mesmo e-mail que você usou aqui.",
+    "note": "É assim que conectamos sua assinatura à sua conta.",
+    "eyebrowError": "Hmm",
+    "errorTitle": "Não conseguimos verificar sua sessão.",
+    "errorFallback": "Atualize a página ou fale com o suporte.",
+    "backToSignup": "Voltar pro cadastro"
+  }
+}

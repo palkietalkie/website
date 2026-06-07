@@ -1,0 +1,88 @@
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-4);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.cta {
+  /* Mobile: stack title above CTA button. Tablet+: side-by-side. */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.ctaTitle {
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.ctaLead {
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-3);
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+  /* Tap target padding without changing visual gap. */
+  padding: 4px 0;
+}
+
+.links a:hover {
+  color: var(--fg);
+}
+
+.copy {
+  color: var(--fg-subtle);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 720px) {
+  .footer {
+    padding-top: var(--space-6);
+  }
+  .inner {
+    gap: var(--space-5);
+  }
+  .cta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px;
+  }
+  .ctaTitle {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,124 @@
+.card {
+  position: relative;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  /* Mobile padding; tablet+ bumps it via the breakpoint below. */
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+}
+
+.featured {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px var(--accent),
+    var(--shadow-md);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.per {
+  color: var(--fg-subtle);
+  font-size: 0.95rem;
+}
+
+.yearly {
+  color: var(--fg-subtle);
+  font-size: 0.9rem;
+  margin-top: -8px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.list li {
+  display: flex;
+  gap: 10px;
+  font-size: 0.97rem;
+  color: var(--fg);
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--accent);
+  margin-top: 2px;
+}
+
+.cta {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* ≥44px tap target. */
+  padding: 14px 18px;
+  min-height: var(--tap-min);
+  border-radius: 12px;
+  border: 1px solid var(--border-strong);
+  font-weight: 600;
+  color: var(--fg);
+  background: var(--surface-elevated);
+}
+
+.btnFeatured {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+
+.btnFeatured:hover {
+  background: var(--accent-hover);
+}
+
+@media (min-width: 640px) {
+  .card {
+    padding: 28px;
+    gap: 16px;
+  }
+  .amount {
+    font-size: 2.4rem;
+  }
+}

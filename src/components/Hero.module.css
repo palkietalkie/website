@@ -1,0 +1,168 @@
+.hero {
+  /* Mobile-first: hug the top, room for the gradient to read at small heights. */
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-6);
+  background:
+    radial-gradient(1100px 600px at 80% -10%, rgba(255, 90, 60, 0.12), transparent 60%),
+    radial-gradient(900px 500px at -5% 15%, rgba(120, 130, 255, 0.08), transparent 60%);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) 0;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: 1.05rem;
+}
+
+.navLinks {
+  display: flex;
+  /* Mobile: tighter gap so the row stays single-line on 360px. */
+  gap: var(--space-2);
+  align-items: center;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.navLinks a {
+  color: var(--fg-muted);
+  font-weight: 500;
+}
+
+.navLinks a:hover {
+  color: var(--fg);
+}
+
+.navCta {
+  /* ≥44px tap target on mobile. */
+  padding: 10px 16px;
+  min-height: var(--tap-min);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--fg);
+  color: var(--bg) !important;
+}
+
+.navCta:hover {
+  background: var(--fg-muted);
+}
+
+.copy {
+  /* Mobile: less air at top so the headline lands within first screen on a 6"-ish phone. */
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-2);
+  max-width: 760px;
+}
+
+.headline {
+  margin-bottom: var(--space-2);
+}
+
+.subhead {
+  font-size: 1.05rem;
+  color: var(--fg-muted);
+  margin-bottom: var(--space-3);
+  max-width: 56ch;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+  /* Mobile: center the lone CTA in the hero column. Tablet+ left-aligns again so it lines up with the headline copy on the wider layout. */
+  justify-content: center;
+  margin-bottom: var(--space-3);
+}
+
+@media (min-width: 880px) {
+  .ctas {
+    justify-content: flex-start;
+  }
+}
+
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  min-height: var(--tap-min);
+  border-radius: 12px;
+  border: 1px solid var(--border-strong);
+  font-weight: 600;
+  color: var(--fg);
+  background: var(--surface-elevated);
+  transition: background 0.15s ease;
+}
+
+.secondary:hover {
+  background: var(--surface);
+}
+
+.smallprint {
+  font-size: 0.85rem;
+  color: var(--fg-subtle);
+  text-align: center;
+}
+
+@media (min-width: 880px) {
+  .smallprint {
+    text-align: left;
+  }
+}
+
+.heroVisual {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .copy {
+    padding-top: var(--space-6);
+  }
+  .subhead {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-4);
+  }
+  .navLinks {
+    gap: var(--space-3);
+    font-size: 0.95rem;
+  }
+  .secondary {
+    padding: 14px 22px;
+  }
+  .smallprint {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 880px) {
+  /* Tablet+: place visual to the right of the copy. */
+  .copy {
+    max-width: 560px;
+  }
+  .inner {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: var(--space-4);
+    align-items: center;
+  }
+  .nav {
+    grid-column: 1 / -1;
+  }
+  .heroVisual {
+    margin: 0;
+  }
+}

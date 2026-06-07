@@ -1,0 +1,130 @@
+.header {
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-5);
+  background: radial-gradient(1000px 500px at 70% -10%, rgba(255, 90, 60, 0.1), transparent 60%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) 0;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.navLinks a {
+  color: var(--fg-muted);
+  font-weight: 500;
+}
+
+.navLinks a:hover {
+  color: var(--fg);
+}
+
+.navCta {
+  padding: 10px 16px;
+  min-height: var(--tap-min);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--fg);
+  color: var(--bg) !important;
+}
+
+.intro {
+  padding-top: var(--space-4);
+  max-width: 720px;
+}
+
+.intro h1 {
+  margin-bottom: var(--space-2);
+}
+
+.lead {
+  font-size: 1rem;
+  color: var(--fg-muted);
+}
+
+.tiers {
+  padding-top: var(--space-4);
+}
+
+.tierGrid {
+  /* Mobile: 1 col. Desktop ≥880px: 3 cols. */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.dualCta {
+  margin-top: var(--space-4);
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.webBtn {
+  display: inline-flex;
+  padding: 12px 20px;
+  min-height: var(--tap-min);
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface-elevated);
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.webBtn:hover {
+  background: var(--surface);
+}
+
+.dualCtaNote {
+  text-align: center;
+  margin-top: var(--space-2);
+  color: var(--fg-subtle);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+  .navLinks {
+    gap: var(--space-3);
+    font-size: 0.95rem;
+  }
+  .intro {
+    padding-top: var(--space-5);
+  }
+  .intro h1 {
+    margin-bottom: var(--space-3);
+  }
+  .lead {
+    font-size: 1.1rem;
+  }
+  .tiers {
+    padding-top: var(--space-5);
+  }
+  .webBtn {
+    padding: 14px 24px;
+  }
+}
+
+@media (min-width: 880px) {
+  .tierGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

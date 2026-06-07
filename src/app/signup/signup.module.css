@@ -1,0 +1,183 @@
+.wrap {
+  min-height: 100vh;
+  background: var(--surface);
+  padding: var(--space-3) var(--gutter);
+}
+
+.shell {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.shellTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.brand {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.grid {
+  /* Mobile: stack summary + form. Tablet+: side-by-side. */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  align-items: start;
+}
+
+.summary {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+.tierName {
+  font-size: 1.4rem;
+  margin: 4px 0 8px;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.yearly {
+  color: var(--fg-subtle);
+  margin-bottom: var(--space-3);
+}
+
+.perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--space-3);
+}
+
+.perks li {
+  color: var(--fg);
+  font-size: 0.95rem;
+}
+
+.perks li::before {
+  content: "✓";
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.switch a {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.92rem;
+  display: inline-block;
+  padding: 8px 0;
+}
+
+.canceled {
+  margin-top: var(--space-3);
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+}
+
+.form {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+.formTitle {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+.formLead {
+  color: var(--fg-muted);
+  margin-bottom: var(--space-3);
+  font-size: 0.95rem;
+}
+
+.clerkSlot {
+  display: flex;
+  justify-content: center;
+}
+
+.signedHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.payBtn {
+  display: block;
+  width: 100%;
+  padding: 16px 22px;
+  min-height: var(--tap-min);
+  border-radius: 12px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: background 0.15s ease;
+}
+
+.payBtn:hover {
+  background: var(--accent-hover);
+}
+
+.smallprint {
+  margin-top: var(--space-2);
+  color: var(--fg-subtle);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding: var(--space-4) var(--gutter);
+  }
+  .summary {
+    padding: 28px;
+  }
+  .tierName {
+    font-size: 1.6rem;
+  }
+  .price {
+    font-size: 2rem;
+  }
+  .perks li {
+    font-size: 0.97rem;
+  }
+  .form {
+    padding: 32px;
+  }
+  .formTitle {
+    font-size: 1.4rem;
+  }
+  .formLead {
+    font-size: 1rem;
+  }
+  .smallprint {
+    font-size: 0.88rem;
+  }
+}
+
+@media (min-width: 880px) {
+  .grid {
+    grid-template-columns: 360px 1fr;
+    gap: var(--space-4);
+  }
+  .summary {
+    position: sticky;
+    top: var(--space-3);
+  }
+}

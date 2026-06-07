@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "价格",
+    "subscribe": "订阅",
+    "language": "语言"
+  },
+  "hero": {
+    "ctaSecondary": "查看价格",
+    "smallprint": "每天免费10分钟。无需信用卡。随时取消。"
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "价格",
+    "perMonth": "/ 月",
+    "orPerYear": "或 {yearly} / 年",
+    "mostPopular": "最受欢迎",
+    "tiers": {
+      "free": {
+        "name": "免费",
+        "cta": "在 App Store 下载",
+        "includes": [
+          "每天10分钟,本地时间0点重置"
+        ]
+      },
+      "individual": {
+        "name": "个人版",
+        "cta": "在网页订阅",
+        "includes": [
+          "1位用户",
+          "畅谈无限"
+        ]
+      },
+      "family": {
+        "name": "家庭版",
+        "cta": "在网页订阅",
+        "includes": [
+          "最多6人",
+          "每人独立的个人资料 + 记忆"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "在 App Store 下载"
+  },
+  "footer": {
+    "home": "首页",
+    "contact": "联系我们"
+  },
+  "signup": {
+    "metaTitle": "订阅",
+    "metaDescription": "在网页订阅 Palkie Talkie 个人版或家庭版。",
+    "youPicked": "你选择的方案",
+    "perMonth": "{amount} / 月",
+    "perYear": "或 {amount} / 年",
+    "switchToFamily": "切换到家庭版 →",
+    "switchToIndividual": "切换到个人版 →",
+    "canceled": "结账已取消。你随时可以重试。",
+    "checkoutCta": "继续结账 — {price}",
+    "cancelNote": "随时取消。访问权限保留到当前计费周期结束。"
+  },
+  "success": {
+    "metaTitle": "完成订阅",
+    "metaDescription": "订阅已确认。下载应用开始对话。",
+    "eyebrowOk": "你已订阅",
+    "title": "现在下载应用。",
+    "lead": "订阅已激活。Palkie Talkie 的本体是应用。",
+    "instructions": "用你在这里使用的同一个邮箱登录。",
+    "note": "这就是我们把订阅和账户对应起来的方式。",
+    "eyebrowError": "嗯",
+    "errorTitle": "我们无法验证你的会话。",
+    "errorFallback": "请刷新页面,或联系客服。",
+    "backToSignup": "返回订阅页"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "Precios",
+    "subscribe": "Suscribirse",
+    "language": "Idioma"
+  },
+  "hero": {
+    "ctaSecondary": "Ver precios",
+    "smallprint": "10 min gratis al día. Sin tarjeta. Cancela cuando quieras."
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "Precios",
+    "perMonth": "/ mes",
+    "orPerYear": "o {yearly} / año",
+    "mostPopular": "Más popular",
+    "tiers": {
+      "free": {
+        "name": "Gratis",
+        "cta": "Descargar en App Store",
+        "includes": [
+          "10 min/día, se reinicia a la medianoche local"
+        ]
+      },
+      "individual": {
+        "name": "Individual",
+        "cta": "Suscribirse en la web",
+        "includes": [
+          "Un usuario",
+          "Tiempo de conversación ilimitado"
+        ]
+      },
+      "family": {
+        "name": "Familia",
+        "cta": "Suscribirse en la web",
+        "includes": [
+          "Hasta 6 personas",
+          "Perfil + memoria para cada una"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "Descargar en App Store"
+  },
+  "footer": {
+    "home": "Inicio",
+    "contact": "Contacto"
+  },
+  "signup": {
+    "metaTitle": "Suscribirse",
+    "metaDescription": "Suscríbete a Palkie Talkie Individual o Familia en la web.",
+    "youPicked": "Plan elegido",
+    "perMonth": "{amount} / mes",
+    "perYear": "o {amount} / año",
+    "switchToFamily": "Cambiar a Familia →",
+    "switchToIndividual": "Cambiar a Individual →",
+    "canceled": "Pago cancelado. Puedes intentarlo de nuevo cuando quieras.",
+    "checkoutCta": "Continuar al pago — {price}",
+    "cancelNote": "Cancela cuando quieras. El acceso continúa hasta el fin del período de facturación."
+  },
+  "success": {
+    "metaTitle": "Listo",
+    "metaDescription": "Suscripción confirmada. Descarga la app y empieza a hablar.",
+    "eyebrowOk": "Estás suscrito",
+    "title": "Ahora descarga la app.",
+    "lead": "Tu suscripción está activa. Palkie Talkie vive en la app.",
+    "instructions": "Inicia sesión con el mismo correo que usaste aquí.",
+    "note": "Así vinculamos tu suscripción a tu cuenta.",
+    "eyebrowError": "Mmm",
+    "errorTitle": "No pudimos verificar tu sesión.",
+    "errorFallback": "Recarga la página o contacta soporte.",
+    "backToSignup": "Volver al registro"
+  }
+}
