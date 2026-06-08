@@ -38,8 +38,19 @@ while IFS= read -r f; do
     pair="${dir}/${base}.test.${ext}"
 
     # Accept either the strict per-file pair OR any other test file in the same directory that was also changed in this PR. Some test files cover multiple sibling sources (e.g. a `<feature>.test.ts` that exercises several helpers in the same dir).
-    if ! printf '%s\n' "$CHANGED" | grep -qx "$pair" \
-        && ! printf '%s\n' "$CHANGED" | grep -qE "^${dir}/[^/]+\.test\.(ts|tsx)$"; then
+    # `grep -F` is critical here: Next.js catch-all routes contain `[[` in paths (e.g. `[[...sign-in]]`), which grep -x without -F treats as an open character class and bails with "invalid collating element". For the directory-sibling check we run -F on a literal anchor prefix instead of a regex.
+    has_same_dir_test=0
+    while IFS= read -r candidate; do
+        case "$candidate" in
+            "${dir}/"*".test.ts" | "${dir}/"*".test.tsx")
+                # Ensure only files directly under $dir (no further subdirs) qualify, mirroring the original regex intent.
+                rel=${candidate#"${dir}/"}
+                [[ "$rel" == */* ]] || has_same_dir_test=1
+                ;;
+        esac
+    done <<< "$CHANGED"
+    if ! printf '%s\n' "$CHANGED" | grep -Fxq "$pair" \
+        && [ "$has_same_dir_test" -eq 0 ]; then
         if [ -f "$pair" ]; then
             MISSING_PAIRS+=("  ${f}  (modified)  →  ${pair}  (unchanged in PR)")
         else
