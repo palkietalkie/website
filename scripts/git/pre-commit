@@ -47,8 +47,8 @@ npm run --silent lint
 echo "pre-commit: tsc --noEmit"
 npm run --silent type-check
 
-echo "pre-commit: vitest"
-npm run --silent test
+echo "pre-commit: vitest (with 90 percent coverage gate from vitest.config.ts)"
+npm run --silent test:coverage
 
 # End-to-end: boot the local dev stack so the freshly-committed website serves on :5000 + paired backend/Modal dev infra runs alongside.
 # Skip iOS install since this is the website repo.

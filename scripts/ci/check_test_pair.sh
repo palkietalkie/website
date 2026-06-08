@@ -12,7 +12,7 @@ BASE_REF="${1:-origin/main}"
 
 git fetch --quiet --depth=200 origin main 2>/dev/null || true
 
-CHANGED=$(git diff --name-only "${BASE_REF}"...HEAD)
+CHANGED=$(git diff --name-only --diff-filter=ACMR "${BASE_REF}"...HEAD)
 if [ -z "$CHANGED" ]; then
     echo "[test-pair] no changes vs ${BASE_REF}"
     exit 0
@@ -22,14 +22,10 @@ MISSING_PAIRS=()
 while IFS= read -r f; do
     [ -z "$f" ] && continue
     case "$f" in
-        # Skip non-source paths
         scripts/*|.github/*|docs/*|messages/*) continue ;;
-        # Skip generated
         src/lib/api-types.ts) continue ;;
-        # Skip tests + type-only + non-JS
         *.test.ts|*.test.tsx|*.d.ts) continue ;;
         *.css|*.json|*.md) continue ;;
-        # Only check ts/tsx under src/
         src/*.ts|src/*.tsx) ;;
         *) continue ;;
     esac
@@ -41,7 +37,9 @@ while IFS= read -r f; do
     esac
     pair="${dir}/${base}.test.${ext}"
 
-    if ! printf '%s\n' "$CHANGED" | grep -qx "$pair"; then
+    # Accept either the strict per-file pair OR any other test file in the same directory that was also changed in this PR. Some test files cover multiple sibling sources (e.g. a `<feature>.test.ts` that exercises several helpers in the same dir).
+    if ! printf '%s\n' "$CHANGED" | grep -qx "$pair" \
+        && ! printf '%s\n' "$CHANGED" | grep -qE "^${dir}/[^/]+\.test\.(ts|tsx)$"; then
         if [ -f "$pair" ]; then
             MISSING_PAIRS+=("  ${f}  (modified)  →  ${pair}  (unchanged in PR)")
         else
