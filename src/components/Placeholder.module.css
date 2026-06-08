@@ -1,0 +1,68 @@
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--surface),
+    var(--surface) 12px,
+    var(--surface-elevated) 12px,
+    var(--surface-elevated) 24px
+  );
+  border: 1.5px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  color: var(--fg-muted);
+  text-align: center;
+  margin: 0;
+}
+
+.label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-subtle);
+}
+
+.spec {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  max-width: 38ch;
+  color: var(--fg-muted);
+}
+
+.phone {
+  aspect-ratio: 9 / 19.5;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 360px;
+}
+
+.wide {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+/* Portrait phone — matches a real iPhone screen-record (9:16). Use for embedded demo videos / app screenshot stills that originated on device. */
+.portrait {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.audio {
+  aspect-ratio: auto;
+  min-height: 96px;
+  width: 100%;
+  max-width: 560px;
+}

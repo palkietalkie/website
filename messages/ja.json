@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "料金",
+    "subscribe": "登録する",
+    "language": "言語"
+  },
+  "hero": {
+    "ctaSecondary": "料金を見る",
+    "smallprint": "毎日10分無料。クレジットカード不要。いつでも解約OK。"
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "料金",
+    "perMonth": "／月",
+    "orPerYear": "または {yearly}／年",
+    "mostPopular": "おすすめ",
+    "tiers": {
+      "free": {
+        "name": "無料",
+        "cta": "App Store からダウンロード",
+        "includes": [
+          "毎日10分、ローカル時間の0時にリセット"
+        ]
+      },
+      "individual": {
+        "name": "個人",
+        "cta": "ウェブで登録",
+        "includes": [
+          "1ユーザー",
+          "話し放題"
+        ]
+      },
+      "family": {
+        "name": "ファミリー",
+        "cta": "ウェブで登録",
+        "includes": [
+          "最大6人まで",
+          "それぞれにプロフィールと記憶"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "App Store からダウンロード"
+  },
+  "footer": {
+    "home": "ホーム",
+    "contact": "お問い合わせ"
+  },
+  "signup": {
+    "metaTitle": "登録",
+    "metaDescription": "Palkie Talkie の個人プラン／ファミリープランをウェブから登録。",
+    "youPicked": "選択中のプラン",
+    "perMonth": "{amount}／月",
+    "perYear": "または {amount}／年",
+    "switchToFamily": "ファミリーに切り替え →",
+    "switchToIndividual": "個人プランに切り替え →",
+    "canceled": "決済はキャンセルされました。いつでもまた試せます。",
+    "checkoutCta": "決済へ進む — {price}",
+    "cancelNote": "いつでも解約OK。請求期間の終わりまでアクセスは続きます。"
+  },
+  "success": {
+    "metaTitle": "登録完了",
+    "metaDescription": "登録が完了しました。アプリをダウンロードして、会話を始めましょう。",
+    "eyebrowOk": "登録が完了しました",
+    "title": "アプリをダウンロード。",
+    "lead": "サブスクリプションが有効になりました。Palkie Talkie の本体はアプリです。",
+    "instructions": "ここで使ったメールアドレスでサインインしてください。",
+    "note": "そのメールアドレスで、サブスクリプションとアカウントを紐づけます。",
+    "eyebrowError": "うーん",
+    "errorTitle": "セッションを確認できませんでした。",
+    "errorFallback": "ページを再読み込みするか、サポートにお問い合わせください。",
+    "backToSignup": "登録ページに戻る"
+  },
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes."
+}

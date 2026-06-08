@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "Giá",
+    "subscribe": "Đăng ký",
+    "language": "Ngôn ngữ"
+  },
+  "hero": {
+    "ctaSecondary": "Xem giá",
+    "smallprint": "10 phút miễn phí mỗi ngày. Không cần thẻ. Huỷ bất cứ lúc nào."
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "Giá",
+    "perMonth": "/ tháng",
+    "orPerYear": "hoặc {yearly} / năm",
+    "mostPopular": "Phổ biến nhất",
+    "tiers": {
+      "free": {
+        "name": "Miễn phí",
+        "cta": "Tải trên App Store",
+        "includes": [
+          "10 phút/ngày, reset lúc nửa đêm theo giờ địa phương"
+        ]
+      },
+      "individual": {
+        "name": "Cá nhân",
+        "cta": "Đăng ký trên web",
+        "includes": [
+          "1 người dùng",
+          "Trò chuyện không giới hạn"
+        ]
+      },
+      "family": {
+        "name": "Gia đình",
+        "cta": "Đăng ký trên web",
+        "includes": [
+          "Đến 6 người",
+          "Mỗi người có hồ sơ + bộ nhớ riêng"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "Tải trên App Store"
+  },
+  "footer": {
+    "home": "Trang chủ",
+    "contact": "Liên hệ"
+  },
+  "signup": {
+    "metaTitle": "Đăng ký",
+    "metaDescription": "Đăng ký Palkie Talkie Cá nhân hoặc Gia đình trên web.",
+    "youPicked": "Gói bạn chọn",
+    "perMonth": "{amount} / tháng",
+    "perYear": "hoặc {amount} / năm",
+    "switchToFamily": "Chuyển sang Gia đình →",
+    "switchToIndividual": "Chuyển sang Cá nhân →",
+    "canceled": "Thanh toán đã huỷ. Bạn có thể thử lại bất cứ lúc nào.",
+    "checkoutCta": "Tiếp tục thanh toán — {price}",
+    "cancelNote": "Huỷ bất cứ lúc nào. Quyền truy cập vẫn duy trì đến hết chu kỳ thanh toán."
+  },
+  "success": {
+    "metaTitle": "Xong",
+    "metaDescription": "Đã xác nhận đăng ký. Tải app để bắt đầu trò chuyện.",
+    "eyebrowOk": "Bạn đã đăng ký",
+    "title": "Giờ thì tải app.",
+    "lead": "Gói đăng ký của bạn đang hoạt động. Palkie Talkie sống trong app.",
+    "instructions": "Đăng nhập bằng email bạn dùng ở đây.",
+    "note": "Đó là cách chúng tôi liên kết gói đăng ký với tài khoản của bạn.",
+    "eyebrowError": "Ồ",
+    "errorTitle": "Chúng tôi không xác minh được phiên của bạn.",
+    "errorFallback": "Vui lòng tải lại trang, hoặc liên hệ hỗ trợ.",
+    "backToSignup": "Quay lại trang đăng ký"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "Tarifs",
+    "subscribe": "S'abonner",
+    "language": "Langue"
+  },
+  "hero": {
+    "ctaSecondary": "Voir les tarifs",
+    "smallprint": "10 min gratuites par jour. Sans carte. Annulation à tout moment."
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "Tarifs",
+    "perMonth": "/ mois",
+    "orPerYear": "ou {yearly} / an",
+    "mostPopular": "Le plus populaire",
+    "tiers": {
+      "free": {
+        "name": "Gratuit",
+        "cta": "Télécharger dans l'App Store",
+        "includes": [
+          "10 min/jour, remise à zéro à minuit local"
+        ]
+      },
+      "individual": {
+        "name": "Individuel",
+        "cta": "S'abonner sur le web",
+        "includes": [
+          "1 utilisateur",
+          "Conversation illimitée"
+        ]
+      },
+      "family": {
+        "name": "Famille",
+        "cta": "S'abonner sur le web",
+        "includes": [
+          "Jusqu'à 6 personnes",
+          "Profil + mémoire pour chacune"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "Télécharger dans l'App Store"
+  },
+  "footer": {
+    "home": "Accueil",
+    "contact": "Contact"
+  },
+  "signup": {
+    "metaTitle": "S'abonner",
+    "metaDescription": "Abonnez-vous à Palkie Talkie Individuel ou Famille sur le web.",
+    "youPicked": "Votre choix",
+    "perMonth": "{amount} / mois",
+    "perYear": "ou {amount} / an",
+    "switchToFamily": "Passer à Famille →",
+    "switchToIndividual": "Passer à Individuel →",
+    "canceled": "Paiement annulé. Vous pouvez réessayer à tout moment.",
+    "checkoutCta": "Continuer vers le paiement — {price}",
+    "cancelNote": "Annulation à tout moment. L'accès reste jusqu'à la fin de la période de facturation."
+  },
+  "success": {
+    "metaTitle": "C'est bon",
+    "metaDescription": "Abonnement confirmé. Téléchargez l'app pour commencer à parler.",
+    "eyebrowOk": "Abonnement actif",
+    "title": "Maintenant téléchargez l'app.",
+    "lead": "Votre abonnement est actif. Palkie Talkie vit dans l'app.",
+    "instructions": "Connectez-vous avec le même e-mail que celui utilisé ici.",
+    "note": "C'est ainsi que nous lions votre abonnement à votre compte.",
+    "eyebrowError": "Hmm",
+    "errorTitle": "Impossible de vérifier votre session.",
+    "errorFallback": "Rechargez la page ou contactez le support.",
+    "backToSignup": "Retour à l'inscription"
+  }
+}

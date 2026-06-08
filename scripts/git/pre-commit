@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+set -e
+cd "$(git rev-parse --show-toplevel)"
+
+# Refuse `git commit <pathspec>`. When git assembles a partial commit from a working-tree pathspec, it routes the hook through a temp index (e.g. `.git/next-index-12345`) instead of `.git/index`. That bypasses whatever was staged AND quietly picks up unstaged hunks in the named files — a footgun in multi-session workflows.
+if [ -n "$GIT_INDEX_FILE" ] && [ "$(basename "$GIT_INDEX_FILE")" != "index" ]; then
+    echo "pre-commit: REFUSED — 'git commit <pathspec>' detected (GIT_INDEX_FILE=$GIT_INDEX_FILE)." >&2
+    echo "  This snapshots the working tree of those paths and bypasses the staging boundary." >&2
+    echo "  Stage explicitly then commit:  git add <files> && git commit -m '...'" >&2
+    exit 1
+fi
+
+# Block direct commits to main — feature work always lives on a branch.
+CURRENT_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "")
+if [ "$CURRENT_BRANCH" = "main" ]; then
+    echo "pre-commit: don't commit directly to main — branch off first" >&2
+    exit 1
+fi
+
+# Fast-forward local main from origin so it stays in sync (silent on offline / no remote).
+git fetch --quiet origin main:main 2>/dev/null || true
+
+if [ ! -d "node_modules" ]; then
+    echo "pre-commit: node_modules missing — run 'npm install' first" >&2
+    exit 1
+fi
+
+# Regenerate the API types from the running backend's OpenAPI spec — only if a backend is reachable. Skip silently otherwise (most pre-commit runs happen without the backend up); CI re-checks via the dedicated workflow.
+OPENAPI_URL="${OPENAPI_URL:-http://localhost:8000/openapi.json}"
+if curl -fsS "$OPENAPI_URL" >/dev/null 2>&1; then
+    echo "pre-commit: regenerate src/lib/api-types.ts from $OPENAPI_URL"
+    BEFORE=$(cat src/lib/api-types.ts 2>/dev/null || true)
+    bash scripts/generate-api-types.sh >/dev/null
+    AFTER=$(cat src/lib/api-types.ts)
+    if [ "$BEFORE" != "$AFTER" ]; then
+        echo "pre-commit: src/lib/api-types.ts drifted — re-stage it and re-commit" >&2
+        exit 1
+    fi
+fi
+
+echo "pre-commit: prettier --check"
+npx --no-install prettier --check 'src/**/*.{ts,tsx,js,jsx,css,json,md}' 'eslint.config.mjs' 'next.config.ts' 'vitest.config.ts' 'vitest.setup.ts'
+
+echo "pre-commit: eslint"
+npm run --silent lint
+
+echo "pre-commit: tsc --noEmit"
+npm run --silent type-check
+
+echo "pre-commit: vitest (with 90 percent coverage gate from vitest.config.ts)"
+npm run --silent test:coverage
+
+# End-to-end: boot the local dev stack so the freshly-committed website serves on :5000 + paired backend/Modal dev infra runs alongside.
+# Skip iOS install since this is the website repo.
+BOOT_SH="$(git rev-parse --show-toplevel)/../scripts/boot.sh"
+if [ -x "$BOOT_SH" ]; then
+    echo "pre-commit: boot.sh --no-ios (deploy backend + Modal dev, start website)"
+    "$BOOT_SH" --no-ios
+fi

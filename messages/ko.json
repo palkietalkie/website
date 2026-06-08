@@ -1,0 +1,80 @@
+{
+  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "meta": {
+    "siteName": "Palkie Talkie"
+  },
+  "nav": {
+    "pricing": "요금",
+    "subscribe": "구독",
+    "language": "언어"
+  },
+  "hero": {
+    "ctaSecondary": "요금 보기",
+    "smallprint": "매일 10분 무료. 카드 등록 불필요. 언제든 해지 가능."
+  },
+  "problems": {},
+  "features": {},
+  "pricing": {
+    "eyebrow": "요금",
+    "perMonth": "/ 월",
+    "orPerYear": "또는 {yearly} / 년",
+    "mostPopular": "가장 인기",
+    "tiers": {
+      "free": {
+        "name": "무료",
+        "cta": "App Store에서 다운로드",
+        "includes": [
+          "하루 10분, 현지 시간 자정 리셋"
+        ]
+      },
+      "individual": {
+        "name": "개인",
+        "cta": "웹에서 구독",
+        "includes": [
+          "1명",
+          "대화 무제한"
+        ]
+      },
+      "family": {
+        "name": "가족",
+        "cta": "웹에서 구독",
+        "includes": [
+          "최대 6명",
+          "각자의 프로필 + 기억"
+        ]
+      }
+    }
+  },
+  "appStore": {
+    "label": "App Store에서 다운로드"
+  },
+  "footer": {
+    "home": "홈",
+    "contact": "문의"
+  },
+  "signup": {
+    "metaTitle": "구독",
+    "metaDescription": "웹에서 Palkie Talkie 개인 또는 가족 플랜을 구독하세요.",
+    "youPicked": "선택한 플랜",
+    "perMonth": "{amount} / 월",
+    "perYear": "또는 {amount} / 년",
+    "switchToFamily": "가족 플랜으로 변경 →",
+    "switchToIndividual": "개인 플랜으로 변경 →",
+    "canceled": "결제가 취소되었습니다. 언제든 다시 시도할 수 있어요.",
+    "checkoutCta": "결제로 진행 — {price}",
+    "cancelNote": "언제든 해지 가능. 현재 결제 주기 종료일까지 액세스가 유지됩니다."
+  },
+  "success": {
+    "metaTitle": "구독 완료",
+    "metaDescription": "구독이 확인되었습니다. 앱을 다운로드해서 대화를 시작하세요.",
+    "eyebrowOk": "구독 완료",
+    "title": "이제 앱을 다운로드.",
+    "lead": "구독이 활성화되었습니다. Palkie Talkie의 본체는 앱입니다.",
+    "instructions": "여기서 사용한 이메일로 로그인하세요.",
+    "note": "이렇게 구독과 계정을 연결합니다.",
+    "eyebrowError": "음",
+    "errorTitle": "세션을 확인할 수 없습니다.",
+    "errorFallback": "페이지를 새로고침하거나 고객센터에 문의하세요.",
+    "backToSignup": "구독 페이지로 돌아가기"
+  }
+}
