@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getCurrentUserEmail, getCurrentUserId } from "@/lib/auth/getCurrentUserId";
-import { createCheckoutSession, normalizeTier } from "@/lib/stripe/checkout";
+import { createCheckoutSession } from "@/lib/stripe/createCheckoutSession";
+import { normalizeTier } from "@/lib/stripe/normalizeTier";
 
 async function readTier(req: NextRequest): Promise<string | null> {
   const contentType = req.headers.get("content-type") ?? "";

@@ -14,9 +14,10 @@ vi.mock("@/lib/auth/getCurrentUserId", () => ({
   getCurrentUserEmail: () => getCurrentUserEmailMock(),
 }));
 
-vi.mock("@/lib/stripe/checkout", async () => {
-  const actual =
-    await vi.importActual<typeof import("@/lib/stripe/checkout")>("@/lib/stripe/checkout");
+vi.mock("@/lib/stripe/createCheckoutSession", async () => {
+  const actual = await vi.importActual<typeof import("@/lib/stripe/createCheckoutSession")>(
+    "@/lib/stripe/createCheckoutSession",
+  );
   return {
     ...actual,
     createCheckoutSession: (...args: Parameters<typeof actual.createCheckoutSession>) =>

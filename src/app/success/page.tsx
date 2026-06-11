@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import Stripe from "stripe";
 import { AppStoreButton } from "@/components/AppStoreButton";
+import { getStripeClient } from "@/lib/stripe/getStripeClient";
 import styles from "./success.module.css";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -26,7 +26,7 @@ async function verifySession(sessionId: string | undefined): Promise<Verified> {
   if (!secret) return { ok: false, reason: "Stripe not configured" };
 
   try {
-    const stripe = new Stripe(secret);
+    const stripe = getStripeClient();
     const session = await stripe.checkout.sessions.retrieve(sessionId);
     const paid =
       session.payment_status === "paid" || session.payment_status === "no_payment_required";
