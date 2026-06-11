@@ -3,10 +3,11 @@ import { NextIntlClientProvider } from "next-intl";
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 
 const stripeRetrieveMock = vi.fn();
-vi.mock("stripe", () => ({
-  default: class FakeStripe {
-    checkout = { sessions: { retrieve: (...args: unknown[]) => stripeRetrieveMock(...args) } };
-  },
+// The page now resolves its client through the getStripeClient seam, so mock that rather than the raw stripe module.
+vi.mock("@/lib/stripe/getStripeClient", () => ({
+  getStripeClient: () => ({
+    checkout: { sessions: { retrieve: (...args: unknown[]) => stripeRetrieveMock(...args) } },
+  }),
 }));
 vi.mock("next-intl/server", () => ({
   getTranslations: vi.fn(async () => (key: string) => key),
