@@ -1,10 +1,5 @@
-import { afterAll, beforeEach, describe, expect, it, vi } from "vitest";
-import {
-  buildStripeClient,
-  createCheckoutSession,
-  normalizeTier,
-  priceIdFor,
-} from "@/lib/stripe/checkout";
+import { describe, expect, it, vi } from "vitest";
+import { createCheckoutSession } from "@/lib/stripe/createCheckoutSession";
 
 type FakeSession = { id: string; url: string };
 
@@ -15,73 +10,6 @@ function makeFakeStripe(session: FakeSession = { id: "cs_1", url: "https://strip
     create,
   };
 }
-
-describe("normalizeTier", () => {
-  it("returns the tier verbatim when valid", () => {
-    expect(normalizeTier("individual")).toBe("individual");
-    expect(normalizeTier("family")).toBe("family");
-  });
-
-  it("returns null for unknown / empty input", () => {
-    expect(normalizeTier(null)).toBeNull();
-    expect(normalizeTier(undefined)).toBeNull();
-    expect(normalizeTier("")).toBeNull();
-    expect(normalizeTier("enterprise")).toBeNull();
-  });
-});
-
-describe("priceIdFor", () => {
-  // Codegen-backed: prices come from backend/app/iap/products_list.py via constants/iap-products.ts. Tests pin against the literal ids so a drift in regen breaks here.
-  it("returns the sandbox individual monthly price id by default (dev env)", () => {
-    expect(priceIdFor("individual")).toBe("price_1Tb7Wa5kJkygJqGZq0o4ssGx");
-  });
-
-  it("supports yearly cycle", () => {
-    expect(priceIdFor("individual", "yearly")).toBe("price_1TfBGv5kJkygJqGZhvE2hah8");
-  });
-
-  it("routes family tier to the family price id", () => {
-    expect(priceIdFor("family")).toBe("price_1Tb7Wa5kJkygJqGZUxd7pwlV");
-  });
-});
-
-describe("buildStripeClient", () => {
-  const original = process.env.STRIPE_SECRET_KEY;
-
-  beforeEach(() => {
-    delete process.env.STRIPE_SECRET_KEY;
-  });
-
-  afterAll(() => {
-    if (original === undefined) delete process.env.STRIPE_SECRET_KEY;
-    else process.env.STRIPE_SECRET_KEY = original;
-  });
-
-  it("throws when STRIPE_SECRET_KEY is missing", () => {
-    expect(() => buildStripeClient()).toThrow(/Missing STRIPE_SECRET_KEY/);
-  });
-
-  it("returns a Stripe client instance when key is set", () => {
-    process.env.STRIPE_SECRET_KEY = "sk_test_dummy";
-    const client = buildStripeClient();
-    expect(client).toBeDefined();
-    expect(typeof (client as unknown as { checkout: unknown }).checkout).toBe("object");
-  });
-
-  it("createCheckoutSession constructs a default client when none is passed", async () => {
-    process.env.STRIPE_SECRET_KEY = "sk_test_dummy";
-    const create = vi.fn().mockResolvedValue({ id: "cs", url: "https://x" });
-    const stripe = { checkout: { sessions: { create } } } as never;
-    await createCheckoutSession({
-      tier: "individual",
-      userId: "u",
-      email: null,
-      origin: "https://x",
-      stripe,
-    });
-    expect(create).toHaveBeenCalled();
-  });
-});
 
 describe("createCheckoutSession", () => {
   it("routes individual tier to the correct price id with quantity 1", async () => {

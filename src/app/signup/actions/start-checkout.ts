@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { getCurrentUserEmail, getCurrentUserId } from "@/lib/auth/getCurrentUserId";
 import { LOCAL_DEV_ORIGIN } from "@/constants/local-dev-origin";
 import { Tier } from "@/constants/tiers";
-import { createCheckoutSession } from "@/lib/stripe/checkout";
+import { createCheckoutSession } from "@/lib/stripe/createCheckoutSession";
 
 async function resolveOrigin(): Promise<string> {
   const h = await headers();

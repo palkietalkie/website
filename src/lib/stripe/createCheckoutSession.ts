@@ -1,8 +1,8 @@
 import Stripe from "stripe";
-import { type SubscriptionCycle, stripePriceFor } from "@/constants/iap-subscriptions";
+import type { SubscriptionCycle } from "@/constants/iap-subscriptions";
 import type { Tier } from "@/constants/tiers";
-
-// Pure helpers — no Next.js request/response, no Clerk. Easy to unit test.
+import { getStripeClient } from "@/lib/stripe/getStripeClient";
+import { resolvePriceId } from "@/lib/stripe/resolvePriceId";
 
 export type CreateCheckoutSessionArgs = {
   tier: Tier;
@@ -13,31 +13,12 @@ export type CreateCheckoutSessionArgs = {
   stripe?: Stripe;
 };
 
-function readEnv(name: string): string {
-  const value = process.env[name];
-  if (!value) throw new Error(`Missing ${name}`);
-  return value;
-}
-
-export function priceIdFor(tier: Tier, cycle: SubscriptionCycle = "monthly"): string {
-  return stripePriceFor(tier, cycle);
-}
-
-export function normalizeTier(raw: string | null | undefined): Tier | null {
-  if (raw === "individual" || raw === "family") return raw;
-  return null;
-}
-
-export function buildStripeClient(): Stripe {
-  return new Stripe(readEnv("STRIPE_SECRET_KEY"));
-}
-
 export async function createCheckoutSession(
   args: CreateCheckoutSessionArgs,
 ): Promise<Stripe.Checkout.Session> {
   const { tier, cycle = "monthly", userId, email, origin } = args;
-  const priceId = priceIdFor(tier, cycle);
-  const stripe = args.stripe ?? buildStripeClient();
+  const priceId = resolvePriceId(tier, cycle);
+  const stripe = args.stripe ?? getStripeClient();
 
   return stripe.checkout.sessions.create({
     mode: "subscription",
