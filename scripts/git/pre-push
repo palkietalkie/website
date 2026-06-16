@@ -7,3 +7,8 @@ set -e
 REPO="$(git rev-parse --show-toplevel)"
 echo "[pre-push] paired-test guard (same check CI runs)..."
 bash "$REPO/scripts/ci/check_test_pair.sh" origin/main
+
+# Branch-level test run + 90 percent coverage gate (CI parity). Too slow to pay on every commit.
+cd "$REPO"
+echo "[pre-push] vitest + coverage gate..."
+npm run --silent test:coverage
