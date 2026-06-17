@@ -47,6 +47,11 @@
   font-size: 1.4rem;
 }
 
+/* First heading sits right under the section padding; its own top margin would stack into a big empty gap. */
+.prose h2:first-child {
+  margin-top: 0;
+}
+
 .prose p,
 .prose ul {
   margin-bottom: var(--space-3);
@@ -64,11 +69,4 @@
 .prose a {
   color: var(--accent);
   text-decoration: underline;
-}
-
-.prose code {
-  background: var(--surface-elevated);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.9em;
 }
