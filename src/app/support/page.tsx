@@ -112,9 +112,9 @@ export default function SupportPage() {
             <details className={styles.item}>
               <summary>I want to delete my account.</summary>
               <p>
-                Open the app → More → Privacy &amp; Data → Delete my account. We soft-delete
-                immediately and hard-delete after 30 days. If you can&apos;t reach the screen, email
-                us and we&apos;ll do it manually.
+                Open the app → More → Privacy &amp; Data → Delete my account. This removes your
+                account and signs you out. If you can&apos;t reach the screen, email us and
+                we&apos;ll do it for you.
               </p>
             </details>
 

@@ -46,6 +46,15 @@ export function Footer({
             <Link href="/faq" className="tap-target">
               {t("footer.faq")}
             </Link>
+            <Link href="/support" className="tap-target">
+              {t("footer.support")}
+            </Link>
+            <Link href="/privacy" className="tap-target">
+              {t("footer.privacy")}
+            </Link>
+            <Link href="/terms" className="tap-target">
+              {t("footer.terms")}
+            </Link>
             <MailLink className="tap-target" newWindow subject="palkietalkie.com — Contact">
               {t("footer.contact")}
             </MailLink>

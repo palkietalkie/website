@@ -1,6 +1,6 @@
 .header {
   padding-top: var(--space-2);
-  padding-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
   background: radial-gradient(900px 500px at 70% -10%, rgba(255, 90, 60, 0.08), transparent 60%);
 }
 

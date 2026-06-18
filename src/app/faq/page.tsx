@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+import { AppStoreButton } from "@/components/AppStoreButton";
 import { Footer } from "@/components/Footer";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import styles from "./faq.module.css";
@@ -43,6 +44,9 @@ export default function FaqPage() {
                 <p>{f.a}</p>
               </details>
             ))}
+          </div>
+          <div className={styles.cta}>
+            <AppStoreButton />
           </div>
         </div>
       </section>

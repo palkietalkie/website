@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "Palkie Talkie",
     "tagline": "You can read this. Saying it is the hard part.",
-    "description": "A voice partner who remembers what you said and shows up in the gaps of your day. No booking. No camera.",
+    "description": "An AI voice partner who remembers what you said and shows up in the gaps of your day. No booking. No camera.",
     "homeTitle": "Palkie Talkie — You can read this. Saying it is the hard part."
   },
   "nav": {
@@ -48,17 +48,17 @@
       { "title": "No booking", "body": "Open it when you have a minute. Close it when you don't." },
       { "title": "No camera", "body": "Voice only. Walk, ride, shower, talk." },
       { "title": "No chair, no desk", "body": "Built for the gaps, not for sitting down to study." },
-      { "title": "No smalltalk filler", "body": "Never \"How can I help you today?\" The partner already knows you." }
+      { "title": "No smalltalk filler", "body": "Never \"How can I help you today?\" Your AI partner already knows you." }
     ]
   },
   "features": {
     "eyebrow": "How it feels",
     "title": "Three things that change everything.",
-    "lead": "Cut the cold-start, cut the reset, cut the boring tutor. Talk to a partner who knows you.",
+    "lead": "Cut the cold-start, cut the reset, cut the boring tutor. Talk to an AI partner who knows you.",
     "items": [
       {
         "title": "It talks first",
-        "body": "Open the app and the partner is already speaking — addressing you by name, picking up where you left off. Answer if you want. Just listen if you don't.",
+        "body": "Open the app and your AI partner is already speaking — addressing you by name, picking up where you left off. Answer if you want. Just listen if you don't.",
         "visual": {
           "label": "[Feature visual placeholder]",
           "spec": "Avatar mid-speech, sound waveform under the captions. Square 1:1, ~400×400. Midjourney prompt: 'illustrated character, friendly expression, mid-conversation, warm background, voice-wave element subtle, square, flat illustration style'."
@@ -74,7 +74,7 @@
       },
       {
         "title": "Real personalities",
-        "body": "Pick a partner who matches the mood — sharp, dry, warm, blunt. They have opinions. They push back when you're wrong. They're funny when you're not trying to be.",
+        "body": "Pick an AI partner who matches the mood — sharp, dry, warm, blunt. They have opinions. They push back when you're wrong. They're funny when you're not trying to be.",
         "visual": {
           "label": "[Feature visual placeholder]",
           "spec": "4 character portraits in a 2×2 grid, distinct expressions. Square 1:1 overall, each portrait ~200px. Midjourney prompt: 'four illustrated character portraits, distinct personalities — wry, warm, sharp, blunt — 2x2 grid, flat illustration, square'."
@@ -85,7 +85,7 @@
   "demo": {
     "eyebrow": "Hear it",
     "title": "10 seconds is enough.",
-    "lead": "This is the opening turn. No greeting filler, no \"how can I help.\" Just a partner who's been waiting for you to walk in.",
+    "lead": "This is the opening turn. No greeting filler, no \"how can I help.\" Just an AI partner who's been waiting for you to walk in.",
     "playLabel": "Play 10-second sample",
     "pauseLabel": "Pause",
     "transcriptLabel": "Transcript"
@@ -143,19 +143,19 @@
     "items": [
       {
         "q": "Does it work without internet?",
-        "a": "No. The AI runs server-side because phone-sized models can't do natural-paced full-duplex voice yet. If you're underground or on a plane without wifi, it pauses until you're back online."
+        "a": "No, it needs a connection. Your AI partner runs in the cloud, so if you're underground or on a plane without wifi, it pauses until you're back online."
       },
       {
         "q": "Is my voice stored?",
-        "a": "Transcripts and audio are stored under your account so the partner can remember you next conversation. You can opt out of training use during signup. You can wipe everything from More → Privacy & Data."
+        "a": "Transcripts and audio are stored under your account so your AI partner remembers you next time. You can opt out of training use during signup."
       },
       {
         "q": "Can I use it on AirPods during my commute?",
-        "a": "Yes. Bluetooth audio works the same as the phone speaker. The walk from the train station is one of the most common usage patterns we hear from early users."
+        "a": "Yes. Bluetooth audio works just like the phone speaker. The walk from the train station is one of the most common ways people use it."
       },
       {
-        "q": "Will the AI judge my accent?",
-        "a": "No. The partner adapts its speaking speed and corrects gently — only when you ask, or when a mistake is something a friend would actually flag. You set the proficiency level; it respects it."
+        "q": "Will it judge my accent?",
+        "a": "No. Your AI partner adapts its speaking speed and corrects gently, only when you ask or when a mistake is something a friend would actually flag. You set the proficiency level; it respects it."
       },
       {
         "q": "iPhone only?",
@@ -218,6 +218,9 @@
     "home": "Home",
     "faq": "FAQ",
     "waitlist": "Waitlist",
+    "support": "Support",
+    "privacy": "Privacy",
+    "terms": "Terms",
     "contact": "Contact",
     "copyright": "© {year} Palkie Talkie"
   },
