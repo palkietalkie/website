@@ -54,4 +54,10 @@ describe("Home (landing page)", () => {
       .filter((el) => el.getAttribute("href") === "/pricing");
     expect(pricingLinks.length).toBeGreaterThan(0);
   });
+
+  it("embeds the real demo video", async () => {
+    const { container } = await renderHome();
+    const video = container.querySelector("video");
+    expect(video?.getAttribute("src")).toBe("/video/demo.mp4");
+  });
 });

@@ -1,16 +1,16 @@
-import { Placeholder } from "./Placeholder";
+import { Screenshot } from "./Screenshot";
 import styles from "./FeatureCard.module.css";
 
-type Visual = { label: string; spec: string };
+type Image = { src: string; alt: string };
 
 type Props = {
   n: number;
   title: string;
   body: string;
-  visual?: Visual;
+  image?: Image;
 };
 
-export function FeatureCard({ n, title, body, visual }: Props) {
+export function FeatureCard({ n, title, body, image }: Props) {
   return (
     <article className={styles.card}>
       <div className={styles.text}>
@@ -18,14 +18,7 @@ export function FeatureCard({ n, title, body, visual }: Props) {
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.body}>{body}</p>
       </div>
-      {visual && (
-        <Placeholder
-          shape="square"
-          label={visual.label}
-          spec={visual.spec}
-          className={styles.visual}
-        />
-      )}
+      {image && <Screenshot src={image.src} alt={image.alt} className={styles.visual} />}
     </article>
   );
 }

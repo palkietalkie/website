@@ -1,80 +1,311 @@
 {
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "읽는 건 됩니다. 말하는 게 어렵죠.",
+    "description": "당신이 했던 말을 기억하고, 하루의 빈 시간에 찾아오는 AI 음성 파트너. 예약도, 카메라도 필요 없어요.",
+    "homeTitle": "Palkie Talkie — 읽는 건 됩니다. 말하는 게 어렵죠."
   },
   "nav": {
-    "pricing": "요금",
-    "subscribe": "구독",
+    "pricing": "요금제",
+    "subscribe": "구독하기",
     "language": "언어"
   },
   "hero": {
-    "ctaSecondary": "요금 보기",
-    "smallprint": "매일 10분 무료. 카드 등록 불필요. 언제든 해지 가능."
+    "smallprint": "무료로 하루 {day}분, 일주일 {week}분. 신용카드 필요 없음. 언제든 해지 가능.",
+    "visual": {
+      "label": "[히어로 비주얼 자리]"
+    },
+    "audioSample": {
+      "label": "[10초 페르소나 음성 샘플 자리]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "그 간극",
+    "title": "되긴 되는데, 유창하진 않다.",
+    "lead": "영어를 읽을 줄 알고, 하루를 버틸 수도 있어요. 문제는 머릿속에 있는 것과 입 밖으로 나오는 것 사이의 간극, 그리고 그건 저절로 좁혀지지 않습니다.",
+    "items": [
+      {
+        "title": "농담을 놓친다",
+        "body": "회의는 진행할 수 있어요. 그런데 다들 웃게 만든 그 한마디? 따라 웃기만 했죠. 끝나고 나눈 가벼운 잡담? 생각보다 더 딱딱하게 들렸고요. 애쓸수록 더 티가 납니다."
+      },
+      {
+        "title": "앉아서 공부할 시간이 없다",
+        "body": "일할 땐 일해야죠. 남는 건 자투리뿐입니다. 역에서 사무실까지 걷는 길, 자전거로 퇴근하는 시간, 샤워하는 동안, 헬스장에서. 남 눈치 안 보고 소리 내어 말할 수 있는 순간들이요. 대부분의 앱은 책상과 30분을 요구하는데, 둘 다 없잖아요."
+      },
+      {
+        "title": "다른 도구들은 핵심을 놓친다",
+        "body": "탭해서 번역하는 반복 연습으론 말하기 실력이 늘지 않아요. 범용 음성 비서는 세션마다 초기화되고 성격도 없죠. 실시간 튜터는 예약과 카메라가 필요하고요. 어느 것도 나를 아는 사람과의 진짜 대화처럼 느껴지지 않습니다."
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "이런 건 아닙니다",
+    "title": "안 해도 되는 것들.",
+    "lead": "당신이 그만둔 건 바로 그 번거로움 때문이에요. 그걸 없앴습니다.",
+    "items": [
+      {
+        "title": "예약 없음",
+        "body": "시간 날 때 열고, 없으면 닫으면 돼요."
+      },
+      {
+        "title": "카메라 없음",
+        "body": "음성만. 걸으면서, 타면서, 샤워하면서, 말하세요."
+      },
+      {
+        "title": "의자도, 책상도 없음",
+        "body": "앉아서 공부하라고 만든 게 아니라 자투리 시간을 위해 만들었어요."
+      },
+      {
+        "title": "쓸데없는 잡담 없음",
+        "body": "\"오늘 무엇을 도와드릴까요?\" 같은 말 절대 없습니다. 당신의 AI 파트너는 이미 당신을 알고 있으니까요."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "어떤 느낌이냐면",
+    "title": "모든 걸 바꾸는 세 가지.",
+    "lead": "차가운 시작도, 매번의 초기화도, 지루한 튜터도 없애세요. 당신을 아는 AI 파트너와 대화하세요.",
+    "items": [
+      {
+        "title": "먼저 말을 건다",
+        "body": "앱을 열면 AI 파트너가 이미 말하고 있어요. 이름을 부르며, 지난번 멈춘 곳에서 이어가죠. 대답하고 싶으면 하고, 아니면 그냥 듣기만 해도 됩니다.",
+        "visual": {
+          "label": "[기능 비주얼 자리]"
+        }
+      },
+      {
+        "title": "당신을 기억한다",
+        "body": "지난주에 한 말, 통한 농담, 언급한 마감일, 아이 이름까지. 다음 대화에서 친구처럼 자연스럽게 다시 엮어 줍니다. 프로필을 읽어 내려가는 챗봇과는 다르게요.",
+        "visual": {
+          "label": "[기능 비주얼 자리]"
+        }
+      },
+      {
+        "title": "진짜 성격들",
+        "body": "기분에 맞는 AI 파트너를 고르세요. 날카롭게, 시크하게, 따뜻하게, 직설적으로. 의견이 있고, 당신이 틀리면 반박하고, 당신이 애쓰지 않아도 웃겨 줍니다.",
+        "visual": {
+          "label": "[기능 비주얼 자리]"
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "들어 보세요",
+    "title": "10초면 충분합니다.",
+    "lead": "이게 첫 마디예요. 인사치레도, \"무엇을 도와드릴까요\"도 없이, 당신이 들어오기를 기다려 온 AI 파트너일 뿐입니다.",
+    "playLabel": "10초 샘플 재생",
+    "pauseLabel": "일시정지",
+    "transcriptLabel": "대화 내용"
+  },
+  "video": {
+    "eyebrow": "직접 보세요",
+    "title": "30초, 마이크에서 귀까지.",
+    "videoPlaceholder": {
+      "label": "[데모 영상 자리]"
+    }
+  },
+  "trust": {
+    "eyebrow": "바로 이 문제를 위해 만들었습니다",
+    "title": "20년간 이 문제를 직접 겪은 사람이 만들었습니다.",
+    "body": "되긴 되지만 유창하지 않은 영어는 가설이 아닙니다. 회의와 통화, 놓친 한마디들로 채워진 창업자의 20년 넘는 일상 그 자체예요. 이 제품의 모든 설계 결정은 \"이게 왜 아직도 별로일까\"라고 적힌 노트에서 나왔습니다.",
+    "waitlistCount": "대기자 {count}명"
+  },
   "pricing": {
-    "eyebrow": "요금",
+    "eyebrow": "요금제",
+    "teaserTitle": "무료로 시작. 다른 곳보다 저렴.",
+    "compareCta": "전체 요금제 보기 →",
+    "pageTitle": "무료로 시작. 앱과 웹 어디서나 같은 가격.",
+    "pageLead": "대부분 무료로 하루 {day}분(일주일 {week}분)으로 시작해요. 더 필요해지면 월 $12.99, 이미 돈 쓰고 있는 습관 하나보다도 쌉니다.",
+    "dualCtaNote": "어느 쪽으로 가입해도 같은 계정, 같은 이용 범위입니다.",
     "perMonth": "/ 월",
-    "orPerYear": "또는 {yearly} / 년",
+    "orPerYear": "또는 연 {yearly}",
+    "teaserFree": "하루 {day}분, 일주일 {week}분",
+    "teaserPaidLine": "월 {monthly} · 연 {yearly}",
+    "teaserFamilyLine": "월 {monthly} · 연 {yearly} · 최대 {seats}",
+    "freeAlwaysFree": "항상 무료",
     "mostPopular": "가장 인기",
     "tiers": {
       "free": {
         "name": "무료",
-        "cta": "App Store에서 다운로드",
+        "cta": "시작하기",
         "includes": [
-          "하루 10분, 현지 시간 자정 리셋"
+          "하루 {day}분, 현지 자정에 초기화",
+          "일주일 {week}분, 월요일에 초기화"
         ]
       },
       "individual": {
         "name": "개인",
-        "cta": "웹에서 구독",
+        "cta": "웹에서 구독하기",
         "includes": [
-          "1명",
-          "대화 무제한"
+          "사용자 1명",
+          "무제한 대화 시간"
         ]
       },
       "family": {
         "name": "가족",
-        "cta": "웹에서 구독",
+        "cta": "웹에서 구독하기",
         "includes": [
           "최대 6명",
-          "각자의 프로필 + 기억"
+          "각자 별도 프로필 + 메모리"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "솔직한 답변",
+    "title": "설치 전에 다들 묻는 것들.",
+    "viewAllCta": "전체 FAQ 보기 →",
+    "items": [
+      {
+        "q": "인터넷 없이도 되나요?",
+        "a": "아니요, 연결이 필요해요. AI 파트너는 클라우드에서 동작하기 때문에 지하나 와이파이 없는 비행기에서는 다시 온라인이 될 때까지 멈춥니다."
+      },
+      {
+        "q": "제 목소리가 저장되나요?",
+        "a": "다음에 AI 파트너가 당신을 기억할 수 있도록 대화 내용과 음성은 당신의 계정에 저장됩니다. 가입할 때 학습 활용에 대한 동의는 거부할 수 있어요."
+      },
+      {
+        "q": "출퇴근길에 AirPods로 써도 되나요?",
+        "a": "네. Bluetooth 오디오도 휴대폰 스피커와 똑같이 됩니다. 역에서 걸어가는 길이 사람들이 가장 많이 쓰는 순간 중 하나예요."
+      },
+      {
+        "q": "제 억양을 평가하나요?",
+        "a": "아니요. AI 파트너는 말하는 속도를 맞추고, 당신이 요청할 때나 친구라면 짚어 줄 만한 실수일 때만 부드럽게 고쳐 줍니다. 숙련도 수준은 당신이 정하고, 그걸 존중해요."
+      },
+      {
+        "q": "iPhone만 되나요?",
+        "a": "지금은 iPhone만 됩니다. Android를 쓰신다면 대기자 명단에 등록해 주세요. 준비되면 이메일로 알려 드릴게요."
+      },
+      {
+        "q": "언제든 해지할 수 있나요?",
+        "a": "네. 언제든 해지할 수 있고, 현재 결제 기간이 끝날 때까지 계속 이용할 수 있습니다."
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "대기자 명단 등록",
+    "metaDescription": "Palkie Talkie 출시 소식을 가장 먼저 받아 보세요.",
+    "title": "대기자 명단에 등록하세요.",
+    "lead": "앱이 아직 App Store에 없어요. 연락처를 남겨 주시면 출시되는 날 알려 드릴게요.",
+    "fields": {
+      "email": "이메일",
+      "emailPlaceholder": "you@example.com",
+      "name": "이름",
+      "namePlaceholder": "Wes",
+      "phone": "설치할 기기",
+      "phoneChoose": "선택…",
+      "phoneDesktopPlaceholder": "iPhone 16, Pixel 9 등",
+      "phones": {
+        "iphone_ios_26": "iPhone (iOS 26)",
+        "iphone_ios_18": "iPhone (iOS 18)",
+        "iphone_ios_17": "iPhone (iOS 17)",
+        "iphone_ios_16_or_older": "iPhone (iOS 16 이하)",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12 이하",
+        "other": "기타"
+      },
+      "nativeLanguage": "모국어",
+      "nativeLanguageChoose": "선택…",
+      "nativeLanguageOther": "기타",
+      "multiSelectHint": "탭해서 하나 이상 고르세요.",
+      "targetLanguage": "배우고 싶은 언어",
+      "targetLanguageChoose": "선택…",
+      "targetLanguageOther": "기타",
+      "biggestPain": "지금 말하기에서 가장 힘든 점은? (선택)",
+      "biggestPainPlaceholder": "전화 통화요. 매번 얼어붙어요."
+    },
+    "submit": "대기자 명단에 등록",
+    "submitting": "등록 중…",
+    "thanksTitle": "명단에 등록됐어요.",
+    "thanksLead": "출시되는 날 이메일로 알려 드릴게요. 그리고 괜찮으시다면 그 전에 몇 번, 저희가 배우고 있는 것들도 함께 보내 드릴게요."
+  },
   "appStore": {
-    "label": "App Store에서 다운로드"
+    "label": "App Store에서 다운로드",
+    "waitlistLabel": "대기자 명단 등록"
   },
   "footer": {
+    "ctaTitle": "오늘부터 말해 보세요.",
+    "ctaLead": "무료로 하루 {day}분, 일주일 {week}분. 준비되면 언제든 구독하세요.",
     "home": "홈",
-    "contact": "문의"
+    "faq": "FAQ",
+    "waitlist": "대기자 명단",
+    "support": "지원",
+    "privacy": "개인정보",
+    "terms": "약관",
+    "contact": "문의",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
-    "metaTitle": "구독",
-    "metaDescription": "웹에서 Palkie Talkie 개인 또는 가족 플랜을 구독하세요.",
-    "youPicked": "선택한 플랜",
-    "perMonth": "{amount} / 월",
-    "perYear": "또는 {amount} / 년",
-    "switchToFamily": "가족 플랜으로 변경 →",
-    "switchToIndividual": "개인 플랜으로 변경 →",
-    "canceled": "결제가 취소되었습니다. 언제든 다시 시도할 수 있어요.",
-    "checkoutCta": "결제로 진행 — {price}",
-    "cancelNote": "언제든 해지 가능. 현재 결제 주기 종료일까지 액세스가 유지됩니다."
+    "metaTitle": "구독하기",
+    "metaDescription": "웹에서 Palkie Talkie 개인 또는 가족 요금제를 구독하세요.",
+    "youPicked": "선택한 요금제",
+    "perMonth": "월 {amount}",
+    "perYear": "또는 연 {amount}",
+    "switchToFamily": "가족 요금제로 변경 →",
+    "switchToIndividual": "개인 요금제로 변경 →",
+    "canceled": "결제가 취소됐어요. 언제든 다시 시도할 수 있습니다.",
+    "step2Title": "확인하고 결제",
+    "step2Lead": "Stripe의 보안 결제 페이지로 이동합니다. 설치 직후 같은 계정으로 앱이 바로 잠금 해제돼요.",
+    "checkoutCta": "결제로 계속하기, {price}",
+    "cancelNote": "언제든 해지 가능. 결제 기간이 끝날 때까지 이용할 수 있습니다."
   },
   "success": {
-    "metaTitle": "구독 완료",
-    "metaDescription": "구독이 확인되었습니다. 앱을 다운로드해서 대화를 시작하세요.",
+    "metaTitle": "완료됐어요",
+    "metaDescription": "구독이 확인됐어요. 앱을 다운로드하고 대화를 시작하세요.",
     "eyebrowOk": "구독 완료",
-    "title": "이제 앱을 다운로드.",
-    "lead": "구독이 활성화되었습니다. Palkie Talkie의 본체는 앱입니다.",
-    "instructions": "여기서 사용한 이메일로 로그인하세요.",
-    "note": "이렇게 구독과 계정을 연결합니다.",
+    "title": "이제 앱을 다운로드하세요.",
+    "lead": "구독이 활성화됐어요. Palkie Talkie는 앱 안에서 살아 움직입니다.",
+    "instructions": "여기서 사용한 이메일과 같은 이메일로 로그인하세요.",
+    "note": "그렇게 해야 구독이 계정에 연결돼요.",
     "eyebrowError": "음",
-    "errorTitle": "세션을 확인할 수 없습니다.",
-    "errorFallback": "페이지를 새로고침하거나 고객센터에 문의하세요.",
-    "backToSignup": "구독 페이지로 돌아가기"
+    "errorTitle": "세션을 확인하지 못했어요.",
+    "errorFallback": "새로고침하거나 지원팀에 문의해 주세요.",
+    "backToSignup": "구독 화면으로 돌아가기"
+  },
+  "support": {
+    "metaTitle": "지원 — Palkie Talkie",
+    "metaDescription": "Palkie Talkie 도움말. 이메일 지원, 구독 관리, 계정 삭제, 자주 묻는 질문.",
+    "eyebrow": "지원",
+    "title": "도와드릴게요.",
+    "ledeBefore": "실제 사람이 보통 24시간 안에 답합니다. 질문을 보내실 곳은 ",
+    "ledeAfter": " 또는 아래 바로가기 중 하나를 이용하세요.",
+    "cards": {
+      "emailTitle": "이메일 보내기",
+      "emailBody": "hello@palkietalkie.com, 사람에게 가장 빠르게 답받는 길.",
+      "subscriptionTitle": "구독 관리",
+      "subscriptionBody": "iPhone 설정 → 이름 탭 → 구독 → Palkie Talkie. 인앱 결제의 갱신, 해지, 환불은 Apple이 관리합니다.",
+      "faqTitle": "FAQ",
+      "faqBody": "자주 묻는 답변: 요금제, 무료 이용 한도, 지원 언어, AI 파트너가 기억하는 것, 개인정보.",
+      "privacyTitle": "개인정보 및 데이터 삭제",
+      "privacyBody": "앱 안의 더보기 → 개인정보 및 데이터에서 언제든 데이터를 삭제할 수 있어요. 전체 개인정보 처리방침을 확인하세요."
+    },
+    "quickAnswers": "빠른 답변",
+    "items": [
+      {
+        "q": "구독은 어떻게 해지하나요?",
+        "a": "iPhone에서: 설정 → 맨 위 이름 탭 → 구독 → Palkie Talkie → 구독 취소. 해지는 Apple이 처리하며, 프리미엄 이용은 현재 기간이 끝날 때까지 계속됩니다."
+      },
+      {
+        "q": "환불은 어떻게 받나요?",
+        "a": "인앱 결제는 reportaproblem.apple.com에서 환불을 요청하세요. 최종 결정은 Apple이 합니다. 웹 구독은 이메일을 보내 주시면 Stripe를 통해 환불해 드립니다."
+      },
+      {
+        "q": "앱이 멈추거나 소리가 안 나요.",
+        "a": "iPhone 설정 → Palkie Talkie → 마이크에서 마이크 권한을 허용했는지 확인하세요. AI 파트너가 말은 하는데 안 들린다면, 측면 볼륨 스위치와 무음 모드가 꺼져 있는지 확인하세요. 그래도 안 되면 iOS 버전과 어떤 일이 생기는지 적어서 이메일로 보내 주세요."
+      },
+      {
+        "q": "계정을 삭제하고 싶어요.",
+        "a": "앱 열기 → 더보기 → 개인정보 및 데이터 → 계정 삭제. 계정이 삭제되고 로그아웃됩니다. 화면에 들어갈 수 없으면 이메일로 알려 주세요. 저희가 처리해 드릴게요."
+      },
+      {
+        "q": "AI 파트너가 말을 너무 많이 해요 / 제가 말해도 안 멈춰요.",
+        "a": "말을 시작하면 문장 도중에도 끊을 수 있고, AI 파트너의 소리가 양보합니다. 특정 페르소나가 계속 속도를 무시하거나 같은 말을 반복하면 페르소나 탭에서 페르소나를 바꾸거나 이메일을 보내 주세요. 실제 제보를 바탕으로 페르소나 프롬프트를 조정합니다."
+      }
+    ]
   }
 }

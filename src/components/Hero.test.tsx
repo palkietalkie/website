@@ -44,4 +44,12 @@ describe("Hero", () => {
     const expected = enMessages.hero.smallprint.replace("{day}", "10").replace("{week}", "30");
     expect(screen.getByText(expected)).toBeInTheDocument();
   });
+
+  it("renders the real app screenshot (not a placeholder)", () => {
+    renderWithI18n(<Hero />);
+    // next/image rewrites src to its optimizer URL; assert the source path is referenced.
+    expect(
+      screen.getByRole("img", { name: enMessages.meta.description }).getAttribute("src"),
+    ).toContain("01-talk");
+  });
 });

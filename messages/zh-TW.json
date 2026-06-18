@@ -1,80 +1,311 @@
 {
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "你看得懂這句。難的是把它說出口。",
+    "description": "一個會記得你說過什麼的 AI 語音夥伴，在你一天的零碎時間裡現身。免預約，不用開鏡頭。",
+    "homeTitle": "Palkie Talkie — 你看得懂這句。難的是把它說出口。"
   },
   "nav": {
-    "pricing": "價格",
+    "pricing": "方案價格",
     "subscribe": "訂閱",
     "language": "語言"
   },
   "hero": {
-    "ctaSecondary": "查看價格",
-    "smallprint": "每天免費10分鐘。無需信用卡。隨時取消。"
+    "smallprint": "免費每天 {day} 分鐘、每週 {week} 分鐘。不用信用卡，隨時取消。",
+    "visual": {
+      "label": "[主視覺佔位圖]"
+    },
+    "audioSample": {
+      "label": "[10 秒角色語音樣本佔位]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "那道落差",
+    "title": "能用，不等於流利。",
+    "lead": "你看得懂英文，也應付得了一整天。落差，藏在你腦中所想跟嘴裡說出來之間，而且它不會自己消失。",
+    "items": [
+      {
+        "title": "笑點你都接不到",
+        "body": "會議你撐得住。但那句讓全場笑出來的玩笑話呢？你只能跟著笑。會後的閒聊呢？你聽起來比自己想要的還要拘謹。越用力，越露餡。"
+      },
+      {
+        "title": "沒空坐下來好好讀書",
+        "body": "工作就是工作。剩下的全是碎片時間，從車站走到公司的路上、騎車回家、洗澡、健身房。那些你能放開來大聲說、不會覺得尷尬的時刻。多數 App 要你坐在桌前花上 30 分鐘，這兩樣你都沒有。"
+      },
+      {
+        "title": "其他工具都搞錯了重點",
+        "body": "點一點翻譯的練習題，練不出口說能力。一般的語音助理每次對話都重新開始，毫無個性。真人家教又得預約、又得開鏡頭。沒有一個像是在跟一個懂你的人真正對話。"
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "它不是什麼",
+    "title": "你不必再做的事。",
+    "lead": "讓你放棄的，就是那些麻煩。把它們拿掉。",
+    "items": [
+      {
+        "title": "不用預約",
+        "body": "有一分鐘就打開，沒空就關掉。"
+      },
+      {
+        "title": "不用開鏡頭",
+        "body": "只用聲音。走路、騎車、洗澡，都能講。"
+      },
+      {
+        "title": "不用椅子、不用書桌",
+        "body": "為零碎時間而生，不是要你坐下來苦讀。"
+      },
+      {
+        "title": "沒有客套廢話",
+        "body": "絕不會問「今天有什麼能幫你的嗎？」你的 AI 夥伴早就認識你了。"
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "它的感覺",
+    "title": "三件事，改變一切。",
+    "lead": "省去冷場開頭、省去每次重來、省去無聊家教。跟一個懂你的 AI 夥伴對話。",
+    "items": [
+      {
+        "title": "它先開口",
+        "body": "打開 App，你的 AI 夥伴已經在講話了，叫得出你的名字，接著上次的話題繼續。想回就回，不想回，聽著也行。",
+        "visual": {
+          "label": "[功能視覺佔位圖]"
+        }
+      },
+      {
+        "title": "它記得你",
+        "body": "你上週說過的話、那個接得漂亮的玩笑、你提過的截止日、孩子的名字。下次對話時，它會像朋友一樣自然地把這些織回話裡，而不是像聊天機器人那樣照著個人檔案唸出來。",
+        "visual": {
+          "label": "[功能視覺佔位圖]"
+        }
+      },
+      {
+        "title": "真正有個性",
+        "body": "挑一個合你心情的 AI 夥伴，犀利、冷靜、溫暖、直率都行。他們有自己的看法，你說錯時會反駁你，會在你沒打算搞笑時逗你笑。",
+        "visual": {
+          "label": "[功能視覺佔位圖]"
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "聽聽看",
+    "title": "10 秒就夠了。",
+    "lead": "這是開場的第一句。沒有招呼廢話，沒有「有什麼能幫你的」。就是一個一直等著你走進來的 AI 夥伴。",
+    "playLabel": "播放 10 秒樣本",
+    "pauseLabel": "暫停",
+    "transcriptLabel": "逐字稿"
+  },
+  "video": {
+    "eyebrow": "看看實際",
+    "title": "30 秒，從麥克風到耳朵。",
+    "videoPlaceholder": {
+      "label": "[示範影片佔位]"
+    }
+  },
+  "trust": {
+    "eyebrow": "為這個問題量身打造",
+    "title": "由一個親身熬了二十年的人打造。",
+    "body": "卡在「能用卻不流利」的英文，不是什麼假設。這是創辦人二十多年來的日常，無數場會議、電話、和接不到的玩笑話。這個產品的每一個設計選擇，都來自一本記滿「為什麼這還是這麼難用」的筆記。",
+    "waitlistCount": "已有 {count} 人在候補名單上"
+  },
   "pricing": {
-    "eyebrow": "價格",
+    "eyebrow": "方案價格",
+    "teaserTitle": "免費開始，比其他都便宜。",
+    "compareCta": "看完整方案 →",
+    "pageTitle": "免費開始。App 和網頁，同一個價格。",
+    "pageLead": "多數人從免費的每天 {day} 分鐘（每週 {week} 分鐘）開始。想要更多時，每月 $12.99，比你早就在付的某個習慣還便宜。",
+    "dualCtaNote": "兩種方式都行，同一個帳號，同樣的權限。",
     "perMonth": "/ 月",
     "orPerYear": "或 {yearly} / 年",
-    "mostPopular": "最受歡迎",
+    "teaserFree": "每天 {day} 分鐘、每週 {week} 分鐘",
+    "teaserPaidLine": "{monthly} / 月 · {yearly} / 年",
+    "teaserFamilyLine": "{monthly} / 月 · {yearly} / 年 · 最多 {seats} 人",
+    "freeAlwaysFree": "永久免費",
+    "mostPopular": "最熱門",
     "tiers": {
       "free": {
         "name": "免費",
-        "cta": "在 App Store 下載",
+        "cta": "開始使用",
         "includes": [
-          "每天10分鐘,本地時間0點重置"
+          "每天 {day} 分鐘，當地午夜重置",
+          "每週 {week} 分鐘，週一重置"
         ]
       },
       "individual": {
-        "name": "個人版",
+        "name": "個人方案",
         "cta": "在網頁訂閱",
         "includes": [
-          "1位使用者",
-          "暢談無限"
+          "一位使用者",
+          "無限對話時間"
         ]
       },
       "family": {
-        "name": "家庭版",
+        "name": "家庭方案",
         "cta": "在網頁訂閱",
         "includes": [
-          "最多6人",
-          "每人獨立的個人資料 + 記憶"
+          "最多 6 人",
+          "每人獨立的個人檔案與記憶"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "誠實作答",
+    "title": "下載前大家會問的事。",
+    "viewAllCta": "看所有常見問題 →",
+    "items": [
+      {
+        "q": "沒有網路也能用嗎？",
+        "a": "不行，它需要連線。你的 AI 夥伴跑在雲端，所以如果你在地下或在沒有 Wi-Fi 的飛機上，它會暫停，等你重新上線再繼續。"
+      },
+      {
+        "q": "我的聲音會被儲存嗎？",
+        "a": "逐字稿和音訊會存在你的帳號下，這樣你的 AI 夥伴下次才記得你。註冊時你可以選擇不讓資料用於訓練。"
+      },
+      {
+        "q": "通勤時可以用 AirPods 嗎？",
+        "a": "可以。Bluetooth 音訊和手機喇叭一樣能用。從車站走出來的那段路，正是大家最常用它的時候之一。"
+      },
+      {
+        "q": "它會嫌我的口音嗎？",
+        "a": "不會。你的 AI 夥伴會調整說話速度，只在你要求、或在朋友真的會點出來的錯誤時，才溫和地糾正。程度等級由你設定，它會尊重。"
+      },
+      {
+        "q": "只有 iPhone 能用嗎？",
+        "a": "目前只有 iPhone。如果你用 Android，加入候補名單，有適合你的版本時我們會寄信通知。"
+      },
+      {
+        "q": "可以隨時取消嗎？",
+        "a": "可以。隨時取消，權限會延續到當期帳單週期結束。"
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "加入候補名單",
+    "metaDescription": "搶先得知 Palkie Talkie 上線的消息。",
+    "title": "加入候補名單。",
+    "lead": "這個 App 還沒上架 App Store。告訴我們去哪找你，上線那天我們就通知你。",
+    "fields": {
+      "email": "電子郵件",
+      "emailPlaceholder": "you@example.com",
+      "name": "名字",
+      "namePlaceholder": "Wes",
+      "phone": "你會安裝的手機",
+      "phoneChoose": "請選擇…",
+      "phoneDesktopPlaceholder": "iPhone 16、Pixel 9 等",
+      "phones": {
+        "iphone_ios_26": "iPhone（iOS 26）",
+        "iphone_ios_18": "iPhone（iOS 18）",
+        "iphone_ios_17": "iPhone（iOS 17）",
+        "iphone_ios_16_or_older": "iPhone（iOS 16 或更舊）",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12 或更舊",
+        "other": "其他"
+      },
+      "nativeLanguage": "母語（可多選）",
+      "nativeLanguageChoose": "請選擇…",
+      "nativeLanguageOther": "其他",
+      "multiSelectHint": "點選一個或多個。",
+      "targetLanguage": "你想學的語言",
+      "targetLanguageChoose": "請選擇…",
+      "targetLanguageOther": "其他",
+      "biggestPain": "現在開口說，最難的是什麼？（選填）",
+      "biggestPainPlaceholder": "講電話。我每次都當機。"
+    },
+    "submit": "把我加進候補名單",
+    "submitting": "加入中…",
+    "thanksTitle": "你已在名單上。",
+    "thanksLead": "上線那天我們會寄信給你，上線前也會偶爾分享幾次我們學到的東西，如果你不介意的話。"
+  },
   "appStore": {
-    "label": "在 App Store 下載"
+    "label": "在 App Store 下載",
+    "waitlistLabel": "加入候補名單"
   },
   "footer": {
+    "ctaTitle": "今天就開始說。",
+    "ctaLead": "免費每天 {day} 分鐘、每週 {week} 分鐘。準備好了隨時訂閱。",
     "home": "首頁",
-    "contact": "聯絡我們"
+    "faq": "常見問題",
+    "waitlist": "候補名單",
+    "support": "支援",
+    "privacy": "隱私權",
+    "terms": "使用條款",
+    "contact": "聯絡我們",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
     "metaTitle": "訂閱",
-    "metaDescription": "在網頁訂閱 Palkie Talkie 個人版或家庭版。",
-    "youPicked": "你選擇的方案",
+    "metaDescription": "在網頁訂閱 Palkie Talkie 個人方案或家庭方案。",
+    "youPicked": "你選的是",
     "perMonth": "{amount} / 月",
     "perYear": "或 {amount} / 年",
-    "switchToFamily": "切換到家庭版 →",
-    "switchToIndividual": "切換到個人版 →",
-    "canceled": "結帳已取消。你隨時可以重試。",
-    "checkoutCta": "繼續結帳 — {price}",
-    "cancelNote": "隨時取消。使用權限保留到當前計費週期結束。"
+    "switchToFamily": "改選家庭方案 →",
+    "switchToIndividual": "改選個人方案 →",
+    "canceled": "結帳已取消。你隨時可以再試一次。",
+    "step2Title": "確認並付款",
+    "step2Lead": "你會被導向 Stripe 的安全結帳頁。安裝後，同一個帳號會立刻解鎖 App。",
+    "checkoutCta": "前往結帳，{price}",
+    "cancelNote": "隨時取消。權限會延續到當期帳單週期結束。"
   },
   "success": {
-    "metaTitle": "完成訂閱",
-    "metaDescription": "訂閱已確認。下載應用開始對話。",
-    "eyebrowOk": "你已訂閱",
-    "title": "現在下載應用。",
-    "lead": "訂閱已啟用。Palkie Talkie 的本體是應用。",
-    "instructions": "用你在這裡使用的同一個信箱登入。",
-    "note": "這就是我們把訂閱和帳戶對應起來的方式。",
-    "eyebrowError": "嗯",
+    "metaTitle": "你已加入",
+    "metaDescription": "訂閱已確認。下載 App 開始對話吧。",
+    "eyebrowOk": "訂閱成功",
+    "title": "現在下載 App。",
+    "lead": "你的訂閱已生效。Palkie Talkie 就活在 App 裡。",
+    "instructions": "用你在這裡使用的同一個電子郵件登入。",
+    "note": "我們就是這樣把你的訂閱和帳號連在一起的。",
+    "eyebrowError": "嗯…",
     "errorTitle": "我們無法驗證你的工作階段。",
-    "errorFallback": "請重新整理頁面,或聯絡客服。",
+    "errorFallback": "試著重新整理，或聯絡支援。",
     "backToSignup": "返回訂閱頁"
+  },
+  "support": {
+    "metaTitle": "支援 — Palkie Talkie",
+    "metaDescription": "取得 Palkie Talkie 的協助。電子郵件支援、訂閱管理、帳號刪除，以及常見問題。",
+    "eyebrow": "支援",
+    "title": "我們隨時為你服務。",
+    "ledeBefore": "真人回覆，通常在 24 小時內。把你的問題寄到 ",
+    "ledeAfter": "，或使用下方的捷徑。",
+    "cards": {
+      "emailTitle": "寫信給我們",
+      "emailBody": "hello@palkietalkie.com，最快收到真人回覆的方式。",
+      "subscriptionTitle": "管理你的訂閱",
+      "subscriptionBody": "iPhone 設定 → 點你的名字 → 訂閱項目 → Palkie Talkie。App 內購買的續訂、取消和退款流程，都由 Apple 控管。",
+      "faqTitle": "常見問題",
+      "faqBody": "常見解答：方案價格、免費方案限制、支援的語言、你的 AI 夥伴記得什麼、隱私。",
+      "privacyTitle": "隱私與資料刪除",
+      "privacyBody": "你隨時可以在 App 內的「更多 → 隱私與資料」刪除你的資料。閱讀我們完整的隱私權政策。"
+    },
+    "quickAnswers": "快速解答",
+    "items": [
+      {
+        "q": "我要怎麼取消訂閱？",
+        "a": "在 iPhone 上：打開設定 → 點最上方你的名字 → 訂閱項目 → Palkie Talkie → 取消訂閱。Apple 會處理取消；你的進階權限會延續到當期結束。"
+      },
+      {
+        "q": "我要怎麼申請退款？",
+        "a": "App 內購買：到 reportaproblem.apple.com 申請退款，由 Apple 做最終決定。網頁訂閱：寫信給我們，我們會透過 Stripe 退款。"
+      },
+      {
+        "q": "App 當機或聲音沒反應。",
+        "a": "確認你已在 iPhone 設定 → Palkie Talkie → 麥克風 授予麥克風權限。如果你的 AI 夥伴有在講話但你聽不到，檢查側邊的音量開關，並確認靜音模式已關閉。若問題持續，寫信給我們，附上你的 iOS 版本和狀況說明。"
+      },
+      {
+        "q": "我想刪除我的帳號。",
+        "a": "打開 App → 更多 → 隱私與資料 → 刪除我的帳號。這會移除你的帳號並登出你。如果你進不去那個畫面，寫信給我們，我們幫你處理。"
+      },
+      {
+        "q": "你的 AI 夥伴話太多／我講話時它不停下來。",
+        "a": "你可以直接開口打斷它講到一半的話，你的 AI 夥伴的聲音會讓出來。如果某個角色一直搶話、或老是說同一句，到角色分頁換一個角色，或寫信給我們，我們會根據真實回報來調整角色提示。"
+      }
+    ]
   }
 }
