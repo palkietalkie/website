@@ -113,10 +113,10 @@
   },
   "pricing": {
     "eyebrow": "方案價格",
-    "teaserTitle": "免費開始，比其他都便宜。",
+    "teaserTitle": "免費開始，價格簡單。",
     "compareCta": "看完整方案 →",
     "pageTitle": "免費開始。App 和網頁，同一個價格。",
-    "pageLead": "多數人從免費的每天 {day} 分鐘（每週 {week} 分鐘）開始。想要更多時，每月 $12.99，比你早就在付的某個習慣還便宜。",
+    "pageLead": "多數人從免費的每天 {day} 分鐘（每週 {week} 分鐘）開始。想要更多時，每月 $17.99，比你早就在付的某個習慣還便宜。",
     "dualCtaNote": "兩種方式都行，同一個帳號，同樣的權限。",
     "perMonth": "/ 月",
     "orPerYear": "或 {yearly} / 年",

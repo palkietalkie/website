@@ -113,10 +113,10 @@
   },
   "pricing": {
     "eyebrow": "价格",
-    "teaserTitle": "免费开始，比别家更便宜。",
+    "teaserTitle": "免费开始，价格简单。",
     "compareCta": "查看完整价格 →",
     "pageTitle": "免费开始。App 和网页同一个价格。",
-    "pageLead": "大多数人从免费的每天 {day} 分钟（每周 {week} 分钟）开始。想要更多时，每月 $12.99，比你早已在花的一个习惯还便宜。",
+    "pageLead": "大多数人从免费的每天 {day} 分钟（每周 {week} 分钟）开始。想要更多时，每月 $17.99，比你早已在花的一个习惯还便宜。",
     "dualCtaNote": "两条路都行，同一个账号，同样的权益。",
     "perMonth": "/ 月",
     "orPerYear": "或 {yearly} / 年",

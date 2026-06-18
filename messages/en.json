@@ -118,10 +118,10 @@
   },
   "pricing": {
     "eyebrow": "Pricing",
-    "teaserTitle": "Free to start. Cheaper than the rest.",
+    "teaserTitle": "Free to start. One simple price.",
     "compareCta": "See full pricing →",
     "pageTitle": "Free to start. One price across the app and the web.",
-    "pageLead": "Most people start with the free {day} min/day ({week} min/week). When you're ready for more, $12.99/month, less than a habit you already pay for.",
+    "pageLead": "Most people start with the free {day} min/day ({week} min/week). When you're ready for more, $17.99/month, less than a habit you already pay for.",
     "dualCtaNote": "Either route works, same account, same access.",
     "perMonth": "/ month",
     "orPerYear": "or {yearly} / year",

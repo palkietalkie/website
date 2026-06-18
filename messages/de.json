@@ -113,10 +113,10 @@
   },
   "pricing": {
     "eyebrow": "Preise",
-    "teaserTitle": "Kostenlos starten. Günstiger als der Rest.",
+    "teaserTitle": "Kostenlos starten. Ein einfacher Preis.",
     "compareCta": "Alle Preise ansehen →",
     "pageTitle": "Kostenlos starten. Ein Preis für App und Web.",
-    "pageLead": "Die meisten starten mit den kostenlosen {day} Min/Tag ({week} Min/Woche). Wenn du mehr willst, $12.99/Monat: weniger als eine Gewohnheit, für die du eh schon zahlst.",
+    "pageLead": "Die meisten starten mit den kostenlosen {day} Min/Tag ({week} Min/Woche). Wenn du mehr willst, $17.99/Monat: weniger als eine Gewohnheit, für die du eh schon zahlst.",
     "dualCtaNote": "Beide Wege funktionieren: gleiches Konto, gleicher Zugang.",
     "perMonth": "/ Monat",
     "orPerYear": "oder {yearly} / Jahr",

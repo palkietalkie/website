@@ -47,6 +47,9 @@ npm run --silent lint
 echo "pre-commit: tsc --noEmit"
 npm run --silent type-check
 
+echo "pre-commit: pricing drift guard"
+node scripts/ci/check_pricing.mjs
+
 # End-to-end: boot the local dev stack so the freshly-committed website serves on :5000 + paired backend/Modal dev infra runs alongside.
 # Skip iOS install since this is the website repo.
 BOOT_SH="$(git rev-parse --show-toplevel)/../scripts/boot.sh"

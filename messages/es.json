@@ -113,10 +113,10 @@
   },
   "pricing": {
     "eyebrow": "Precios",
-    "teaserTitle": "Gratis para empezar. Más barato que el resto.",
+    "teaserTitle": "Empieza gratis. Un precio simple.",
     "compareCta": "Ver precios completos →",
     "pageTitle": "Gratis para empezar. Un solo precio en la app y en la web.",
-    "pageLead": "La mayoría empieza con los {day} min/día gratis ({week} min/semana). Cuando quieras más, $12.99/mes, menos que un hábito que ya pagas.",
+    "pageLead": "La mayoría empieza con los {day} min/día gratis ({week} min/semana). Cuando quieras más, $17.99/mes, menos que un hábito que ya pagas.",
     "dualCtaNote": "Cualquiera de las dos vías funciona: misma cuenta, mismo acceso.",
     "perMonth": "/ mes",
     "orPerYear": "o {yearly} / año",
