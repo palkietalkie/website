@@ -22,4 +22,18 @@ describe("FeatureCard", () => {
     render(<FeatureCard n={12} title="x" body="y" />);
     expect(screen.getByText("12")).toBeInTheDocument();
   });
+
+  it("renders a screenshot when an image is provided", () => {
+    render(
+      <FeatureCard
+        n={1}
+        title="It talks first"
+        body="..."
+        image={{ src: "/screens/01-talk.png", alt: "It talks first" }}
+      />,
+    );
+    expect(screen.getByRole("img", { name: "It talks first" }).getAttribute("src")).toContain(
+      "01-talk",
+    );
+  });
 });

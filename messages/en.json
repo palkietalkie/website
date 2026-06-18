@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "Palkie Talkie",
     "tagline": "You can read this. Saying it is the hard part.",
-    "description": "A voice partner who remembers what you said and shows up in the gaps of your day. No booking. No camera.",
+    "description": "An AI voice partner who remembers what you said and shows up in the gaps of your day. No booking. No camera.",
     "homeTitle": "Palkie Talkie — You can read this. Saying it is the hard part."
   },
   "nav": {
@@ -18,13 +18,13 @@
     },
     "audioSample": {
       "label": "[10-second persona audio sample placeholder]",
-      "spec": "A 10s clip of the AI partner delivering an opening turn (\"Hey — you got into work yet, or still on the walk over?\"). Record by running one dev session against OpenAI Realtime with the test prompt, dumping the audio stream to .wav, and trimming the first 10s in Audacity. Web encodes as .mp3 (preferred) or .aac. File at /public/audio/persona-sample.mp3."
+      "spec": "A 10s clip of the AI partner delivering an opening turn (\"Hey, you got into work yet, or still on the walk over?\"). Record by running one dev session against OpenAI Realtime with the test prompt, dumping the audio stream to .wav, and trimming the first 10s in Audacity. Web encodes as .mp3 (preferred) or .aac. File at /public/audio/persona-sample.mp3."
     }
   },
   "problems": {
     "eyebrow": "The gap",
     "title": "Functional ≠ fluent.",
-    "lead": "You can read English. You can get through the day. The gap is between what's in your head and what comes out of your mouth — and it doesn't close on its own.",
+    "lead": "You can read English. You can get through the day. The gap is between what's in your head and what comes out of your mouth, and it doesn't close on its own.",
     "items": [
       {
         "title": "You miss the jokes",
@@ -32,7 +32,7 @@
       },
       {
         "title": "No time to sit down and study",
-        "body": "Work is work. What's left is fragments — the walk from the train to the office, the bike ride home, the shower, the gym. The moments you can talk out loud without being self-conscious. Most apps want a desk and 30 minutes. You don't have either."
+        "body": "Work is work. What's left is fragments, the walk from the train to the office, the bike ride home, the shower, the gym. The moments you can talk out loud without being self-conscious. Most apps want a desk and 30 minutes. You don't have either."
       },
       {
         "title": "The other tools miss the point",
@@ -45,20 +45,32 @@
     "title": "What you don't have to do.",
     "lead": "The friction is the reason you stopped. Take it out.",
     "items": [
-      { "title": "No booking", "body": "Open it when you have a minute. Close it when you don't." },
-      { "title": "No camera", "body": "Voice only. Walk, ride, shower, talk." },
-      { "title": "No chair, no desk", "body": "Built for the gaps, not for sitting down to study." },
-      { "title": "No smalltalk filler", "body": "Never \"How can I help you today?\" The partner already knows you." }
+      {
+        "title": "No booking",
+        "body": "Open it when you have a minute. Close it when you don't."
+      },
+      {
+        "title": "No camera",
+        "body": "Voice only. Walk, ride, shower, talk."
+      },
+      {
+        "title": "No chair, no desk",
+        "body": "Built for the gaps, not for sitting down to study."
+      },
+      {
+        "title": "No smalltalk filler",
+        "body": "Never \"How can I help you today?\" Your AI partner already knows you."
+      }
     ]
   },
   "features": {
     "eyebrow": "How it feels",
     "title": "Three things that change everything.",
-    "lead": "Cut the cold-start, cut the reset, cut the boring tutor. Talk to a partner who knows you.",
+    "lead": "Cut the cold-start, cut the reset, cut the boring tutor. Talk to an AI partner who knows you.",
     "items": [
       {
         "title": "It talks first",
-        "body": "Open the app and the partner is already speaking — addressing you by name, picking up where you left off. Answer if you want. Just listen if you don't.",
+        "body": "Open the app and your AI partner is already speaking, addressing you by name, picking up where you left off. Answer if you want. Just listen if you don't.",
         "visual": {
           "label": "[Feature visual placeholder]",
           "spec": "Avatar mid-speech, sound waveform under the captions. Square 1:1, ~400×400. Midjourney prompt: 'illustrated character, friendly expression, mid-conversation, warm background, voice-wave element subtle, square, flat illustration style'."
@@ -66,18 +78,18 @@
       },
       {
         "title": "It remembers you",
-        "body": "What you said last week, the joke that landed, the deadline you mentioned, the kid's name. Next conversation, it weaves them back in like a friend would — not like a chatbot reciting a profile.",
+        "body": "What you said last week, the joke that landed, the deadline you mentioned, the kid's name. Next conversation, it weaves them back in like a friend would, not like a chatbot reciting a profile.",
         "visual": {
           "label": "[Feature visual placeholder]",
-          "spec": "Two speech bubbles connected by a soft arc — Friday's bubble references Monday's. Square 1:1. Midjourney prompt: 'two warm speech bubbles connected by curve, soft pastel, suggesting memory thread, flat illustration, square'."
+          "spec": "Two speech bubbles connected by a soft arc, Friday's bubble references Monday's. Square 1:1. Midjourney prompt: 'two warm speech bubbles connected by curve, soft pastel, suggesting memory thread, flat illustration, square'."
         }
       },
       {
         "title": "Real personalities",
-        "body": "Pick a partner who matches the mood — sharp, dry, warm, blunt. They have opinions. They push back when you're wrong. They're funny when you're not trying to be.",
+        "body": "Pick an AI partner who matches the mood, sharp, dry, warm, blunt. They have opinions. They push back when you're wrong. They're funny when you're not trying to be.",
         "visual": {
           "label": "[Feature visual placeholder]",
-          "spec": "4 character portraits in a 2×2 grid, distinct expressions. Square 1:1 overall, each portrait ~200px. Midjourney prompt: 'four illustrated character portraits, distinct personalities — wry, warm, sharp, blunt — 2x2 grid, flat illustration, square'."
+          "spec": "4 character portraits in a 2×2 grid, distinct expressions. Square 1:1 overall, each portrait ~200px. Midjourney prompt: 'four illustrated character portraits, distinct personalities, wry, warm, sharp, blunt, 2x2 grid, flat illustration, square'."
         }
       }
     ]
@@ -85,7 +97,7 @@
   "demo": {
     "eyebrow": "Hear it",
     "title": "10 seconds is enough.",
-    "lead": "This is the opening turn. No greeting filler, no \"how can I help.\" Just a partner who's been waiting for you to walk in.",
+    "lead": "This is the opening turn. No greeting filler, no \"how can I help.\" Just an AI partner who's been waiting for you to walk in.",
     "playLabel": "Play 10-second sample",
     "pauseLabel": "Pause",
     "transcriptLabel": "Transcript"
@@ -95,7 +107,7 @@
     "title": "30 seconds, mic to ear.",
     "videoPlaceholder": {
       "label": "[Demo video placeholder]",
-      "spec": "30s screen-record of one real conversation: open app → AI talks first → user replies → AI references something from a prior session → end. 9:16 portrait (1080×1920) — matches the iPhone aspect the visitor would see. Captions on. Capture via QuickTime's iPhone screen-record (Phone connected → File → New Movie Recording → camera/source = iPhone) or directly on the device via Settings → Control Center → Screen Recording. Host on /public/video/demo.mp4 + a poster frame on /public/video/demo-poster.jpg."
+      "spec": "30s screen-record of one real conversation: open app → AI talks first → user replies → AI references something from a prior session → end. 9:16 portrait (1080×1920), matches the iPhone aspect the visitor would see. Captions on. Capture via QuickTime's iPhone screen-record (Phone connected → File → New Movie Recording → camera/source = iPhone) or directly on the device via Settings → Control Center → Screen Recording. Host on /public/video/demo.mp4 + a poster frame on /public/video/demo-poster.jpg."
     }
   },
   "trust": {
@@ -106,11 +118,11 @@
   },
   "pricing": {
     "eyebrow": "Pricing",
-    "teaserTitle": "Free to start. Cheaper than the rest.",
+    "teaserTitle": "Free to start. One simple price.",
     "compareCta": "See full pricing →",
     "pageTitle": "Free to start. One price across the app and the web.",
-    "pageLead": "Most people start with the free {day} min/day ({week} min/week). When you're ready for more, $12.99/month — less than a habit you already pay for.",
-    "dualCtaNote": "Either route works — same account, same access.",
+    "pageLead": "Most people start with the free {day} min/day ({week} min/week). When you're ready for more, $17.99/month, less than a habit you already pay for.",
+    "dualCtaNote": "Either route works, same account, same access.",
     "perMonth": "/ month",
     "orPerYear": "or {yearly} / year",
     "teaserFree": "{day} min/day, {week} min/week",
@@ -122,17 +134,26 @@
       "free": {
         "name": "Free",
         "cta": "Get started",
-        "includes": ["{day} min/day, reset at local midnight", "{week} min/week, reset Monday"]
+        "includes": [
+          "{day} min/day, reset at local midnight",
+          "{week} min/week, reset Monday"
+        ]
       },
       "individual": {
         "name": "Individual",
         "cta": "Subscribe on web",
-        "includes": ["One user", "Unlimited talk time"]
+        "includes": [
+          "One user",
+          "Unlimited talk time"
+        ]
       },
       "family": {
         "name": "Family",
         "cta": "Subscribe on web",
-        "includes": ["Up to 6 people", "Separate profile + memory for each"]
+        "includes": [
+          "Up to 6 people",
+          "Separate profile + memory for each"
+        ]
       }
     }
   },
@@ -143,19 +164,19 @@
     "items": [
       {
         "q": "Does it work without internet?",
-        "a": "No. The AI runs server-side because phone-sized models can't do natural-paced full-duplex voice yet. If you're underground or on a plane without wifi, it pauses until you're back online."
+        "a": "No, it needs a connection. Your AI partner runs in the cloud, so if you're underground or on a plane without wifi, it pauses until you're back online."
       },
       {
         "q": "Is my voice stored?",
-        "a": "Transcripts and audio are stored under your account so the partner can remember you next conversation. You can opt out of training use during signup. You can wipe everything from More → Privacy & Data."
+        "a": "Transcripts and audio are stored under your account so your AI partner remembers you next time. You can opt out of training use during signup."
       },
       {
         "q": "Can I use it on AirPods during my commute?",
-        "a": "Yes. Bluetooth audio works the same as the phone speaker. The walk from the train station is one of the most common usage patterns we hear from early users."
+        "a": "Yes. Bluetooth audio works just like the phone speaker. The walk from the train station is one of the most common ways people use it."
       },
       {
-        "q": "Will the AI judge my accent?",
-        "a": "No. The partner adapts its speaking speed and corrects gently — only when you ask, or when a mistake is something a friend would actually flag. You set the proficiency level; it respects it."
+        "q": "Will it judge my accent?",
+        "a": "No. Your AI partner adapts its speaking speed and corrects gently, only when you ask or when a mistake is something a friend would actually flag. You set the proficiency level; it respects it."
       },
       {
         "q": "iPhone only?",
@@ -206,7 +227,7 @@
     "submit": "Add me to the waitlist",
     "submitting": "Adding…",
     "thanksTitle": "You're on the list.",
-    "thanksLead": "We'll email you the day it launches — and a couple of times before that with what we're learning, if you don't mind."
+    "thanksLead": "We'll email you the day it launches, and a couple of times before that with what we're learning, if you don't mind."
   },
   "appStore": {
     "label": "Download on the App Store",
@@ -218,6 +239,9 @@
     "home": "Home",
     "faq": "FAQ",
     "waitlist": "Waitlist",
+    "support": "Support",
+    "privacy": "Privacy",
+    "terms": "Terms",
     "contact": "Contact",
     "copyright": "© {year} Palkie Talkie"
   },
@@ -232,7 +256,7 @@
     "canceled": "Checkout canceled. You can try again any time.",
     "step2Title": "Confirm and pay",
     "step2Lead": "You'll be redirected to Stripe's secure checkout. Same account unlocks the app immediately after install.",
-    "checkoutCta": "Continue to checkout — {price}",
+    "checkoutCta": "Continue to checkout, {price}",
     "cancelNote": "Cancel anytime. Access remains until the end of the billing period."
   },
   "success": {
@@ -247,5 +271,46 @@
     "errorTitle": "We couldn't verify your session.",
     "errorFallback": "Try refreshing, or contact support.",
     "backToSignup": "Back to signup"
+  },
+  "support": {
+    "metaTitle": "Support — Palkie Talkie",
+    "metaDescription": "Get help with Palkie Talkie. Email support, subscription management, account deletion, and common questions.",
+    "eyebrow": "Support",
+    "title": "We're here to help.",
+    "ledeBefore": "Real human responses, usually within 24 hours. Send your question to ",
+    "ledeAfter": " or use one of the shortcuts below.",
+    "cards": {
+      "emailTitle": "Email us",
+      "emailBody": "hello@palkietalkie.com, fastest path to a human reply.",
+      "subscriptionTitle": "Manage your subscription",
+      "subscriptionBody": "iPhone Settings → tap your name → Subscriptions → Palkie Talkie. Apple controls the renewal, cancellation, and refund flow for in-app purchases.",
+      "faqTitle": "FAQ",
+      "faqBody": "Common answers: pricing, free-tier limits, supported languages, what your AI partner remembers, privacy.",
+      "privacyTitle": "Privacy & data deletion",
+      "privacyBody": "Delete your data any time from More → Privacy & Data inside the app. Read our full privacy policy."
+    },
+    "quickAnswers": "Quick answers",
+    "items": [
+      {
+        "q": "How do I cancel my subscription?",
+        "a": "On iPhone: open Settings → tap your name at the top → Subscriptions → Palkie Talkie → Cancel Subscription. Apple processes the cancellation; your premium access continues until the end of the current period."
+      },
+      {
+        "q": "How do I get a refund?",
+        "a": "For in-app purchases: request a refund at reportaproblem.apple.com, Apple makes the final decision. For web subscriptions: email us and we'll refund through Stripe."
+      },
+      {
+        "q": "The app crashes or audio doesn't work.",
+        "a": "Check that you granted microphone permission in iPhone Settings → Palkie Talkie → Microphone. If your AI partner plays but you don't hear it, check the volume side switch and that Silent Mode is off. If the issue persists, email us with your iOS version and a description of what happens."
+      },
+      {
+        "q": "I want to delete my account.",
+        "a": "Open the app → More → Privacy & Data → Delete my account. This removes your account and signs you out. If you can't reach the screen, email us and we'll do it for you."
+      },
+      {
+        "q": "Your AI partner is talking too much / not stopping when I do.",
+        "a": "You can interrupt mid-sentence by speaking; your AI partner's audio will yield. If a specific persona keeps overriding pace or saying the same phrase, switch personas from the Persona tab, or email us, we tune persona prompts based on real reports."
+      }
+    ]
   }
 }

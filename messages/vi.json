@@ -1,80 +1,311 @@
 {
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "Bạn đọc được câu này. Nói ra mới là phần khó.",
+    "description": "Một người bạn AI nói chuyện bằng giọng nói, nhớ những gì bạn từng kể và xuất hiện ngay trong những khoảng trống của ngày. Không cần đặt lịch. Không cần bật camera.",
+    "homeTitle": "Palkie Talkie — Bạn đọc được câu này. Nói ra mới là phần khó."
   },
   "nav": {
-    "pricing": "Giá",
+    "pricing": "Bảng giá",
     "subscribe": "Đăng ký",
     "language": "Ngôn ngữ"
   },
   "hero": {
-    "ctaSecondary": "Xem giá",
-    "smallprint": "10 phút miễn phí mỗi ngày. Không cần thẻ. Huỷ bất cứ lúc nào."
+    "smallprint": "Miễn phí {day} phút/ngày, {week} phút/tuần. Không cần thẻ tín dụng. Hủy bất cứ lúc nào.",
+    "visual": {
+      "label": "[Chỗ đặt hình ảnh hero]"
+    },
+    "audioSample": {
+      "label": "[Chỗ đặt mẫu âm thanh persona 10 giây]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "Khoảng cách",
+    "title": "Dùng được không có nghĩa là thành thạo.",
+    "lead": "Bạn đọc được tiếng Anh. Bạn qua được một ngày. Khoảng cách nằm giữa những gì trong đầu bạn và những gì thốt ra khỏi miệng, và nó không tự khép lại.",
+    "items": [
+      {
+        "title": "Bạn bỏ lỡ những câu đùa",
+        "body": "Bạn lo được cả cuộc họp. Nhưng câu nói chêm vào khiến mọi người cười phá lên? Bạn chỉ cười theo. Cuộc trò chuyện thoải mái sau đó? Bạn nghe trang trọng hơn mức bạn muốn. Càng cố gắng, càng lộ ra."
+      },
+      {
+        "title": "Không có thời gian ngồi xuống học",
+        "body": "Làm việc là làm việc. Phần còn lại chỉ là những mảnh vụn: lúc đi bộ từ ga tàu tới văn phòng, đạp xe về nhà, lúc tắm, lúc tập gym. Những khoảnh khắc bạn có thể nói to mà không ngại ngùng. Hầu hết các app đòi một cái bàn và 30 phút. Bạn không có cả hai."
+      },
+      {
+        "title": "Những công cụ khác lạc đề",
+        "body": "Bài tập gõ và dịch không giúp bạn nói được. Trợ lý giọng nói chung chung thì khởi động lại mỗi phiên và chẳng có cá tính gì. Gia sư trực tiếp thì cần đặt lịch và bật camera. Không cái nào cho cảm giác như một cuộc trò chuyện thật với người hiểu bạn."
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "Nó không phải là gì",
+    "title": "Những thứ bạn không phải làm.",
+    "lead": "Chính những rào cản khiến bạn bỏ cuộc. Hãy gỡ chúng đi.",
+    "items": [
+      {
+        "title": "Không cần đặt lịch",
+        "body": "Mở lên khi bạn có một phút rảnh. Đóng lại khi không có."
+      },
+      {
+        "title": "Không cần camera",
+        "body": "Chỉ cần giọng nói. Đi bộ, đạp xe, tắm, nói."
+      },
+      {
+        "title": "Không cần ghế, không cần bàn",
+        "body": "Được tạo ra cho những khoảng trống, không phải để ngồi xuống học."
+      },
+      {
+        "title": "Không nói chuyện phiếm cho có",
+        "body": "Không bao giờ hỏi \"Hôm nay tôi có thể giúp gì cho bạn?\" Người bạn AI của bạn đã hiểu bạn rồi."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Cảm giác ra sao",
+    "title": "Ba điều thay đổi tất cả.",
+    "lead": "Bỏ đi cái khởi động lạnh lùng, bỏ đi việc reset, bỏ đi ông gia sư nhàm chán. Trò chuyện với một người bạn AI hiểu bạn.",
+    "items": [
+      {
+        "title": "Nó nói trước",
+        "body": "Mở app lên và người bạn AI của bạn đã cất tiếng, gọi tên bạn, nối tiếp ngay chỗ bạn dừng lại lần trước. Đáp lại nếu bạn muốn. Cứ lắng nghe nếu bạn không muốn.",
+        "visual": {
+          "label": "[Chỗ đặt hình ảnh tính năng]"
+        }
+      },
+      {
+        "title": "Nó nhớ bạn",
+        "body": "Điều bạn nói tuần trước, câu đùa khiến cả nhóm cười, deadline bạn nhắc tới, tên đứa con. Cuộc trò chuyện lần sau, nó lồng những điều ấy vào như một người bạn thật sự, chứ không như một chatbot đọc lại hồ sơ.",
+        "visual": {
+          "label": "[Chỗ đặt hình ảnh tính năng]"
+        }
+      },
+      {
+        "title": "Cá tính thật sự",
+        "body": "Chọn một người bạn AI hợp với tâm trạng: sắc sảo, khô khan, ấm áp, thẳng thắn. Họ có quan điểm. Họ phản bác khi bạn sai. Họ hài hước cả khi bạn chẳng cố tỏ ra hài hước.",
+        "visual": {
+          "label": "[Chỗ đặt hình ảnh tính năng]"
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "Nghe thử",
+    "title": "10 giây là đủ.",
+    "lead": "Đây là lượt mở đầu. Không lời chào cho có, không câu \"tôi giúp được gì.\" Chỉ là một người bạn AI đã chờ bạn bước vào.",
+    "playLabel": "Phát mẫu 10 giây",
+    "pauseLabel": "Tạm dừng",
+    "transcriptLabel": "Lời thoại"
+  },
+  "video": {
+    "eyebrow": "Xem thử",
+    "title": "30 giây, từ mic tới tai.",
+    "videoPlaceholder": {
+      "label": "[Chỗ đặt video demo]"
+    }
+  },
+  "trust": {
+    "eyebrow": "Được tạo ra đúng cho vấn đề này",
+    "title": "Được làm bởi người đã sống với điều này suốt hai thập kỷ.",
+    "body": "Tiếng Anh dùng được nhưng mắc kẹt không phải là một giả thuyết. Đó là hiện thực hằng ngày của nhà sáng lập suốt hơn 20 năm họp hành, gọi điện, và bỏ lỡ những câu chêm vào. Mọi lựa chọn thiết kế của sản phẩm này đến từ một cuốn sổ ghi \"sao chuyện này vẫn tệ vậy.\"",
+    "waitlistCount": "{count} người trong danh sách chờ"
+  },
   "pricing": {
-    "eyebrow": "Giá",
+    "eyebrow": "Bảng giá",
+    "teaserTitle": "Bắt đầu miễn phí. Một mức giá đơn giản.",
+    "compareCta": "Xem bảng giá đầy đủ →",
+    "pageTitle": "Miễn phí để bắt đầu. Một mức giá cho cả app lẫn web.",
+    "pageLead": "Hầu hết mọi người bắt đầu với gói miễn phí {day} phút/ngày ({week} phút/tuần). Khi bạn sẵn sàng dùng nhiều hơn, $17.99/tháng, ít hơn một thói quen bạn vẫn đang trả tiền.",
+    "dualCtaNote": "Đường nào cũng được, cùng một tài khoản, cùng quyền truy cập.",
     "perMonth": "/ tháng",
     "orPerYear": "hoặc {yearly} / năm",
+    "teaserFree": "{day} phút/ngày, {week} phút/tuần",
+    "teaserPaidLine": "{monthly} / tháng · {yearly} / năm",
+    "teaserFamilyLine": "{monthly} / tháng · {yearly} / năm · tối đa {seats}",
+    "freeAlwaysFree": "Luôn miễn phí",
     "mostPopular": "Phổ biến nhất",
     "tiers": {
       "free": {
         "name": "Miễn phí",
-        "cta": "Tải trên App Store",
+        "cta": "Bắt đầu",
         "includes": [
-          "10 phút/ngày, reset lúc nửa đêm theo giờ địa phương"
+          "{day} phút/ngày, làm mới vào nửa đêm giờ địa phương",
+          "{week} phút/tuần, làm mới vào thứ Hai"
         ]
       },
       "individual": {
         "name": "Cá nhân",
         "cta": "Đăng ký trên web",
         "includes": [
-          "1 người dùng",
-          "Trò chuyện không giới hạn"
+          "Một người dùng",
+          "Thời lượng trò chuyện không giới hạn"
         ]
       },
       "family": {
         "name": "Gia đình",
         "cta": "Đăng ký trên web",
         "includes": [
-          "Đến 6 người",
-          "Mỗi người có hồ sơ + bộ nhớ riêng"
+          "Tối đa 6 người",
+          "Hồ sơ và bộ nhớ riêng cho mỗi người"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "Câu trả lời thật lòng",
+    "title": "Những điều người ta hỏi trước khi cài đặt.",
+    "viewAllCta": "Xem tất cả câu hỏi →",
+    "items": [
+      {
+        "q": "Có dùng được khi không có internet không?",
+        "a": "Không, nó cần kết nối mạng. Người bạn AI của bạn chạy trên đám mây, nên nếu bạn ở dưới lòng đất hay trên máy bay không có wifi, nó sẽ tạm dừng cho tới khi bạn trở lại trực tuyến."
+      },
+      {
+        "q": "Giọng nói của tôi có được lưu lại không?",
+        "a": "Lời thoại và âm thanh được lưu trong tài khoản của bạn để người bạn AI nhớ bạn vào lần sau. Bạn có thể chọn không cho phép dùng dữ liệu để huấn luyện ngay khi đăng ký."
+      },
+      {
+        "q": "Tôi dùng được với AirPods lúc đi làm không?",
+        "a": "Được. Âm thanh Bluetooth hoạt động y như loa điện thoại. Đoạn đi bộ từ ga tàu là một trong những cách dùng phổ biến nhất."
+      },
+      {
+        "q": "Nó có chê giọng của tôi không?",
+        "a": "Không. Người bạn AI của bạn điều chỉnh tốc độ nói và sửa lỗi một cách nhẹ nhàng, chỉ khi bạn yêu cầu hoặc khi lỗi đó là điều một người bạn thật sẽ nhắc. Bạn đặt trình độ; nó tôn trọng điều đó."
+      },
+      {
+        "q": "Chỉ có trên iPhone à?",
+        "a": "Hiện tại chỉ có trên iPhone. Nếu bạn dùng Android, hãy đăng ký vào danh sách chờ và chúng tôi sẽ gửi email cho bạn khi có phiên bản dành cho bạn."
+      },
+      {
+        "q": "Tôi hủy được bất cứ lúc nào không?",
+        "a": "Được. Hủy bất cứ lúc nào; bạn vẫn dùng được cho tới hết kỳ thanh toán hiện tại."
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "Tham gia danh sách chờ",
+    "metaDescription": "Là người đầu tiên biết khi Palkie Talkie ra mắt.",
+    "title": "Tham gia danh sách chờ.",
+    "lead": "App vẫn chưa lên App Store. Cho chúng tôi biết cách liên hệ với bạn, và chúng tôi sẽ báo ngay ngày nó ra mắt.",
+    "fields": {
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "name": "Tên",
+      "namePlaceholder": "Wes",
+      "phone": "Điện thoại bạn sẽ cài đặt",
+      "phoneChoose": "Chọn…",
+      "phoneDesktopPlaceholder": "iPhone 16, Pixel 9, v.v.",
+      "phones": {
+        "iphone_ios_26": "iPhone (iOS 26)",
+        "iphone_ios_18": "iPhone (iOS 18)",
+        "iphone_ios_17": "iPhone (iOS 17)",
+        "iphone_ios_16_or_older": "iPhone (iOS 16 trở về trước)",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12 trở về trước",
+        "other": "Khác"
+      },
+      "nativeLanguage": "Ngôn ngữ mẹ đẻ",
+      "nativeLanguageChoose": "Chọn…",
+      "nativeLanguageOther": "Khác",
+      "multiSelectHint": "Chạm để chọn một hoặc nhiều.",
+      "targetLanguage": "Ngôn ngữ bạn muốn học",
+      "targetLanguageChoose": "Chọn…",
+      "targetLanguageOther": "Khác",
+      "biggestPain": "Điều gì khó nhất khi nói lúc này? (không bắt buộc)",
+      "biggestPainPlaceholder": "Gọi điện thoại. Lần nào tôi cũng đơ ra."
+    },
+    "submit": "Thêm tôi vào danh sách chờ",
+    "submitting": "Đang thêm…",
+    "thanksTitle": "Bạn đã có tên trong danh sách.",
+    "thanksLead": "Chúng tôi sẽ gửi email cho bạn vào ngày ra mắt, và đôi lần trước đó để chia sẻ những gì chúng tôi học được, nếu bạn không phiền."
+  },
   "appStore": {
-    "label": "Tải trên App Store"
+    "label": "Tải trên App Store",
+    "waitlistLabel": "Tham gia danh sách chờ"
   },
   "footer": {
+    "ctaTitle": "Bắt đầu trò chuyện hôm nay.",
+    "ctaLead": "Miễn phí {day} phút/ngày, {week} phút/tuần. Đăng ký bất cứ khi nào bạn sẵn sàng.",
     "home": "Trang chủ",
-    "contact": "Liên hệ"
+    "faq": "FAQ",
+    "waitlist": "Danh sách chờ",
+    "support": "Hỗ trợ",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản",
+    "contact": "Liên hệ",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
     "metaTitle": "Đăng ký",
-    "metaDescription": "Đăng ký Palkie Talkie Cá nhân hoặc Gia đình trên web.",
-    "youPicked": "Gói bạn chọn",
+    "metaDescription": "Đăng ký gói Cá nhân hoặc Gia đình của Palkie Talkie trên web.",
+    "youPicked": "Bạn đã chọn",
     "perMonth": "{amount} / tháng",
     "perYear": "hoặc {amount} / năm",
     "switchToFamily": "Chuyển sang Gia đình →",
     "switchToIndividual": "Chuyển sang Cá nhân →",
-    "canceled": "Thanh toán đã huỷ. Bạn có thể thử lại bất cứ lúc nào.",
-    "checkoutCta": "Tiếp tục thanh toán — {price}",
-    "cancelNote": "Huỷ bất cứ lúc nào. Quyền truy cập vẫn duy trì đến hết chu kỳ thanh toán."
+    "canceled": "Đã hủy thanh toán. Bạn có thể thử lại bất cứ lúc nào.",
+    "step2Title": "Xác nhận và thanh toán",
+    "step2Lead": "Bạn sẽ được chuyển tới trang thanh toán bảo mật của Stripe. Cùng một tài khoản sẽ mở khóa app ngay sau khi cài đặt.",
+    "checkoutCta": "Tiếp tục thanh toán, {price}",
+    "cancelNote": "Hủy bất cứ lúc nào. Bạn vẫn dùng được cho tới hết kỳ thanh toán."
   },
   "success": {
-    "metaTitle": "Xong",
+    "metaTitle": "Bạn đã vào rồi",
     "metaDescription": "Đã xác nhận đăng ký. Tải app để bắt đầu trò chuyện.",
-    "eyebrowOk": "Bạn đã đăng ký",
-    "title": "Giờ thì tải app.",
-    "lead": "Gói đăng ký của bạn đang hoạt động. Palkie Talkie sống trong app.",
-    "instructions": "Đăng nhập bằng email bạn dùng ở đây.",
+    "eyebrowOk": "Bạn đã đăng ký thành công",
+    "title": "Giờ thì tải app nhé.",
+    "lead": "Gói đăng ký của bạn đang hoạt động. App là nơi Palkie Talkie sống.",
+    "instructions": "Đăng nhập bằng đúng email bạn đã dùng ở đây.",
     "note": "Đó là cách chúng tôi liên kết gói đăng ký với tài khoản của bạn.",
-    "eyebrowError": "Ồ",
+    "eyebrowError": "Ơ",
     "errorTitle": "Chúng tôi không xác minh được phiên của bạn.",
-    "errorFallback": "Vui lòng tải lại trang, hoặc liên hệ hỗ trợ.",
-    "backToSignup": "Quay lại trang đăng ký"
+    "errorFallback": "Thử tải lại trang, hoặc liên hệ bộ phận hỗ trợ.",
+    "backToSignup": "Quay lại đăng ký"
+  },
+  "support": {
+    "metaTitle": "Hỗ trợ — Palkie Talkie",
+    "metaDescription": "Nhận trợ giúp với Palkie Talkie. Hỗ trợ qua email, quản lý gói đăng ký, xóa tài khoản, và các câu hỏi thường gặp.",
+    "eyebrow": "Hỗ trợ",
+    "title": "Chúng tôi luôn ở đây để giúp bạn.",
+    "ledeBefore": "Người thật trả lời, thường trong vòng 24 giờ. Gửi câu hỏi của bạn tới ",
+    "ledeAfter": " hoặc dùng một trong các lối tắt bên dưới.",
+    "cards": {
+      "emailTitle": "Gửi email cho chúng tôi",
+      "emailBody": "hello@palkietalkie.com, cách nhanh nhất để được người thật trả lời.",
+      "subscriptionTitle": "Quản lý gói đăng ký của bạn",
+      "subscriptionBody": "Cài đặt iPhone → chạm vào tên bạn → Subscriptions → Palkie Talkie. Apple kiểm soát việc gia hạn, hủy, và hoàn tiền cho các giao dịch trong ứng dụng.",
+      "faqTitle": "FAQ",
+      "faqBody": "Các câu trả lời thường gặp: giá cả, giới hạn gói miễn phí, các ngôn ngữ được hỗ trợ, người bạn AI nhớ những gì, quyền riêng tư.",
+      "privacyTitle": "Quyền riêng tư và xóa dữ liệu",
+      "privacyBody": "Xóa dữ liệu của bạn bất cứ lúc nào trong app tại More → Privacy & Data. Đọc chính sách quyền riêng tư đầy đủ của chúng tôi."
+    },
+    "quickAnswers": "Câu trả lời nhanh",
+    "items": [
+      {
+        "q": "Làm sao để hủy gói đăng ký?",
+        "a": "Trên iPhone: mở Cài đặt → chạm vào tên bạn ở trên cùng → Subscriptions → Palkie Talkie → Cancel Subscription. Apple xử lý việc hủy; quyền truy cập premium của bạn vẫn còn cho tới hết kỳ hiện tại."
+      },
+      {
+        "q": "Làm sao để được hoàn tiền?",
+        "a": "Với giao dịch trong ứng dụng: yêu cầu hoàn tiền tại reportaproblem.apple.com, Apple là bên quyết định cuối cùng. Với gói đăng ký trên web: gửi email cho chúng tôi và chúng tôi sẽ hoàn tiền qua Stripe."
+      },
+      {
+        "q": "App bị treo hoặc âm thanh không hoạt động.",
+        "a": "Kiểm tra xem bạn đã cấp quyền micro trong Cài đặt iPhone → Palkie Talkie → Microphone chưa. Nếu người bạn AI nói nhưng bạn không nghe thấy, kiểm tra nút gạt âm lượng bên cạnh và đảm bảo Chế độ im lặng đang tắt. Nếu vẫn còn lỗi, gửi email cho chúng tôi kèm phiên bản iOS và mô tả điều xảy ra."
+      },
+      {
+        "q": "Tôi muốn xóa tài khoản.",
+        "a": "Mở app → More → Privacy & Data → Delete my account. Thao tác này xóa tài khoản của bạn và đăng xuất bạn. Nếu bạn không vào được màn hình đó, gửi email cho chúng tôi và chúng tôi sẽ làm giúp bạn."
+      },
+      {
+        "q": "Người bạn AI nói quá nhiều / không dừng khi tôi nói.",
+        "a": "Bạn có thể ngắt lời giữa câu bằng cách lên tiếng; âm thanh của người bạn AI sẽ nhường lại. Nếu một persona cụ thể cứ át nhịp hoặc lặp đi lặp lại một câu, hãy đổi persona ở tab Persona, hoặc gửi email cho chúng tôi, chúng tôi tinh chỉnh lời nhắc persona dựa trên phản hồi thực tế."
+      }
+    ]
   }
 }

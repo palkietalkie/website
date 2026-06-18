@@ -1,7 +1,10 @@
 {
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "Kamu bisa membacanya. Mengucapkannya itu bagian yang sulit.",
+    "description": "Partner suara AI yang mengingat apa yang kamu katakan dan hadir di sela-sela harimu. Tanpa booking. Tanpa kamera.",
+    "homeTitle": "Palkie Talkie — Kamu bisa membacanya. Mengucapkannya itu bagian yang sulit."
   },
   "nav": {
     "pricing": "Harga",
@@ -9,72 +12,300 @@
     "language": "Bahasa"
   },
   "hero": {
-    "ctaSecondary": "Lihat harga",
-    "smallprint": "10 menit gratis tiap hari. Tanpa kartu. Bisa berhenti kapan saja."
+    "smallprint": "Gratis {day} mnt/hari, {week} mnt/minggu. Tanpa kartu kredit. Batalkan kapan saja.",
+    "visual": {
+      "label": "[Placeholder visual hero]"
+    },
+    "audioSample": {
+      "label": "[Placeholder sampel audio persona 10 detik]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "Jaraknya",
+    "title": "Fungsional ≠ fasih.",
+    "lead": "Kamu bisa membaca bahasa Inggris. Kamu bisa melewati hari. Jaraknya ada di antara apa yang ada di kepalamu dan apa yang keluar dari mulutmu, dan itu tidak menutup dengan sendirinya.",
+    "items": [
+      {
+        "title": "Kamu kehilangan leluconnya",
+        "body": "Kamu bisa memimpin rapat. Tapi komentar selip yang membuat semua orang tertawa? Kamu cuma ikut senyum. Obrolan santai setelahnya? Suaramu terdengar lebih formal dari yang kamu inginkan. Makin keras kamu berusaha, makin kentara."
+      },
+      {
+        "title": "Tak ada waktu untuk duduk dan belajar",
+        "body": "Kerja ya kerja. Yang tersisa cuma serpihan, jalan kaki dari stasiun ke kantor, naik sepeda pulang, di kamar mandi, di gym. Momen ketika kamu bisa bicara keras tanpa merasa canggung. Kebanyakan aplikasi minta meja dan 30 menit. Kamu tak punya keduanya."
+      },
+      {
+        "title": "Alat lain meleset dari intinya",
+        "body": "Latihan ketuk-dan-terjemahkan tidak membangun kemampuan bicara. Asisten suara generik mereset tiap sesi dan tak punya kepribadian. Tutor langsung butuh booking dan kamera. Tak satu pun terasa seperti percakapan nyata dengan seseorang yang mengenalmu."
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "Apa yang bukan",
+    "title": "Yang tak perlu kamu lakukan.",
+    "lead": "Gesekan itulah alasan kamu berhenti. Singkirkan.",
+    "items": [
+      {
+        "title": "Tanpa booking",
+        "body": "Buka saat kamu punya semenit. Tutup saat tidak."
+      },
+      {
+        "title": "Tanpa kamera",
+        "body": "Suara saja. Jalan, naik kendaraan, mandi, bicara."
+      },
+      {
+        "title": "Tanpa kursi, tanpa meja",
+        "body": "Dibuat untuk sela-sela waktu, bukan untuk duduk belajar."
+      },
+      {
+        "title": "Tanpa basa-basi",
+        "body": "Tak pernah \"Ada yang bisa saya bantu hari ini?\" Partner AI-mu sudah mengenalmu."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Rasanya begini",
+    "title": "Tiga hal yang mengubah segalanya.",
+    "lead": "Buang cold-start, buang reset, buang tutor yang membosankan. Bicara dengan partner AI yang mengenalmu.",
+    "items": [
+      {
+        "title": "Dia bicara duluan",
+        "body": "Buka aplikasinya dan partner AI-mu sudah bicara, menyapamu dengan namamu, melanjutkan dari tempat kalian berhenti. Jawab kalau mau. Dengarkan saja kalau tidak.",
+        "visual": {
+          "label": "[Placeholder visual fitur]"
+        }
+      },
+      {
+        "title": "Dia mengingatmu",
+        "body": "Apa yang kamu katakan minggu lalu, lelucon yang mengena, tenggat yang kamu sebut, nama anakmu. Di percakapan berikutnya, dia merajutnya kembali seperti seorang teman, bukan seperti chatbot yang membaca profil.",
+        "visual": {
+          "label": "[Placeholder visual fitur]"
+        }
+      },
+      {
+        "title": "Kepribadian sungguhan",
+        "body": "Pilih partner AI yang cocok dengan suasana hati, tajam, kalem, hangat, blak-blakan. Mereka punya pendapat. Mereka membantah saat kamu salah. Mereka lucu saat kamu sedang tidak berusaha lucu.",
+        "visual": {
+          "label": "[Placeholder visual fitur]"
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "Dengarkan",
+    "title": "10 detik sudah cukup.",
+    "lead": "Ini giliran pembuka. Tanpa basa-basi sapaan, tanpa \"ada yang bisa saya bantu.\" Cuma partner AI yang sudah menunggumu datang.",
+    "playLabel": "Putar sampel 10 detik",
+    "pauseLabel": "Jeda",
+    "transcriptLabel": "Transkrip"
+  },
+  "video": {
+    "eyebrow": "Lihat",
+    "title": "30 detik, dari mik ke telinga.",
+    "videoPlaceholder": {
+      "label": "[Placeholder video demo]"
+    }
+  },
+  "trust": {
+    "eyebrow": "Dibuat untuk masalah yang persis ini",
+    "title": "Dibuat oleh seseorang yang menjalaninya selama dua dekade.",
+    "body": "Bahasa Inggris yang fungsional-tapi-mentok bukan hipotesis. Itu keseharian sang pendiri selama 20+ tahun rapat, telepon, dan komentar selip yang terlewat. Setiap pilihan desain di produk ini berasal dari catatan \"kenapa ini masih payah.\"",
+    "waitlistCount": "{count} di daftar tunggu"
+  },
   "pricing": {
     "eyebrow": "Harga",
+    "teaserTitle": "Mulai gratis. Satu harga sederhana.",
+    "compareCta": "Lihat harga lengkap →",
+    "pageTitle": "Gratis untuk mulai. Satu harga di seluruh aplikasi dan web.",
+    "pageLead": "Kebanyakan orang mulai dengan gratis {day} mnt/hari ({week} mnt/minggu). Saat kamu siap untuk lebih, $17.99/bulan, lebih murah dari kebiasaan yang sudah kamu bayar.",
+    "dualCtaNote": "Lewat jalur mana pun bisa, akun sama, akses sama.",
     "perMonth": "/ bulan",
     "orPerYear": "atau {yearly} / tahun",
+    "teaserFree": "{day} mnt/hari, {week} mnt/minggu",
+    "teaserPaidLine": "{monthly} / bln · {yearly} / thn",
+    "teaserFamilyLine": "{monthly} / bln · {yearly} / thn · hingga {seats}",
+    "freeAlwaysFree": "Selalu gratis",
     "mostPopular": "Paling populer",
     "tiers": {
       "free": {
         "name": "Gratis",
-        "cta": "Unduh di App Store",
+        "cta": "Mulai",
         "includes": [
-          "10 menit/hari, reset tengah malam waktu lokal"
+          "{day} mnt/hari, reset saat tengah malam waktu setempat",
+          "{week} mnt/minggu, reset hari Senin"
         ]
       },
       "individual": {
         "name": "Individu",
         "cta": "Berlangganan di web",
         "includes": [
-          "1 pengguna",
-          "Bicara tanpa batas"
+          "Satu pengguna",
+          "Waktu bicara tanpa batas"
         ]
       },
       "family": {
         "name": "Keluarga",
         "cta": "Berlangganan di web",
         "includes": [
-          "Sampai 6 orang",
-          "Profil + memori untuk masing-masing"
+          "Hingga 6 orang",
+          "Profil + memori terpisah untuk masing-masing"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "Jawaban jujur",
+    "title": "Hal yang ditanyakan orang sebelum memasang.",
+    "viewAllCta": "Lihat semua FAQ →",
+    "items": [
+      {
+        "q": "Apakah bisa tanpa internet?",
+        "a": "Tidak, butuh koneksi. Partner AI-mu berjalan di cloud, jadi kalau kamu di bawah tanah atau di pesawat tanpa wifi, dia berhenti sampai kamu kembali online."
+      },
+      {
+        "q": "Apakah suaraku disimpan?",
+        "a": "Transkrip dan audio disimpan di akunmu agar partner AI-mu mengingatmu lain kali. Kamu bisa menolak penggunaan untuk pelatihan saat mendaftar."
+      },
+      {
+        "q": "Bisakah aku pakai di AirPods saat perjalanan?",
+        "a": "Bisa. Audio Bluetooth bekerja sama seperti speaker ponsel. Jalan kaki dari stasiun adalah salah satu cara paling umum orang memakainya."
+      },
+      {
+        "q": "Apakah dia akan menilai aksenku?",
+        "a": "Tidak. Partner AI-mu menyesuaikan kecepatan bicaranya dan mengoreksi dengan lembut, hanya saat kamu minta atau saat kesalahan itu memang sesuatu yang akan ditegur teman. Kamu yang menetapkan tingkat kemahiran; dia menghormatinya."
+      },
+      {
+        "q": "iPhone saja?",
+        "a": "iPhone saja untuk saat ini. Kalau kamu pakai Android, gabung daftar tunggu dan kami akan mengirim email saat ada sesuatu untukmu."
+      },
+      {
+        "q": "Bisakah aku batalkan kapan saja?",
+        "a": "Bisa. Batalkan kapan saja; akses berlanjut hingga akhir periode penagihan saat ini."
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "Gabung daftar tunggu",
+    "metaDescription": "Jadi yang pertama tahu saat Palkie Talkie rilis.",
+    "title": "Gabung daftar tunggu.",
+    "lead": "Aplikasinya belum ada di App Store. Beri tahu kami cara menghubungimu, dan kami akan mengabari di hari peluncurannya.",
+    "fields": {
+      "email": "Email",
+      "emailPlaceholder": "kamu@contoh.com",
+      "name": "Nama depan",
+      "namePlaceholder": "Wes",
+      "phone": "Ponsel tempat kamu akan memasangnya",
+      "phoneChoose": "Pilih…",
+      "phoneDesktopPlaceholder": "iPhone 16, Pixel 9, dll.",
+      "phones": {
+        "iphone_ios_26": "iPhone (iOS 26)",
+        "iphone_ios_18": "iPhone (iOS 18)",
+        "iphone_ios_17": "iPhone (iOS 17)",
+        "iphone_ios_16_or_older": "iPhone (iOS 16 atau lebih lama)",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12 atau lebih lama",
+        "other": "Lainnya"
+      },
+      "nativeLanguage": "Bahasa ibu",
+      "nativeLanguageChoose": "Pilih…",
+      "nativeLanguageOther": "Lainnya",
+      "multiSelectHint": "Ketuk untuk memilih satu atau lebih.",
+      "targetLanguage": "Bahasa yang ingin kamu pelajari",
+      "targetLanguageChoose": "Pilih…",
+      "targetLanguageOther": "Lainnya",
+      "biggestPain": "Apa yang paling sulit soal berbicara saat ini? (opsional)",
+      "biggestPainPlaceholder": "Telepon. Aku selalu beku tiap kali."
+    },
+    "submit": "Tambahkan aku ke daftar tunggu",
+    "submitting": "Menambahkan…",
+    "thanksTitle": "Kamu sudah masuk daftar.",
+    "thanksLead": "Kami akan mengirim email di hari peluncurannya, dan beberapa kali sebelumnya tentang apa yang kami pelajari, kalau kamu tak keberatan."
+  },
   "appStore": {
-    "label": "Unduh di App Store"
+    "label": "Unduh di App Store",
+    "waitlistLabel": "Gabung daftar tunggu"
   },
   "footer": {
+    "ctaTitle": "Mulai bicara hari ini.",
+    "ctaLead": "Gratis {day} mnt/hari, {week} mnt/minggu. Berlangganan kapan pun kamu siap.",
     "home": "Beranda",
-    "contact": "Kontak"
+    "faq": "FAQ",
+    "waitlist": "Daftar tunggu",
+    "support": "Dukungan",
+    "privacy": "Privasi",
+    "terms": "Ketentuan",
+    "contact": "Kontak",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
     "metaTitle": "Berlangganan",
-    "metaDescription": "Berlangganan Palkie Talkie Individu atau Keluarga lewat web.",
-    "youPicked": "Paket pilihanmu",
-    "perMonth": "{amount} / bulan",
+    "metaDescription": "Berlangganan Palkie Talkie Individu atau Keluarga di web.",
+    "youPicked": "Kamu memilih",
+    "perMonth": "{amount} / bln",
     "perYear": "atau {amount} / tahun",
-    "switchToFamily": "Ganti ke Keluarga →",
-    "switchToIndividual": "Ganti ke Individu →",
-    "canceled": "Pembayaran dibatalkan. Bisa coba lagi kapan saja.",
-    "checkoutCta": "Lanjutkan ke pembayaran — {price}",
-    "cancelNote": "Bisa berhenti kapan saja. Akses tetap sampai akhir periode tagihan."
+    "switchToFamily": "Beralih ke Keluarga →",
+    "switchToIndividual": "Beralih ke Individu →",
+    "canceled": "Checkout dibatalkan. Kamu bisa coba lagi kapan saja.",
+    "step2Title": "Konfirmasi dan bayar",
+    "step2Lead": "Kamu akan diarahkan ke checkout aman Stripe. Akun yang sama membuka aplikasi langsung setelah pemasangan.",
+    "checkoutCta": "Lanjut ke checkout, {price}",
+    "cancelNote": "Batalkan kapan saja. Akses tetap ada hingga akhir periode penagihan."
   },
   "success": {
-    "metaTitle": "Selesai",
-    "metaDescription": "Langganan dikonfirmasi. Unduh aplikasi dan mulai bicara.",
+    "metaTitle": "Kamu sudah masuk",
+    "metaDescription": "Langganan dikonfirmasi. Unduh aplikasinya untuk mulai bicara.",
     "eyebrowOk": "Kamu sudah berlangganan",
     "title": "Sekarang unduh aplikasinya.",
-    "lead": "Langgananmu aktif. Palkie Talkie ada di dalam aplikasi.",
-    "instructions": "Masuk dengan email yang kamu pakai di sini.",
-    "note": "Begitulah cara kami menautkan langganan ke akunmu.",
+    "lead": "Langgananmu sudah aktif. Aplikasinya adalah tempat Palkie Talkie tinggal.",
+    "instructions": "Masuk dengan email yang sama seperti yang kamu pakai di sini.",
+    "note": "Begitulah cara kami menautkan langgananmu ke akunmu.",
     "eyebrowError": "Hmm",
-    "errorTitle": "Sesi kamu tidak bisa kami verifikasi.",
-    "errorFallback": "Muat ulang halaman, atau hubungi dukungan.",
+    "errorTitle": "Kami tak bisa memverifikasi sesimu.",
+    "errorFallback": "Coba muat ulang, atau hubungi dukungan.",
     "backToSignup": "Kembali ke pendaftaran"
+  },
+  "support": {
+    "metaTitle": "Dukungan — Palkie Talkie",
+    "metaDescription": "Dapatkan bantuan untuk Palkie Talkie. Dukungan email, pengelolaan langganan, penghapusan akun, dan pertanyaan umum.",
+    "eyebrow": "Dukungan",
+    "title": "Kami siap membantu.",
+    "ledeBefore": "Balasan dari manusia sungguhan, biasanya dalam 24 jam. Kirim pertanyaanmu ke ",
+    "ledeAfter": " atau gunakan salah satu pintasan di bawah.",
+    "cards": {
+      "emailTitle": "Email kami",
+      "emailBody": "hello@palkietalkie.com, jalur tercepat untuk balasan dari manusia.",
+      "subscriptionTitle": "Kelola langgananmu",
+      "subscriptionBody": "Pengaturan iPhone → ketuk namamu → Langganan → Palkie Talkie. Apple mengatur alur perpanjangan, pembatalan, dan pengembalian dana untuk pembelian dalam aplikasi.",
+      "faqTitle": "FAQ",
+      "faqBody": "Jawaban umum: harga, batas tier gratis, bahasa yang didukung, apa yang diingat partner AI-mu, privasi.",
+      "privacyTitle": "Privasi & penghapusan data",
+      "privacyBody": "Hapus datamu kapan saja dari More → Privacy & Data di dalam aplikasi. Baca kebijakan privasi lengkap kami."
+    },
+    "quickAnswers": "Jawaban cepat",
+    "items": [
+      {
+        "q": "Bagaimana cara membatalkan langgananku?",
+        "a": "Di iPhone: buka Pengaturan → ketuk namamu di atas → Langganan → Palkie Talkie → Batalkan Langganan. Apple memproses pembatalannya; akses premium-mu berlanjut hingga akhir periode saat ini."
+      },
+      {
+        "q": "Bagaimana cara mendapat pengembalian dana?",
+        "a": "Untuk pembelian dalam aplikasi: ajukan pengembalian dana di reportaproblem.apple.com, Apple yang membuat keputusan akhir. Untuk langganan web: email kami dan kami akan mengembalikan dana lewat Stripe."
+      },
+      {
+        "q": "Aplikasinya mogok atau audionya tak berfungsi.",
+        "a": "Pastikan kamu memberi izin mikrofon di Pengaturan iPhone → Palkie Talkie → Mikrofon. Kalau partner AI-mu bicara tapi kamu tak mendengarnya, periksa sakelar volume di samping dan pastikan Mode Senyap mati. Kalau masalahnya berlanjut, email kami dengan versi iOS-mu dan deskripsi apa yang terjadi."
+      },
+      {
+        "q": "Aku ingin menghapus akunku.",
+        "a": "Buka aplikasi → More → Privacy & Data → Delete my account. Ini menghapus akunmu dan mengeluarkanmu. Kalau kamu tak bisa mencapai layar itu, email kami dan kami akan melakukannya untukmu."
+      },
+      {
+        "q": "Partner AI-ku bicara terlalu banyak / tak berhenti saat aku bicara.",
+        "a": "Kamu bisa menyela di tengah kalimat dengan berbicara; audio partner AI-mu akan mengalah. Kalau persona tertentu terus mendominasi tempo atau mengulang frasa yang sama, ganti persona dari tab Persona, atau email kami, kami menyetel prompt persona berdasarkan laporan nyata."
+      }
+    ]
   }
 }

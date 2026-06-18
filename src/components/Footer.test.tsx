@@ -33,6 +33,22 @@ describe("Footer", () => {
     ).toMatch(new RegExp(`^mailto:${SUPPORT_EMAIL}(\\?subject=.*)?$`));
   });
 
+  it("links to the Support, Privacy, and Terms pages", () => {
+    renderWithI18n(<Footer />);
+    expect(screen.getByRole("link", { name: enMessages.footer.support })).toHaveAttribute(
+      "href",
+      "/support",
+    );
+    expect(screen.getByRole("link", { name: enMessages.footer.privacy })).toHaveAttribute(
+      "href",
+      "/privacy",
+    );
+    expect(screen.getByRole("link", { name: enMessages.footer.terms })).toHaveAttribute(
+      "href",
+      "/terms",
+    );
+  });
+
   it("renders a copyright line containing the current year", () => {
     renderWithI18n(<Footer />);
     const year = String(new Date().getFullYear());

@@ -1,7 +1,10 @@
 {
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "读你都会，难的是开口说。",
+    "description": "一个记得你说过什么的 AI 语音搭子，在你一天的碎片时间里出现。无需预约，无需开摄像头。",
+    "homeTitle": "Palkie Talkie — 读你都会，难的是开口说。"
   },
   "nav": {
     "pricing": "价格",
@@ -9,72 +12,300 @@
     "language": "语言"
   },
   "hero": {
-    "ctaSecondary": "查看价格",
-    "smallprint": "每天免费10分钟。无需信用卡。随时取消。"
+    "smallprint": "免费每天 {day} 分钟，每周 {week} 分钟。无需信用卡，随时取消。",
+    "visual": {
+      "label": "[首屏主视觉占位图]"
+    },
+    "audioSample": {
+      "label": "[10 秒角色语音示例占位]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "差距",
+    "title": "能用 ≠ 流利。",
+    "lead": "你看得懂英语，也能应付一天。差距在于脑子里想的和嘴里说出来的不一样，而这道坎不会自己消失。",
+    "items": [
+      {
+        "title": "你接不住那些梗",
+        "body": "会议你能撑下来。但那句逗得全场大笑的插话呢？你只是跟着笑。会后随意的闲聊呢？你说得比想象中正式多了。越用力，越露馅。"
+      },
+      {
+        "title": "没时间坐下来学",
+        "body": "上班就是上班。剩下的只有碎片，从车站走到公司的路上、骑车回家、洗澡、健身房。那些你能放声说话又不尴尬的时刻。大多数 App 要你坐到桌前花上 30 分钟，可这两样你都没有。"
+      },
+      {
+        "title": "别的工具没说到点上",
+        "body": "点一点、翻译一下的练习练不出口语。通用语音助手每次都重置，毫无个性。真人老师要预约还要开摄像头。没有一个像在跟一个懂你的人真正聊天。"
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "它不是什么",
+    "title": "你不必再做的事。",
+    "lead": "正是这些麻烦让你放弃。把它们拿掉。",
+    "items": [
+      {
+        "title": "无需预约",
+        "body": "有一分钟就打开，没空就关掉。"
+      },
+      {
+        "title": "无需摄像头",
+        "body": "只用语音。走路、骑车、洗澡，随时聊。"
+      },
+      {
+        "title": "无需桌椅",
+        "body": "为碎片时间而生，不是为坐下苦学。"
+      },
+      {
+        "title": "没有客套填充",
+        "body": "永远不说「今天有什么能帮你的吗？」你的 AI 搭子早就懂你。"
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "它的感觉",
+    "title": "三件改变一切的事。",
+    "lead": "去掉冷启动，去掉每次重置，去掉无聊的老师。和一个懂你的 AI 搭子聊天。",
+    "items": [
+      {
+        "title": "它先开口",
+        "body": "打开 App，你的 AI 搭子已经在说话了，叫着你的名字，接着上次没聊完的往下说。想回就回，不想回就听着。",
+        "visual": {
+          "label": "[功能视觉占位图]"
+        }
+      },
+      {
+        "title": "它记得你",
+        "body": "你上周说的话、那个接得漂亮的梗、你提过的截止日期、孩子的名字。下次聊天，它会像朋友一样把这些自然地织进对话，而不是像聊天机器人那样照着资料念。",
+        "visual": {
+          "label": "[功能视觉占位图]"
+        }
+      },
+      {
+        "title": "真实的个性",
+        "body": "挑一个对味的 AI 搭子，犀利、冷幽默、温暖、直率。他们有自己的看法。你说错了他们会反驳。你不刻意搞笑时，他们偏偏很好笑。",
+        "visual": {
+          "label": "[功能视觉占位图]"
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "听一听",
+    "title": "10 秒就够了。",
+    "lead": "这就是开场的第一句。没有寒暄填充，没有「有什么能帮你的」。只有一个一直等着你走进来的 AI 搭子。",
+    "playLabel": "播放 10 秒示例",
+    "pauseLabel": "暂停",
+    "transcriptLabel": "文字稿"
+  },
+  "video": {
+    "eyebrow": "看一看",
+    "title": "30 秒，从开口到入耳。",
+    "videoPlaceholder": {
+      "label": "[演示视频占位]"
+    }
+  },
+  "trust": {
+    "eyebrow": "为这个问题量身打造",
+    "title": "由一个亲历二十年的人打造。",
+    "body": "卡在「能用却不流利」的英语不是假设。这是创始人 20 多年来的日常，无数次会议、电话和漏掉的插话。这款产品的每一个设计决定，都来自一本写满「为什么这事还是这么难受」的笔记。",
+    "waitlistCount": "已有 {count} 人在候补名单"
+  },
   "pricing": {
     "eyebrow": "价格",
+    "teaserTitle": "免费开始，价格简单。",
+    "compareCta": "查看完整价格 →",
+    "pageTitle": "免费开始。App 和网页同一个价格。",
+    "pageLead": "大多数人从免费的每天 {day} 分钟（每周 {week} 分钟）开始。想要更多时，每月 $17.99，比你早已在花的一个习惯还便宜。",
+    "dualCtaNote": "两条路都行，同一个账号，同样的权益。",
     "perMonth": "/ 月",
     "orPerYear": "或 {yearly} / 年",
+    "teaserFree": "每天 {day} 分钟，每周 {week} 分钟",
+    "teaserPaidLine": "{monthly} / 月 · {yearly} / 年",
+    "teaserFamilyLine": "{monthly} / 月 · {yearly} / 年 · 最多 {seats} 人",
+    "freeAlwaysFree": "永久免费",
     "mostPopular": "最受欢迎",
     "tiers": {
       "free": {
-        "name": "免费",
-        "cta": "在 App Store 下载",
+        "name": "免费版",
+        "cta": "立即开始",
         "includes": [
-          "每天10分钟,本地时间0点重置"
+          "每天 {day} 分钟，本地午夜重置",
+          "每周 {week} 分钟，周一重置"
         ]
       },
       "individual": {
         "name": "个人版",
         "cta": "在网页订阅",
         "includes": [
-          "1位用户",
-          "畅谈无限"
+          "单人使用",
+          "畅聊不限时"
         ]
       },
       "family": {
         "name": "家庭版",
         "cta": "在网页订阅",
         "includes": [
-          "最多6人",
-          "每人独立的个人资料 + 记忆"
+          "最多 6 人",
+          "每人独立的资料和记忆"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "实话实说",
+    "title": "安装前大家常问的事。",
+    "viewAllCta": "查看全部常见问题 →",
+    "items": [
+      {
+        "q": "没网能用吗？",
+        "a": "不能，需要联网。你的 AI 搭子运行在云端，所以如果你在地下或在没有 wifi 的飞机上，它会暂停，直到你重新联网。"
+      },
+      {
+        "q": "我的声音会被保存吗？",
+        "a": "文字稿和音频会保存在你的账号下，好让你的 AI 搭子下次还记得你。你可以在注册时选择不参与训练用途。"
+      },
+      {
+        "q": "通勤时能用 AirPods 吗？",
+        "a": "可以。Bluetooth 音频和手机扬声器一样好使。从车站走过去的那段路，正是大家最常用它的场景之一。"
+      },
+      {
+        "q": "它会嫌弃我的口音吗？",
+        "a": "不会。你的 AI 搭子会调整语速、温和地纠正，只在你主动问、或某个错误是朋友真会提醒你时才出手。难度等级由你设定，它会照办。"
+      },
+      {
+        "q": "只支持 iPhone 吗？",
+        "a": "目前只支持 iPhone。如果你用 Android，加入候补名单，等有适合你的版本时我们会发邮件通知你。"
+      },
+      {
+        "q": "可以随时取消吗？",
+        "a": "可以。随时取消，权益会持续到当前计费周期结束。"
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "加入候补名单",
+    "metaDescription": "第一时间知道 Palkie Talkie 上线。",
+    "title": "加入候补名单。",
+    "lead": "App 还没上 App Store。告诉我们怎么联系你，上线当天就通知你。",
+    "fields": {
+      "email": "邮箱",
+      "emailPlaceholder": "you@example.com",
+      "name": "名字",
+      "namePlaceholder": "Wes",
+      "phone": "你打算安装的手机",
+      "phoneChoose": "请选择…",
+      "phoneDesktopPlaceholder": "iPhone 16、Pixel 9 等",
+      "phones": {
+        "iphone_ios_26": "iPhone（iOS 26）",
+        "iphone_ios_18": "iPhone（iOS 18）",
+        "iphone_ios_17": "iPhone（iOS 17）",
+        "iphone_ios_16_or_older": "iPhone（iOS 16 或更早）",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12 或更早",
+        "other": "其他"
+      },
+      "nativeLanguage": "母语（可多选）",
+      "nativeLanguageChoose": "请选择…",
+      "nativeLanguageOther": "其他",
+      "multiSelectHint": "点选一个或多个。",
+      "targetLanguage": "你想学的语言",
+      "targetLanguageChoose": "请选择…",
+      "targetLanguageOther": "其他",
+      "biggestPain": "现在开口说，最难的是什么？（选填）",
+      "biggestPainPlaceholder": "打电话。我每次都僵住。"
+    },
+    "submit": "把我加入候补名单",
+    "submitting": "正在加入…",
+    "thanksTitle": "你已在名单上。",
+    "thanksLead": "上线当天我们会发邮件给你，如果你不介意，之前也会发上几封，分享我们的一些心得。"
+  },
   "appStore": {
-    "label": "在 App Store 下载"
+    "label": "在 App Store 下载",
+    "waitlistLabel": "加入候补名单"
   },
   "footer": {
+    "ctaTitle": "今天就开口聊。",
+    "ctaLead": "免费每天 {day} 分钟，每周 {week} 分钟。准备好了随时订阅。",
     "home": "首页",
-    "contact": "联系我们"
+    "faq": "常见问题",
+    "waitlist": "候补名单",
+    "support": "支持",
+    "privacy": "隐私",
+    "terms": "条款",
+    "contact": "联系我们",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
     "metaTitle": "订阅",
     "metaDescription": "在网页订阅 Palkie Talkie 个人版或家庭版。",
-    "youPicked": "你选择的方案",
+    "youPicked": "你选择了",
     "perMonth": "{amount} / 月",
     "perYear": "或 {amount} / 年",
     "switchToFamily": "切换到家庭版 →",
     "switchToIndividual": "切换到个人版 →",
-    "canceled": "结账已取消。你随时可以重试。",
-    "checkoutCta": "继续结账 — {price}",
-    "cancelNote": "随时取消。访问权限保留到当前计费周期结束。"
+    "canceled": "结账已取消。你可以随时再试。",
+    "step2Title": "确认并付款",
+    "step2Lead": "你将跳转到 Stripe 的安全结账页。安装后用同一个账号即可解锁 App。",
+    "checkoutCta": "继续结账，{price}",
+    "cancelNote": "随时取消。权益保留到计费周期结束。"
   },
   "success": {
-    "metaTitle": "完成订阅",
-    "metaDescription": "订阅已确认。下载应用开始对话。",
+    "metaTitle": "你已加入",
+    "metaDescription": "订阅已确认。下载 App 开始聊天。",
     "eyebrowOk": "你已订阅",
-    "title": "现在下载应用。",
-    "lead": "订阅已激活。Palkie Talkie 的本体是应用。",
-    "instructions": "用你在这里使用的同一个邮箱登录。",
-    "note": "这就是我们把订阅和账户对应起来的方式。",
+    "title": "现在下载 App。",
+    "lead": "你的订阅已生效。Palkie Talkie 就住在 App 里。",
+    "instructions": "用你在这里填的同一个邮箱登录。",
+    "note": "这样我们才能把你的订阅和账号关联起来。",
     "eyebrowError": "嗯",
     "errorTitle": "我们无法验证你的会话。",
-    "errorFallback": "请刷新页面,或联系客服。",
+    "errorFallback": "刷新一下试试，或联系客服。",
     "backToSignup": "返回订阅页"
+  },
+  "support": {
+    "metaTitle": "支持 — Palkie Talkie",
+    "metaDescription": "获取 Palkie Talkie 的帮助。邮件支持、订阅管理、账号删除以及常见问题。",
+    "eyebrow": "支持",
+    "title": "我们随时帮你。",
+    "ledeBefore": "真人回复，通常在 24 小时内。把你的问题发到 ",
+    "ledeAfter": "，或使用下面的快捷入口。",
+    "cards": {
+      "emailTitle": "给我们发邮件",
+      "emailBody": "hello@palkietalkie.com，最快得到真人回复的方式。",
+      "subscriptionTitle": "管理你的订阅",
+      "subscriptionBody": "iPhone 设置 → 点你的名字 → 订阅 → Palkie Talkie。App 内购的续订、取消和退款流程由 Apple 掌管。",
+      "faqTitle": "常见问题",
+      "faqBody": "常见解答：价格、免费版限制、支持的语言、你的 AI 搭子会记住什么、隐私。",
+      "privacyTitle": "隐私与数据删除",
+      "privacyBody": "随时在 App 内的「更多 → 隐私与数据」删除你的数据。阅读我们的完整隐私政策。"
+    },
+    "quickAnswers": "快速解答",
+    "items": [
+      {
+        "q": "我怎么取消订阅？",
+        "a": "在 iPhone 上：打开设置 → 点顶部你的名字 → 订阅 → Palkie Talkie → 取消订阅。取消由 Apple 处理；你的高级权益会持续到当前周期结束。"
+      },
+      {
+        "q": "我怎么退款？",
+        "a": "App 内购：在 reportaproblem.apple.com 申请退款，最终由 Apple 决定。网页订阅：给我们发邮件，我们会通过 Stripe 退款。"
+      },
+      {
+        "q": "App 崩溃或没声音。",
+        "a": "检查你是否在 iPhone 设置 → Palkie Talkie → 麦克风 里授予了麦克风权限。如果你的 AI 搭子在说话但你听不到，检查侧面的音量开关，并确认静音模式已关闭。若问题仍在，给我们发邮件，附上你的 iOS 版本和具体情况描述。"
+      },
+      {
+        "q": "我想删除账号。",
+        "a": "打开 App → 更多 → 隐私与数据 → 删除我的账号。这会移除你的账号并退出登录。如果你打不开这个页面，给我们发邮件，我们替你处理。"
+      },
+      {
+        "q": "你的 AI 搭子说太多 / 我说话时它不停。",
+        "a": "你可以直接开口打断它说到一半的话，你的 AI 搭子的声音会让位给你。如果某个角色一直抢节奏或反复说同一句话，到角色标签页换一个角色，或给我们发邮件，我们会根据真实反馈调整角色提示词。"
+      }
+    ]
   }
 }

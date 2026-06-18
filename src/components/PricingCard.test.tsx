@@ -5,8 +5,8 @@ import { enMessages, renderWithI18n } from "@/test/render-with-i18n";
 
 const baseProps = {
   name: "Individual",
-  monthly: "$12.99",
-  yearly: "$89",
+  monthly: "$17.99",
+  yearly: "$83.99",
   includes: ["One user", "Unlimited talk time"],
   cta: "Subscribe on web",
   href: "/signup?tier=individual",
@@ -20,8 +20,8 @@ describe("PricingCard", () => {
 
   it("shows monthly price and yearly price", () => {
     renderWithI18n(<PricingCard {...baseProps} />);
-    expect(screen.getByText("$12.99")).toBeInTheDocument();
-    expect(screen.getByText(/or \$89 \/ year/)).toBeInTheDocument();
+    expect(screen.getByText("$17.99")).toBeInTheDocument();
+    expect(screen.getByText(/or \$83.99 \/ year/)).toBeInTheDocument();
   });
 
   it("renders each included feature", () => {

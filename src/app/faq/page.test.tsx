@@ -16,4 +16,9 @@ describe("FaqPage", () => {
       expect(screen.getByText(item.q)).toBeInTheDocument();
     }
   });
+  it("renders a download/waitlist CTA so an iPhone-only reader can act", () => {
+    renderWithI18n(<FaqPage />);
+    // AppStoreButton renders "Download on the App Store" or "Join the waitlist" depending on launch state. The page body adds one and the Footer has another, so assert at least one is present.
+    expect(screen.getAllByRole("link", { name: /app store|waitlist/i }).length).toBeGreaterThan(0);
+  });
 });

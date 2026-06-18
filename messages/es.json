@@ -1,7 +1,10 @@
 {
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "Esto lo puedes leer. Lo difícil es decirlo.",
+    "description": "Un compañero de voz con IA que recuerda lo que dijiste y aparece en los huecos de tu día. Sin reservas. Sin cámara.",
+    "homeTitle": "Palkie Talkie — Esto lo puedes leer. Lo difícil es decirlo."
   },
   "nav": {
     "pricing": "Precios",
@@ -9,22 +12,126 @@
     "language": "Idioma"
   },
   "hero": {
-    "ctaSecondary": "Ver precios",
-    "smallprint": "10 min gratis al día. Sin tarjeta. Cancela cuando quieras."
+    "smallprint": "Gratis {day} min/día, {week} min/semana. Sin tarjeta. Cancela cuando quieras.",
+    "visual": {
+      "label": "[Marcador de imagen principal]"
+    },
+    "audioSample": {
+      "label": "[Marcador de muestra de audio de persona de 10 segundos]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "La brecha",
+    "title": "Funcional ≠ fluido.",
+    "lead": "Sabes leer inglés. Sabes salir del paso. La brecha está entre lo que tienes en la cabeza y lo que sale de tu boca, y no se cierra sola.",
+    "items": [
+      {
+        "title": "Se te escapan los chistes",
+        "body": "Aguantas la reunión. Pero ¿ese comentario al margen que hizo reír a todos? Sonreíste por inercia. ¿La charla informal de después? Sonaste más formal de lo que querías. Cuanto más te esfuerzas, más se nota."
+      },
+      {
+        "title": "No hay tiempo para sentarse a estudiar",
+        "body": "El trabajo es trabajo. Lo que queda son fragmentos: la caminata del tren a la oficina, el regreso en bici, la ducha, el gym. Los momentos en que puedes hablar en voz alta sin que te dé vergüenza. La mayoría de las apps quieren un escritorio y 30 minutos. Tú no tienes ninguno de los dos."
+      },
+      {
+        "title": "Las otras herramientas no dan en el clavo",
+        "body": "Los ejercicios de tocar y traducir no te hacen hablar. Los asistentes de voz genéricos se reinician en cada sesión y no tienen personalidad. Los tutores en vivo necesitan una reserva y una cámara. Ninguno se siente como una conversación de verdad con alguien que te conoce."
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "Lo que no es",
+    "title": "Lo que no tienes que hacer.",
+    "lead": "La fricción es la razón por la que lo dejaste. Quítala.",
+    "items": [
+      {
+        "title": "Sin reservas",
+        "body": "Ábrelo cuando tengas un minuto. Ciérralo cuando no."
+      },
+      {
+        "title": "Sin cámara",
+        "body": "Solo voz. Camina, pedalea, dúchate, habla."
+      },
+      {
+        "title": "Sin silla, sin escritorio",
+        "body": "Hecho para los huecos, no para sentarse a estudiar."
+      },
+      {
+        "title": "Sin relleno de charla vacía",
+        "body": "Nunca un \"¿En qué te puedo ayudar hoy?\" Tu compañero de IA ya te conoce."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Cómo se siente",
+    "title": "Tres cosas que lo cambian todo.",
+    "lead": "Corta el arranque en frío, corta el reinicio, corta el tutor aburrido. Habla con un compañero de IA que te conoce.",
+    "items": [
+      {
+        "title": "Habla primero",
+        "body": "Abre la app y tu compañero de IA ya está hablando: te llama por tu nombre y retoma donde lo dejaste. Responde si quieres. Solo escucha si no.",
+        "visual": {
+          "label": "[Marcador de imagen de función]"
+        }
+      },
+      {
+        "title": "Te recuerda",
+        "body": "Lo que dijiste la semana pasada, el chiste que cayó bien, la fecha límite que mencionaste, el nombre del peque. En la siguiente conversación lo entreteje de nuevo como lo haría un amigo, no como un chatbot recitando un perfil.",
+        "visual": {
+          "label": "[Marcador de imagen de función]"
+        }
+      },
+      {
+        "title": "Personalidades reales",
+        "body": "Elige un compañero de IA que vaya con tu ánimo: agudo, seco, cálido, directo. Tienen opiniones. Te llevan la contraria cuando te equivocas. Son graciosos cuando tú no lo intentas.",
+        "visual": {
+          "label": "[Marcador de imagen de función]"
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "Escúchalo",
+    "title": "Con 10 segundos basta.",
+    "lead": "Este es el turno de apertura. Sin relleno de saludo, sin \"en qué te ayudo\". Solo un compañero de IA que estaba esperando a que llegaras.",
+    "playLabel": "Reproducir muestra de 10 segundos",
+    "pauseLabel": "Pausar",
+    "transcriptLabel": "Transcripción"
+  },
+  "video": {
+    "eyebrow": "Míralo",
+    "title": "30 segundos, del micro al oído.",
+    "videoPlaceholder": {
+      "label": "[Marcador de video demostrativo]"
+    }
+  },
+  "trust": {
+    "eyebrow": "Hecho para este problema exacto",
+    "title": "Creado por alguien que lo vivió durante dos décadas.",
+    "body": "El inglés funcional pero estancado no es una hipótesis. Es la realidad diaria del fundador a lo largo de más de 20 años de reuniones, llamadas y comentarios al margen que se le escaparon. Cada decisión de diseño de este producto sale de un cuaderno de \"por qué esto sigue siendo un fastidio\".",
+    "waitlistCount": "{count} en la lista de espera"
+  },
   "pricing": {
     "eyebrow": "Precios",
+    "teaserTitle": "Empieza gratis. Un precio simple.",
+    "compareCta": "Ver precios completos →",
+    "pageTitle": "Gratis para empezar. Un solo precio en la app y en la web.",
+    "pageLead": "La mayoría empieza con los {day} min/día gratis ({week} min/semana). Cuando quieras más, $17.99/mes, menos que un hábito que ya pagas.",
+    "dualCtaNote": "Cualquiera de las dos vías funciona: misma cuenta, mismo acceso.",
     "perMonth": "/ mes",
     "orPerYear": "o {yearly} / año",
-    "mostPopular": "Más popular",
+    "teaserFree": "{day} min/día, {week} min/semana",
+    "teaserPaidLine": "{monthly} / mes · {yearly} / año",
+    "teaserFamilyLine": "{monthly} / mes · {yearly} / año · hasta {seats}",
+    "freeAlwaysFree": "Siempre gratis",
+    "mostPopular": "El más popular",
     "tiers": {
       "free": {
         "name": "Gratis",
-        "cta": "Descargar en App Store",
+        "cta": "Empezar",
         "includes": [
-          "10 min/día, se reinicia a la medianoche local"
+          "{day} min/día, se reinicia a medianoche local",
+          "{week} min/semana, se reinicia el lunes"
         ]
       },
       "individual": {
@@ -36,45 +143,169 @@
         ]
       },
       "family": {
-        "name": "Familia",
+        "name": "Familiar",
         "cta": "Suscribirse en la web",
         "includes": [
           "Hasta 6 personas",
-          "Perfil + memoria para cada una"
+          "Perfil y memoria separados para cada una"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "Respuestas honestas",
+    "title": "Lo que la gente pregunta antes de instalar.",
+    "viewAllCta": "Ver todas las preguntas frecuentes →",
+    "items": [
+      {
+        "q": "¿Funciona sin internet?",
+        "a": "No, necesita conexión. Tu compañero de IA corre en la nube, así que si estás bajo tierra o en un avión sin wifi, se pausa hasta que vuelvas a estar en línea."
+      },
+      {
+        "q": "¿Se guarda mi voz?",
+        "a": "Las transcripciones y el audio se guardan en tu cuenta para que tu compañero de IA te recuerde la próxima vez. Puedes rechazar el uso para entrenamiento al registrarte."
+      },
+      {
+        "q": "¿Puedo usarlo con AirPods en el trayecto al trabajo?",
+        "a": "Sí. El audio por Bluetooth funciona igual que el altavoz del teléfono. La caminata desde la estación del tren es una de las formas más comunes de usarlo."
+      },
+      {
+        "q": "¿Va a juzgar mi acento?",
+        "a": "No. Tu compañero de IA adapta su velocidad al hablar y corrige con suavidad, solo cuando se lo pides o cuando un error es algo que un amigo de verdad señalaría. Tú fijas el nivel; él lo respeta."
+      },
+      {
+        "q": "¿Solo para iPhone?",
+        "a": "Por ahora solo iPhone. Si usas Android, únete a la lista de espera y te avisaremos por correo cuando haya algo para ti."
+      },
+      {
+        "q": "¿Puedo cancelar cuando quiera?",
+        "a": "Sí. Cancela cuando quieras; el acceso continúa hasta el final del periodo de facturación actual."
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "Únete a la lista de espera",
+    "metaDescription": "Sé de los primeros en enterarte cuando se lance Palkie Talkie.",
+    "title": "Únete a la lista de espera.",
+    "lead": "La app todavía no está en el App Store. Dinos dónde encontrarte y te avisaremos el día que salga.",
+    "fields": {
+      "email": "Correo",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "name": "Nombre",
+      "namePlaceholder": "Wes",
+      "phone": "Teléfono donde la instalarás",
+      "phoneChoose": "Elige…",
+      "phoneDesktopPlaceholder": "iPhone 16, Pixel 9, etc.",
+      "phones": {
+        "iphone_ios_26": "iPhone (iOS 26)",
+        "iphone_ios_18": "iPhone (iOS 18)",
+        "iphone_ios_17": "iPhone (iOS 17)",
+        "iphone_ios_16_or_older": "iPhone (iOS 16 o anterior)",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12 o anterior",
+        "other": "Otro"
+      },
+      "nativeLanguage": "Idioma(s) nativo(s)",
+      "nativeLanguageChoose": "Elige…",
+      "nativeLanguageOther": "Otro",
+      "multiSelectHint": "Toca para elegir uno o más.",
+      "targetLanguage": "Idioma que quieres aprender",
+      "targetLanguageChoose": "Elige…",
+      "targetLanguageOther": "Otro",
+      "biggestPain": "¿Qué es lo más difícil de hablar ahora mismo? (opcional)",
+      "biggestPainPlaceholder": "Las llamadas. Me bloqueo cada vez."
+    },
+    "submit": "Apúntame a la lista de espera",
+    "submitting": "Apuntando…",
+    "thanksTitle": "Ya estás en la lista.",
+    "thanksLead": "Te escribiremos el día que se lance, y un par de veces antes con lo que vayamos aprendiendo, si no te importa."
+  },
   "appStore": {
-    "label": "Descargar en App Store"
+    "label": "Descargar en el App Store",
+    "waitlistLabel": "Únete a la lista de espera"
   },
   "footer": {
+    "ctaTitle": "Empieza a hablar hoy.",
+    "ctaLead": "Gratis {day} min/día, {week} min/semana. Suscríbete cuando estés listo.",
     "home": "Inicio",
-    "contact": "Contacto"
+    "faq": "FAQ",
+    "waitlist": "Lista de espera",
+    "support": "Soporte",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "contact": "Contacto",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
     "metaTitle": "Suscribirse",
-    "metaDescription": "Suscríbete a Palkie Talkie Individual o Familia en la web.",
-    "youPicked": "Plan elegido",
+    "metaDescription": "Suscríbete a Palkie Talkie Individual o Familiar desde la web.",
+    "youPicked": "Elegiste",
     "perMonth": "{amount} / mes",
     "perYear": "o {amount} / año",
-    "switchToFamily": "Cambiar a Familia →",
+    "switchToFamily": "Cambiar a Familiar →",
     "switchToIndividual": "Cambiar a Individual →",
     "canceled": "Pago cancelado. Puedes intentarlo de nuevo cuando quieras.",
-    "checkoutCta": "Continuar al pago — {price}",
-    "cancelNote": "Cancela cuando quieras. El acceso continúa hasta el fin del período de facturación."
+    "step2Title": "Confirma y paga",
+    "step2Lead": "Te redirigiremos al pago seguro de Stripe. La misma cuenta desbloquea la app justo después de instalarla.",
+    "checkoutCta": "Continuar al pago, {price}",
+    "cancelNote": "Cancela cuando quieras. El acceso se mantiene hasta el final del periodo de facturación."
   },
   "success": {
-    "metaTitle": "Listo",
-    "metaDescription": "Suscripción confirmada. Descarga la app y empieza a hablar.",
-    "eyebrowOk": "Estás suscrito",
+    "metaTitle": "Ya estás dentro",
+    "metaDescription": "Suscripción confirmada. Descarga la app para empezar a hablar.",
+    "eyebrowOk": "Ya estás suscrito",
     "title": "Ahora descarga la app.",
-    "lead": "Tu suscripción está activa. Palkie Talkie vive en la app.",
+    "lead": "Tu suscripción está activa. La app es donde vive Palkie Talkie.",
     "instructions": "Inicia sesión con el mismo correo que usaste aquí.",
-    "note": "Así vinculamos tu suscripción a tu cuenta.",
+    "note": "Así es como vinculamos tu suscripción con tu cuenta.",
     "eyebrowError": "Mmm",
     "errorTitle": "No pudimos verificar tu sesión.",
-    "errorFallback": "Recarga la página o contacta soporte.",
+    "errorFallback": "Prueba a recargar o contacta con soporte.",
     "backToSignup": "Volver al registro"
+  },
+  "support": {
+    "metaTitle": "Soporte — Palkie Talkie",
+    "metaDescription": "Obtén ayuda con Palkie Talkie. Soporte por correo, gestión de suscripción, eliminación de cuenta y preguntas frecuentes.",
+    "eyebrow": "Soporte",
+    "title": "Estamos aquí para ayudarte.",
+    "ledeBefore": "Respuestas de personas reales, normalmente en menos de 24 horas. Envía tu pregunta a ",
+    "ledeAfter": " o usa uno de los accesos directos de abajo.",
+    "cards": {
+      "emailTitle": "Escríbenos",
+      "emailBody": "hello@palkietalkie.com, la vía más rápida a una respuesta humana.",
+      "subscriptionTitle": "Gestiona tu suscripción",
+      "subscriptionBody": "Ajustes del iPhone → toca tu nombre → Suscripciones → Palkie Talkie. Apple controla la renovación, la cancelación y el reembolso de las compras dentro de la app.",
+      "faqTitle": "FAQ",
+      "faqBody": "Respuestas comunes: precios, límites del plan gratuito, idiomas compatibles, qué recuerda tu compañero de IA, privacidad.",
+      "privacyTitle": "Privacidad y eliminación de datos",
+      "privacyBody": "Elimina tus datos cuando quieras desde Más → Privacidad y datos dentro de la app. Lee nuestra política de privacidad completa."
+    },
+    "quickAnswers": "Respuestas rápidas",
+    "items": [
+      {
+        "q": "¿Cómo cancelo mi suscripción?",
+        "a": "En el iPhone: abre Ajustes → toca tu nombre arriba → Suscripciones → Palkie Talkie → Cancelar suscripción. Apple procesa la cancelación; tu acceso premium continúa hasta el final del periodo actual."
+      },
+      {
+        "q": "¿Cómo consigo un reembolso?",
+        "a": "Para compras dentro de la app: solicita un reembolso en reportaproblem.apple.com, Apple toma la decisión final. Para suscripciones web: escríbenos y te reembolsamos a través de Stripe."
+      },
+      {
+        "q": "La app se cierra o el audio no funciona.",
+        "a": "Comprueba que diste permiso de micrófono en Ajustes del iPhone → Palkie Talkie → Micrófono. Si tu compañero de IA suena pero no lo oyes, revisa el interruptor lateral de volumen y que el Modo silencio esté desactivado. Si el problema persiste, escríbenos con tu versión de iOS y una descripción de lo que pasa."
+      },
+      {
+        "q": "Quiero eliminar mi cuenta.",
+        "a": "Abre la app → Más → Privacidad y datos → Eliminar mi cuenta. Esto elimina tu cuenta y cierra tu sesión. Si no puedes llegar a la pantalla, escríbenos y lo hacemos por ti."
+      },
+      {
+        "q": "Mi compañero de IA habla demasiado o no para cuando yo lo hago.",
+        "a": "Puedes interrumpirlo a mitad de frase con solo hablar; el audio de tu compañero de IA cederá. Si una persona concreta sigue pasando por encima del ritmo o repitiendo la misma frase, cambia de persona en la pestaña Persona, o escríbenos: ajustamos los prompts de las personas según los reportes reales."
+      }
+    ]
   }
 }

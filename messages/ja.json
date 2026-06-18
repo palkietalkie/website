@@ -1,29 +1,125 @@
 {
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "読むのはできる。話すのが難しい。",
+    "description": "あなたが話したことを覚えていて、1日のすき間時間にそばにいるAI音声パートナー。予約不要。カメラ不要。",
+    "homeTitle": "Palkie Talkie — 読むのはできる。話すのが難しい。"
   },
   "nav": {
     "pricing": "料金",
-    "subscribe": "登録する",
+    "subscribe": "登録",
     "language": "言語"
   },
   "hero": {
-    "ctaSecondary": "料金を見る",
-    "smallprint": "毎日10分無料。クレジットカード不要。いつでも解約OK。"
+    "smallprint": "無料は1日{day}分、週{week}分。クレジットカード不要。いつでも解約できます。",
+    "visual": {
+      "label": "[ヒーロービジュアル（仮）]"
+    },
+    "audioSample": {
+      "label": "[10秒のペルソナ音声サンプル（仮）]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "ギャップ",
+    "title": "使える ≠ 流暢。",
+    "lead": "英語は読める。1日をやり過ごせる。ギャップは、頭の中にあることと口から出てくることの間にある。そしてそれは、放っておいても埋まらない。",
+    "items": [
+      {
+        "title": "ジョークを聞き逃す",
+        "body": "会議は乗り切れる。でも、みんなを笑わせたあの一言は？合わせて笑っただけ。そのあとの雑談は？思ったより堅い話し方になってしまう。頑張るほど、それが出てしまう。"
+      },
+      {
+        "title": "腰を据えて勉強する時間がない",
+        "body": "仕事は仕事。残るのはすき間時間。駅から会社までの歩き、自転車での帰り道、シャワー、ジム。人目を気にせず声に出せる瞬間。多くのアプリは机と30分を求める。あなたにはどちらもない。"
+      },
+      {
+        "title": "ほかのツールは的を外している",
+        "body": "タップして訳すドリルでは話せるようにならない。汎用の音声アシスタントは毎回リセットされ、個性がない。対面レッスンは予約とカメラが要る。どれも、自分を知ってくれている相手との本当の会話には感じられない。"
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "やらなくていいこと",
+    "title": "やらなくていいこと。",
+    "lead": "その手間こそ、続けられなかった理由。だから取り除いた。",
+    "items": [
+      {
+        "title": "予約なし",
+        "body": "時間ができたら開く。なければ閉じる。"
+      },
+      {
+        "title": "カメラなし",
+        "body": "音声だけ。歩きながら、移動しながら、シャワーしながら、話す。"
+      },
+      {
+        "title": "椅子も机もいらない",
+        "body": "机に向かう勉強ではなく、すき間時間のために。"
+      },
+      {
+        "title": "社交辞令なし",
+        "body": "「今日はどうされましたか？」は言わない。あなたのAIパートナーは、もうあなたを知っている。"
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "使い心地",
+    "title": "すべてを変える3つのこと。",
+    "lead": "出だしの気まずさも、リセットも、退屈なチューターもなし。あなたを知っているAIパートナーと話そう。",
+    "items": [
+      {
+        "title": "向こうから話しかけてくる",
+        "body": "アプリを開くと、あなたのAIパートナーはもう話している。名前で呼びかけ、前回の続きから。答えてもいいし、ただ聞いていてもいい。"
+      },
+      {
+        "title": "あなたを覚えている",
+        "body": "先週話したこと、ウケたジョーク、口にした締め切り、お子さんの名前。次の会話で、友だちのように自然に織り交ぜてくる。プロフィールを読み上げるチャットボットとは違う。"
+      },
+      {
+        "title": "本物の個性",
+        "body": "気分に合うAIパートナーを選ぶ。鋭い、辛口、温かい、ぶっきらぼう。意見を持っていて、間違えれば指摘してくる。狙っていないときほど笑わせてくる。"
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "聴いてみる",
+    "title": "10秒で十分。",
+    "lead": "これは出だしの一言。あいさつの定型文も「どうされましたか」もなし。あなたが入ってくるのを待っていたAIパートナー。",
+    "playLabel": "10秒サンプルを再生",
+    "pauseLabel": "一時停止",
+    "transcriptLabel": "文字起こし"
+  },
+  "video": {
+    "eyebrow": "見てみる",
+    "title": "30秒、マイクから耳まで。"
+  },
+  "trust": {
+    "eyebrow": "まさにこの課題のために",
+    "title": "この課題を20年間生きてきた人間が作りました。",
+    "body": "「使えるけれど流暢ではない」英語は、仮説ではありません。20年以上にわたる会議、電話、聞き逃した一言、その日々のリアルです。このプロダクトのすべての設計は、「なぜこれはまだこんなに不便なのか」というノートから生まれています。",
+    "waitlistCount": "現在{count}人が順番待ち"
+  },
   "pricing": {
     "eyebrow": "料金",
-    "perMonth": "／月",
-    "orPerYear": "または {yearly}／年",
-    "mostPopular": "おすすめ",
+    "teaserTitle": "無料で始められる。",
+    "compareCta": "料金の詳細を見る →",
+    "pageTitle": "無料で始められる。アプリでもウェブでも同じ料金。",
+    "pageLead": "ほとんどの人は無料（1日{day}分、週{week}分）から。もっと話したくなったら月$17.99。すでに払っている習慣より安い。",
+    "dualCtaNote": "どちらの方法でもOK。同じアカウント、同じ利用範囲。",
+    "perMonth": "/ 月",
+    "orPerYear": "または {yearly} / 年",
+    "teaserFree": "1日{day}分、週{week}分",
+    "teaserPaidLine": "{monthly} / 月 ・ {yearly} / 年",
+    "teaserFamilyLine": "{monthly} / 月 ・ {yearly} / 年 ・ 最大{seats}人",
+    "freeAlwaysFree": "ずっと無料",
+    "mostPopular": "人気",
     "tiers": {
       "free": {
         "name": "無料",
-        "cta": "App Store からダウンロード",
+        "cta": "始める",
         "includes": [
-          "毎日10分、ローカル時間の0時にリセット"
+          "1日{day}分、現地時間の深夜にリセット",
+          "週{week}分、月曜にリセット"
         ]
       },
       "individual": {
@@ -38,43 +134,166 @@
         "name": "ファミリー",
         "cta": "ウェブで登録",
         "includes": [
-          "最大6人まで",
-          "それぞれにプロフィールと記憶"
+          "最大6人",
+          "それぞれに専用のプロフィールと記憶"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "正直な回答",
+    "title": "インストール前によく聞かれること。",
+    "viewAllCta": "FAQをすべて見る →",
+    "items": [
+      {
+        "q": "ネットがなくても使える？",
+        "a": "いいえ、接続が必要です。あなたのAIパートナーはクラウドで動いているので、地下やWi-Fiのない機内では、オンラインに戻るまで一時停止します。"
+      },
+      {
+        "q": "声は保存される？",
+        "a": "文字起こしと音声はあなたのアカウントに保存され、次回もAIパートナーがあなたを覚えています。登録時に学習利用をオフにできます。"
+      },
+      {
+        "q": "通勤中にAirPodsで使える？",
+        "a": "はい。Bluetooth音声は本体スピーカーと同じように使えます。駅からの歩きは、最もよくある使い方のひとつです。"
+      },
+      {
+        "q": "発音を判定される？",
+        "a": "いいえ。あなたのAIパートナーは話す速さを合わせ、やさしく直します。あなたが頼んだとき、または友だちなら本当に指摘するような間違いのときだけ。レベルはあなたが設定し、それを尊重します。"
+      },
+      {
+        "q": "iPhoneだけ？",
+        "a": "今のところiPhoneだけです。Androidの方は順番待ちにご登録ください。お届けできるようになったらメールします。"
+      },
+      {
+        "q": "いつでも解約できる？",
+        "a": "はい。いつでも解約でき、今の請求期間の終わりまで利用できます。"
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "順番待ちに登録",
+    "metaDescription": "Palkie Talkieのリリースをいち早くお知らせします。",
+    "title": "順番待ちに登録。",
+    "lead": "アプリはまだApp Storeにありません。連絡先を教えていただければ、配信開始の日にお知らせします。",
+    "fields": {
+      "email": "メールアドレス",
+      "emailPlaceholder": "you@example.com",
+      "name": "名前",
+      "namePlaceholder": "Wes",
+      "phone": "インストールする端末",
+      "phoneChoose": "選択…",
+      "phoneDesktopPlaceholder": "iPhone 16、Pixel 9 など",
+      "phones": {
+        "iphone_ios_26": "iPhone（iOS 26）",
+        "iphone_ios_18": "iPhone（iOS 18）",
+        "iphone_ios_17": "iPhone（iOS 17）",
+        "iphone_ios_16_or_older": "iPhone（iOS 16以前）",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12以前",
+        "other": "その他"
+      },
+      "nativeLanguage": "母語",
+      "nativeLanguageChoose": "選択…",
+      "nativeLanguageOther": "その他",
+      "multiSelectHint": "1つ以上タップして選べます。",
+      "targetLanguage": "学びたい言語",
+      "targetLanguageChoose": "選択…",
+      "targetLanguageOther": "その他",
+      "biggestPain": "今、話すうえで一番むずかしいことは？（任意）",
+      "biggestPainPlaceholder": "電話。毎回かたまってしまう。"
+    },
+    "submit": "順番待ちに登録する",
+    "submitting": "登録中…",
+    "thanksTitle": "登録できました。",
+    "thanksLead": "配信開始の日にメールします。差し支えなければ、それまでにも学んだことを何度かお送りします。"
+  },
   "appStore": {
-    "label": "App Store からダウンロード"
+    "label": "App Storeでダウンロード",
+    "waitlistLabel": "順番待ちに登録"
   },
   "footer": {
+    "ctaTitle": "今日から話そう。",
+    "ctaLead": "無料は1日{day}分、週{week}分。準備ができたら登録を。",
     "home": "ホーム",
-    "contact": "お問い合わせ"
+    "faq": "FAQ",
+    "waitlist": "順番待ち",
+    "support": "サポート",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "contact": "お問い合わせ",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
     "metaTitle": "登録",
-    "metaDescription": "Palkie Talkie の個人プラン／ファミリープランをウェブから登録。",
+    "metaDescription": "Palkie Talkieの個人プランまたはファミリープランにウェブで登録。",
     "youPicked": "選択中のプラン",
-    "perMonth": "{amount}／月",
-    "perYear": "または {amount}／年",
+    "perMonth": "{amount} / 月",
+    "perYear": "または {amount} / 年",
     "switchToFamily": "ファミリーに切り替え →",
-    "switchToIndividual": "個人プランに切り替え →",
-    "canceled": "決済はキャンセルされました。いつでもまた試せます。",
-    "checkoutCta": "決済へ進む — {price}",
-    "cancelNote": "いつでも解約OK。請求期間の終わりまでアクセスは続きます。"
+    "switchToIndividual": "個人に切り替え →",
+    "canceled": "購入をキャンセルしました。いつでもやり直せます。",
+    "step2Title": "確認して支払う",
+    "step2Lead": "Stripeの安全な決済画面に移動します。インストール後、同じアカウントですぐにアプリが使えます。",
+    "checkoutCta": "決済に進む（{price}）",
+    "cancelNote": "いつでも解約できます。請求期間の終わりまで利用できます。"
   },
   "success": {
     "metaTitle": "登録完了",
-    "metaDescription": "登録が完了しました。アプリをダウンロードして、会話を始めましょう。",
-    "eyebrowOk": "登録が完了しました",
+    "metaDescription": "登録が完了しました。アプリをダウンロードして話し始めましょう。",
+    "eyebrowOk": "登録済み",
     "title": "アプリをダウンロード。",
-    "lead": "サブスクリプションが有効になりました。Palkie Talkie の本体はアプリです。",
-    "instructions": "ここで使ったメールアドレスでサインインしてください。",
-    "note": "そのメールアドレスで、サブスクリプションとアカウントを紐づけます。",
-    "eyebrowError": "うーん",
+    "lead": "登録が有効になりました。Palkie Talkieはアプリの中にあります。",
+    "instructions": "ここで使ったのと同じメールアドレスでサインインしてください。",
+    "note": "そうすることで、登録とアカウントが結びつきます。",
+    "eyebrowError": "おや",
     "errorTitle": "セッションを確認できませんでした。",
-    "errorFallback": "ページを再読み込みするか、サポートにお問い合わせください。",
-    "backToSignup": "登録ページに戻る"
+    "errorFallback": "更新するか、サポートにご連絡ください。",
+    "backToSignup": "登録に戻る"
   },
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes."
+  "support": {
+    "metaTitle": "サポート — Palkie Talkie",
+    "metaDescription": "Palkie Talkieのヘルプ。メールサポート、登録の管理、アカウント削除、よくある質問。",
+    "eyebrow": "サポート",
+    "title": "お手伝いします。",
+    "ledeBefore": "たいてい24時間以内に、人間がお返事します。ご質問は ",
+    "ledeAfter": " までお送りいただくか、下のショートカットをご利用ください。",
+    "cards": {
+      "emailTitle": "メールする",
+      "emailBody": "hello@palkietalkie.com｜人からの返信が一番早い方法です。",
+      "subscriptionTitle": "登録を管理する",
+      "subscriptionBody": "iPhoneの設定 → 自分の名前 → サブスクリプション → Palkie Talkie。アプリ内課金の更新・解約・返金はAppleが管理します。",
+      "faqTitle": "FAQ",
+      "faqBody": "よくある回答：料金、無料枠の上限、対応言語、AIパートナーが覚えること、プライバシー。",
+      "privacyTitle": "プライバシーとデータ削除",
+      "privacyBody": "アプリ内の その他 → プライバシーとデータ から、いつでもデータを削除できます。プライバシーポリシー全文もどうぞ。"
+    },
+    "quickAnswers": "クイック回答",
+    "items": [
+      {
+        "q": "サブスクリプションを解約するには？",
+        "a": "iPhoneで：設定 → 一番上の自分の名前 → サブスクリプション → Palkie Talkie → 解約。Appleが解約を処理し、プレミアムは今の期間の終わりまで使えます。"
+      },
+      {
+        "q": "返金してもらうには？",
+        "a": "アプリ内課金は reportaproblem.apple.com から返金を申請してください。最終判断はAppleが行います。ウェブの登録は、メールいただければStripeで返金します。"
+      },
+      {
+        "q": "アプリが落ちる／音が出ない。",
+        "a": "iPhoneの設定 → Palkie Talkie → マイク で、マイクの許可を確認してください。AIパートナーの声が再生されているのに聞こえない場合は、音量スイッチとサイレントモードがオフかを確認してください。直らなければ、iOSのバージョンと症状を添えてメールしてください。"
+      },
+      {
+        "q": "アカウントを削除したい。",
+        "a": "アプリの その他 → プライバシーとデータ → アカウントを削除。アカウントが削除され、サインアウトされます。画面にたどり着けない場合は、メールいただければこちらで対応します。"
+      },
+      {
+        "q": "AIパートナーが話しすぎる／こちらが話しても止まらない。",
+        "a": "話しかければ、文の途中でもAIパートナーの音声は引きます。特定のペルソナがペースを無視したり同じ言い回しを繰り返したりする場合は、ペルソナタブで切り替えるか、メールしてください。実際のご報告をもとにペルソナを調整しています。"
+      }
+    ]
+  }
 }

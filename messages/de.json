@@ -1,7 +1,10 @@
 {
-  "_translation_status": "partial — copy reduced after May 2026 hero/features rewrite; missing keys fall back to EN via deepMerge in i18n/request.ts. Re-translate when EN copy stabilizes.",
+  "_translation_status": "complete for user-facing copy; spec dev-notes fall back to en",
   "meta": {
-    "siteName": "Palkie Talkie"
+    "siteName": "Palkie Talkie",
+    "tagline": "Lesen kannst du das hier. Aussprechen ist der schwere Teil.",
+    "description": "Ein KI-Sprachpartner, der sich merkt, was du gesagt hast, und in den Lücken deines Tages für dich da ist. Kein Termin. Keine Kamera.",
+    "homeTitle": "Palkie Talkie — Lesen kannst du das hier. Aussprechen ist der schwere Teil."
   },
   "nav": {
     "pricing": "Preise",
@@ -9,29 +12,133 @@
     "language": "Sprache"
   },
   "hero": {
-    "ctaSecondary": "Preise ansehen",
-    "smallprint": "10 Min/Tag gratis. Keine Kreditkarte. Jederzeit kündbar."
+    "smallprint": "Kostenlos {day} Min/Tag, {week} Min/Woche. Keine Kreditkarte. Jederzeit kündbar.",
+    "visual": {
+      "label": "[Platzhalter Hero-Bild]"
+    },
+    "audioSample": {
+      "label": "[Platzhalter 10-Sekunden-Persona-Audio]"
+    }
   },
-  "problems": {},
-  "features": {},
+  "problems": {
+    "eyebrow": "Die Lücke",
+    "title": "Funktional heißt nicht fließend.",
+    "lead": "Englisch lesen kannst du. Durch den Tag kommst du. Die Lücke liegt zwischen dem, was in deinem Kopf ist, und dem, was aus deinem Mund kommt. Und sie schließt sich nicht von allein.",
+    "items": [
+      {
+        "title": "Die Witze gehen an dir vorbei",
+        "body": "Das Meeting kriegst du hin. Aber der Spruch nebenbei, über den alle gelacht haben? Du hast mitgelächelt. Der lockere Plausch danach? Du klangst förmlicher, als du wolltest. Je mehr du dich anstrengst, desto deutlicher wird es."
+      },
+      {
+        "title": "Keine Zeit, sich hinzusetzen und zu lernen",
+        "body": "Arbeit ist Arbeit. Was bleibt, sind Fetzen: der Weg von der Bahn ins Büro, die Radtour nach Hause, die Dusche, das Gym. Die Momente, in denen du laut sprechen kannst, ohne dich verlegen zu fühlen. Die meisten Apps wollen einen Schreibtisch und 30 Minuten. Du hast weder noch."
+      },
+      {
+        "title": "Die anderen Tools treffen den Punkt nicht",
+        "body": "Tippen-und-übersetzen-Drills bringen dir kein Sprechen bei. Generische Sprachassistenten fangen jede Sitzung bei null an und haben keine Persönlichkeit. Live-Tutoren brauchen einen Termin und eine Kamera. Keins davon fühlt sich an wie ein echtes Gespräch mit jemandem, der dich kennt."
+      }
+    ]
+  },
+  "absence": {
+    "eyebrow": "Was es nicht ist",
+    "title": "Was du nicht tun musst.",
+    "lead": "Die Reibung ist der Grund, warum du aufgehört hast. Nimm sie raus.",
+    "items": [
+      {
+        "title": "Kein Termin",
+        "body": "Öffne es, wenn du eine Minute hast. Schließ es, wenn nicht."
+      },
+      {
+        "title": "Keine Kamera",
+        "body": "Nur Stimme. Geh, fahr, dusch, sprich."
+      },
+      {
+        "title": "Kein Stuhl, kein Schreibtisch",
+        "body": "Gebaut für die Lücken, nicht fürs Hinsetzen und Pauken."
+      },
+      {
+        "title": "Kein Smalltalk-Füllstoff",
+        "body": "Nie \"Wie kann ich dir heute helfen?\" Dein KI-Partner kennt dich schon."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Wie es sich anfühlt",
+    "title": "Drei Dinge, die alles verändern.",
+    "lead": "Schluss mit Kaltstart, Schluss mit Reset, Schluss mit dem langweiligen Tutor. Sprich mit einem KI-Partner, der dich kennt.",
+    "items": [
+      {
+        "title": "Er spricht zuerst",
+        "body": "Öffne die App, und dein KI-Partner redet schon: spricht dich mit Namen an, knüpft da an, wo ihr aufgehört habt. Antworte, wenn du willst. Hör einfach zu, wenn nicht.",
+        "visual": {
+          "label": "[Platzhalter Feature-Bild]"
+        }
+      },
+      {
+        "title": "Er erinnert sich an dich",
+        "body": "Was du letzte Woche gesagt hast, der Witz, der saß, die Deadline, die du erwähnt hast, der Name deines Kindes. Im nächsten Gespräch flicht er das wieder ein, wie ein Freund es täte, nicht wie ein Chatbot, der ein Profil herunterliest.",
+        "visual": {
+          "label": "[Platzhalter Feature-Bild]"
+        }
+      },
+      {
+        "title": "Echte Persönlichkeiten",
+        "body": "Wähl einen KI-Partner, der zur Stimmung passt: scharfzüngig, trocken, herzlich, direkt. Sie haben Meinungen. Sie widersprechen, wenn du falsch liegst. Sie sind witzig, wenn du es gar nicht versuchst.",
+        "visual": {
+          "label": "[Platzhalter Feature-Bild]"
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "Hör rein",
+    "title": "10 Sekunden reichen.",
+    "lead": "Das ist der erste Gesprächsmoment. Kein Begrüßungs-Füllstoff, kein \"Wie kann ich helfen.\" Einfach ein KI-Partner, der darauf gewartet hat, dass du reinkommst.",
+    "playLabel": "10-Sekunden-Probe abspielen",
+    "pauseLabel": "Pause",
+    "transcriptLabel": "Transkript"
+  },
+  "video": {
+    "eyebrow": "Sieh es",
+    "title": "30 Sekunden, vom Mikro ans Ohr.",
+    "videoPlaceholder": {
+      "label": "[Platzhalter Demo-Video]"
+    }
+  },
+  "trust": {
+    "eyebrow": "Gemacht für genau dieses Problem",
+    "title": "Gebaut von jemandem, der das zwei Jahrzehnte lang gelebt hat.",
+    "body": "Funktional-aber-festgefahrenes Englisch ist keine Hypothese. Es ist die tägliche Realität des Gründers über 20+ Jahre voller Meetings, Telefonate und verpasster Zwischenbemerkungen. Jede Designentscheidung an diesem Produkt kommt aus einem Notizbuch voller \"Warum nervt das immer noch.\"",
+    "waitlistCount": "{count} auf der Warteliste"
+  },
   "pricing": {
     "eyebrow": "Preise",
+    "teaserTitle": "Kostenlos starten. Ein einfacher Preis.",
+    "compareCta": "Alle Preise ansehen →",
+    "pageTitle": "Kostenlos starten. Ein Preis für App und Web.",
+    "pageLead": "Die meisten starten mit den kostenlosen {day} Min/Tag ({week} Min/Woche). Wenn du mehr willst, $17.99/Monat: weniger als eine Gewohnheit, für die du eh schon zahlst.",
+    "dualCtaNote": "Beide Wege funktionieren: gleiches Konto, gleicher Zugang.",
     "perMonth": "/ Monat",
     "orPerYear": "oder {yearly} / Jahr",
+    "teaserFree": "{day} Min/Tag, {week} Min/Woche",
+    "teaserPaidLine": "{monthly} / Mon · {yearly} / Jahr",
+    "teaserFamilyLine": "{monthly} / Mon · {yearly} / Jahr · bis zu {seats}",
+    "freeAlwaysFree": "Immer kostenlos",
     "mostPopular": "Am beliebtesten",
     "tiers": {
       "free": {
-        "name": "Gratis",
-        "cta": "Im App Store laden",
+        "name": "Kostenlos",
+        "cta": "Loslegen",
         "includes": [
-          "10 Min/Tag, Reset um lokale Mitternacht"
+          "{day} Min/Tag, Reset um Mitternacht (lokale Zeit)",
+          "{week} Min/Woche, Reset am Montag"
         ]
       },
       "individual": {
-        "name": "Einzeln",
+        "name": "Einzel",
         "cta": "Im Web abonnieren",
         "includes": [
-          "Eine Person",
+          "Ein Nutzer",
           "Unbegrenzte Sprechzeit"
         ]
       },
@@ -40,41 +147,165 @@
         "cta": "Im Web abonnieren",
         "includes": [
           "Bis zu 6 Personen",
-          "Eigenes Profil + Erinnerung pro Person"
+          "Eigenes Profil + Gedächtnis für jeden"
         ]
       }
     }
   },
+  "faq": {
+    "eyebrow": "Ehrliche Antworten",
+    "title": "Was Leute fragen, bevor sie installieren.",
+    "viewAllCta": "Alle FAQ ansehen →",
+    "items": [
+      {
+        "q": "Funktioniert es ohne Internet?",
+        "a": "Nein, es braucht eine Verbindung. Dein KI-Partner läuft in der Cloud. Wenn du also unter der Erde oder ohne WLAN im Flugzeug bist, pausiert er, bis du wieder online bist."
+      },
+      {
+        "q": "Wird meine Stimme gespeichert?",
+        "a": "Transkripte und Audio werden unter deinem Konto gespeichert, damit dein KI-Partner sich beim nächsten Mal an dich erinnert. Bei der Anmeldung kannst du der Nutzung fürs Training widersprechen."
+      },
+      {
+        "q": "Kann ich es mit AirPods auf dem Weg zur Arbeit nutzen?",
+        "a": "Ja. Bluetooth-Audio funktioniert genauso wie der Lautsprecher des Telefons. Der Weg vom Bahnhof ist eine der häufigsten Arten, wie Leute es nutzen."
+      },
+      {
+        "q": "Bewertet es meinen Akzent?",
+        "a": "Nein. Dein KI-Partner passt seine Sprechgeschwindigkeit an und korrigiert behutsam, nur wenn du fragst oder wenn ein Fehler etwas ist, das ein Freund tatsächlich ansprechen würde. Du legst das Niveau fest; er respektiert es."
+      },
+      {
+        "q": "Nur für iPhone?",
+        "a": "Vorerst nur iPhone. Wenn du Android hast, trag dich in die Warteliste ein, und wir mailen dir, sobald es etwas für dich gibt."
+      },
+      {
+        "q": "Kann ich jederzeit kündigen?",
+        "a": "Ja. Jederzeit kündbar; der Zugang läuft bis zum Ende des aktuellen Abrechnungszeitraums weiter."
+      }
+    ]
+  },
+  "waitlist": {
+    "metaTitle": "Auf die Warteliste",
+    "metaDescription": "Sei als Erstes dabei, wenn Palkie Talkie startet.",
+    "title": "Auf die Warteliste.",
+    "lead": "Die App ist noch nicht im App Store. Sag uns, wo wir dich erreichen, und wir melden uns am Tag des Starts.",
+    "fields": {
+      "email": "E-Mail",
+      "emailPlaceholder": "du@beispiel.com",
+      "name": "Vorname",
+      "namePlaceholder": "Wes",
+      "phone": "Gerät, auf dem du installierst",
+      "phoneChoose": "Auswählen…",
+      "phoneDesktopPlaceholder": "iPhone 16, Pixel 9 usw.",
+      "phones": {
+        "iphone_ios_26": "iPhone (iOS 26)",
+        "iphone_ios_18": "iPhone (iOS 18)",
+        "iphone_ios_17": "iPhone (iOS 17)",
+        "iphone_ios_16_or_older": "iPhone (iOS 16 oder älter)",
+        "ipad": "iPad",
+        "android_16": "Android 16",
+        "android_15": "Android 15",
+        "android_14": "Android 14",
+        "android_13": "Android 13",
+        "android_12_or_older": "Android 12 oder älter",
+        "other": "Andere"
+      },
+      "nativeLanguage": "Muttersprache(n)",
+      "nativeLanguageChoose": "Auswählen…",
+      "nativeLanguageOther": "Andere",
+      "multiSelectHint": "Tippe, um eine oder mehrere auszuwählen.",
+      "targetLanguage": "Sprache, die du lernen willst",
+      "targetLanguageChoose": "Auswählen…",
+      "targetLanguageOther": "Andere",
+      "biggestPain": "Was fällt dir beim Sprechen gerade am schwersten? (optional)",
+      "biggestPainPlaceholder": "Telefonate. Da blockiere ich jedes Mal."
+    },
+    "submit": "Auf die Warteliste setzen",
+    "submitting": "Wird hinzugefügt…",
+    "thanksTitle": "Du bist auf der Liste.",
+    "thanksLead": "Wir mailen dir am Tag des Starts, und ein paar Mal davor mit dem, was wir gerade lernen, falls es dir nichts ausmacht."
+  },
   "appStore": {
-    "label": "Im App Store laden"
+    "label": "Im App Store laden",
+    "waitlistLabel": "Auf die Warteliste"
   },
   "footer": {
+    "ctaTitle": "Fang heute an zu sprechen.",
+    "ctaLead": "Kostenlos {day} Min/Tag, {week} Min/Woche. Abonnieren, wann immer du bereit bist.",
     "home": "Start",
-    "contact": "Kontakt"
+    "faq": "FAQ",
+    "waitlist": "Warteliste",
+    "support": "Hilfe",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "contact": "Kontakt",
+    "copyright": "© {year} Palkie Talkie"
   },
   "signup": {
     "metaTitle": "Abonnieren",
-    "metaDescription": "Abonniere Palkie Talkie Einzeln oder Familie im Web.",
-    "youPicked": "Dein Tarif",
-    "perMonth": "{amount} / Monat",
+    "metaDescription": "Abonniere Palkie Talkie Einzel oder Familie im Web.",
+    "youPicked": "Deine Wahl",
+    "perMonth": "{amount} / Mon",
     "perYear": "oder {amount} / Jahr",
     "switchToFamily": "Zu Familie wechseln →",
-    "switchToIndividual": "Zu Einzeln wechseln →",
-    "canceled": "Bezahlung abgebrochen. Du kannst jederzeit erneut versuchen.",
-    "checkoutCta": "Weiter zur Zahlung — {price}",
-    "cancelNote": "Jederzeit kündbar. Zugang bleibt bis zum Ende des Abrechnungszeitraums."
+    "switchToIndividual": "Zu Einzel wechseln →",
+    "canceled": "Checkout abgebrochen. Du kannst es jederzeit erneut versuchen.",
+    "step2Title": "Bestätigen und bezahlen",
+    "step2Lead": "Du wirst zum sicheren Checkout von Stripe weitergeleitet. Dasselbe Konto schaltet die App direkt nach der Installation frei.",
+    "checkoutCta": "Weiter zum Checkout, {price}",
+    "cancelNote": "Jederzeit kündbar. Der Zugang bleibt bis zum Ende des Abrechnungszeitraums bestehen."
   },
   "success": {
-    "metaTitle": "Geschafft",
-    "metaDescription": "Abonnement bestätigt. App laden und losreden.",
+    "metaTitle": "Du bist dabei",
+    "metaDescription": "Abo bestätigt. Lad die App, um loszusprechen.",
     "eyebrowOk": "Du bist abonniert",
-    "title": "Jetzt die App laden.",
-    "lead": "Dein Abonnement ist aktiv. Palkie Talkie lebt in der App.",
-    "instructions": "Melde dich mit derselben E-Mail an, die du hier benutzt hast.",
-    "note": "So verknüpfen wir dein Abo mit deinem Account.",
+    "title": "Jetzt lad die App.",
+    "lead": "Dein Abo ist aktiv. Die App ist das Zuhause von Palkie Talkie.",
+    "instructions": "Melde dich mit derselben E-Mail an, die du hier verwendet hast.",
+    "note": "So verknüpfen wir dein Abo mit deinem Konto.",
     "eyebrowError": "Hmm",
-    "errorTitle": "Wir konnten deine Sitzung nicht verifizieren.",
-    "errorFallback": "Seite neu laden oder Support kontaktieren.",
+    "errorTitle": "Wir konnten deine Sitzung nicht überprüfen.",
+    "errorFallback": "Versuch es mit Neuladen oder wende dich an den Support.",
     "backToSignup": "Zurück zur Anmeldung"
+  },
+  "support": {
+    "metaTitle": "Hilfe — Palkie Talkie",
+    "metaDescription": "Hilfe zu Palkie Talkie. E-Mail-Support, Abo-Verwaltung, Kontolöschung und häufige Fragen.",
+    "eyebrow": "Hilfe",
+    "title": "Wir helfen dir gern.",
+    "ledeBefore": "Echte menschliche Antworten, meist innerhalb von 24 Stunden. Schick deine Frage an ",
+    "ledeAfter": " oder nutze eine der Abkürzungen unten.",
+    "cards": {
+      "emailTitle": "Schreib uns",
+      "emailBody": "hello@palkietalkie.com, der schnellste Weg zu einer menschlichen Antwort.",
+      "subscriptionTitle": "Abo verwalten",
+      "subscriptionBody": "iPhone-Einstellungen → tippe auf deinen Namen → Abonnements → Palkie Talkie. Apple steuert Verlängerung, Kündigung und Rückerstattung bei In-App-Käufen.",
+      "faqTitle": "FAQ",
+      "faqBody": "Häufige Antworten: Preise, Limits der Gratisversion, unterstützte Sprachen, woran sich dein KI-Partner erinnert, Datenschutz.",
+      "privacyTitle": "Datenschutz & Datenlöschung",
+      "privacyBody": "Lösche deine Daten jederzeit unter Mehr → Datenschutz & Daten in der App. Lies unsere vollständige Datenschutzerklärung."
+    },
+    "quickAnswers": "Schnelle Antworten",
+    "items": [
+      {
+        "q": "Wie kündige ich mein Abo?",
+        "a": "Auf dem iPhone: Einstellungen öffnen → oben auf deinen Namen tippen → Abonnements → Palkie Talkie → Abo kündigen. Apple wickelt die Kündigung ab; dein Premium-Zugang läuft bis zum Ende des aktuellen Zeitraums weiter."
+      },
+      {
+        "q": "Wie bekomme ich eine Rückerstattung?",
+        "a": "Bei In-App-Käufen: beantrage eine Rückerstattung unter reportaproblem.apple.com. Apple trifft die endgültige Entscheidung. Bei Web-Abos: schreib uns, und wir erstatten über Stripe."
+      },
+      {
+        "q": "Die App stürzt ab oder der Ton geht nicht.",
+        "a": "Prüf, ob du die Mikrofonberechtigung erteilt hast unter iPhone-Einstellungen → Palkie Talkie → Mikrofon. Wenn dein KI-Partner spielt, du ihn aber nicht hörst, prüf den Lautstärkeregler an der Seite und ob der Lautlos-Modus aus ist. Bleibt das Problem, schreib uns mit deiner iOS-Version und einer Beschreibung, was passiert."
+      },
+      {
+        "q": "Ich möchte mein Konto löschen.",
+        "a": "Öffne die App → Mehr → Datenschutz & Daten → Konto löschen. Das entfernt dein Konto und meldet dich ab. Wenn du den Bildschirm nicht erreichst, schreib uns, und wir erledigen es für dich."
+      },
+      {
+        "q": "Mein KI-Partner redet zu viel / hört nicht auf, wenn ich anfange.",
+        "a": "Du kannst ihn mitten im Satz unterbrechen, indem du sprichst; der Ton deines KI-Partners gibt nach. Wenn eine bestimmte Persona ständig das Tempo überstimmt oder denselben Satz wiederholt, wechsel die Persona im Persona-Tab, oder schreib uns, wir feinjustieren Persona-Prompts anhand echter Rückmeldungen."
+      }
+    ]
   }
 }

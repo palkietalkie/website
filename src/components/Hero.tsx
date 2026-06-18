@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AppStoreButton } from "./AppStoreButton";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import styles from "./Hero.module.css";
-import { Placeholder } from "./Placeholder";
+import { Screenshot } from "./Screenshot";
 
 type Props = {
   /** True when the visitor is in waitlist mode (pre-launch OR non-iOS). The page resolves this server-side via `shouldShowWaitlist()` and passes it down. Default false so tests rendering <Hero /> synchronously get post-launch UI. */
@@ -53,11 +53,11 @@ export function Hero({
           </p>
         </div>
 
-        <Placeholder
-          shape="phone"
-          label={t("hero.visual.label")}
-          spec={t("hero.visual.spec")}
+        <Screenshot
+          src="/screens/01-talk.png"
+          alt={t("meta.description")}
           className={styles.heroVisual}
+          priority
         />
       </div>
     </header>

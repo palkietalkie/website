@@ -14,6 +14,13 @@ type FeatureItem = { title: string; body: string; visual?: { label: string; spec
 type AbsenceItem = { title: string; body: string };
 type FaqItem = { q: string; a: string };
 
+// Screenshot per feature, in features.items order: talks-first → Talk screen, remembers-you → Profile, real-personalities → Persona picker.
+const FEATURE_SHOTS = [
+  "/screens/01-talk.png",
+  "/screens/08-profile.png",
+  "/screens/02-persona.png",
+];
+
 export default async function Home() {
   const t = await getTranslations();
   const waitlist = await shouldShowWaitlist();
@@ -71,7 +78,7 @@ export default async function Home() {
                 n={i + 1}
                 title={f.title}
                 body={f.body}
-                visual={f.visual}
+                image={{ src: FEATURE_SHOTS[i], alt: f.title }}
               />
             ))}
           </div>
@@ -99,11 +106,15 @@ export default async function Home() {
         <div className="container">
           <span className="eyebrow">{t("video.eyebrow")}</span>
           <h2 className="section-title">{t("video.title")}</h2>
-          <Placeholder
-            shape="portrait"
-            label={t("video.videoPlaceholder.label")}
-            spec={t("video.videoPlaceholder.spec")}
-          />
+          <video
+            className={styles.demoVideo}
+            src="/video/demo.mp4"
+            controls
+            playsInline
+            preload="metadata"
+          >
+            <track kind="captions" />
+          </video>
         </div>
       </section>
 
