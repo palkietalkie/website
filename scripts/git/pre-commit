@@ -38,8 +38,17 @@ if curl -fsS "$OPENAPI_URL" >/dev/null 2>&1; then
     fi
 fi
 
-echo "pre-commit: prettier --check"
-npx --no-install prettier --check 'src/**/*.{ts,tsx,js,jsx,css,json,md}' 'eslint.config.mjs' 'next.config.ts' 'vitest.config.ts' 'vitest.setup.ts'
+# Reformat in place, then auto-restage prettier's changes — but ONLY for files that were already staged and were otherwise clean. A file with pre-existing unstaged edits is left alone (re-adding it would silently fold unreviewed work in), and unstaged files are never introduced. Reduces the manual re-stage burden a check-and-fail hook imposes.
+echo "pre-commit: prettier --write (auto-restage formatter changes to cleanly-staged files)"
+STAGED=$(git diff --cached --name-only --diff-filter=ACM)
+DIRTY_BEFORE=$(git diff --name-only)
+npx --no-install prettier --write 'src/**/*.{ts,tsx,js,jsx,css,json,md}' 'eslint.config.mjs' 'next.config.ts' 'vitest.config.ts' 'vitest.setup.ts'
+git diff --name-only | while read -r f; do
+    [ -z "$f" ] && continue
+    echo "$STAGED" | grep -qx "$f" || continue        # only files that were staged
+    echo "$DIRTY_BEFORE" | grep -qx "$f" && continue  # skip files that already had unstaged edits
+    git add "$f" && echo "pre-commit: re-staged formatter changes in $f"
+done
 
 echo "pre-commit: eslint"
 npm run --silent lint
